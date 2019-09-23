@@ -1,0 +1,80 @@
+<section>
+		<div class="cover">		
+		<%= image_tag 'wow-classic-logo', id:"img-logo" %>
+		    
+		<h1 class="cover_text">QuickBuilds-Classic!</h1>
+		<h2 class="cover_text2">O acervo contém atualmente mais de 40 Builds!</h2>
+		
+        <div id="container-classes">
+          <% for i in 0..@classes.size %>            
+            <%= link_to @classes[i], :action => @classes[i], target:"_blank" do %>
+                 <div class="classes" id="<%=@classes[i]%>"><p><span><%=@classes[i]%></span><br>builds, guias e dicas.</p></div>            
+            <%end%>
+          <% end %>
+        </div>
+	
+		</div>
+</section>
+
+<section id="auto_adjustment">
+          <div class="layer">          
+          <%= image_tag "DG's/Treasure_chest", alt:"treasure chest" %>
+          <ol>
+            <li>Masmorras durante o Leveling!</li>
+          </ol>
+                <!-- Slide Page 1 -->
+    <div class="swiper-container">                
+    <div class="swiper-wrapper">
+       <div class="swiper-slide"> 
+         <% for i in 0..5%>
+            <%= link_to @dgs[i][3], :action => @dgs[i][3], target:"_blank" do %>
+             <div class="limit">
+               <h1><%= @dgs[i][0]%></h1>
+               <h2><%= @dgs[i][1]%></h2>
+               <div class="dg" id="<%= @dgs[i][2] %>"></div>
+             </div>
+            <%end%>
+            <%= image_tag "animation_swipe_icon", class:"icon_swiper" %>
+         <%end%>
+       </div>        
+                <!-- Slide Page 2 -->
+       <div class="swiper-slide"> 
+            <% for i in 6..11%>
+              <%= link_to @dgs[i][3], :action => @dgs[i][3], target:"_blank" do %>
+             <div class="limit">
+               <h1><%= @dgs[i][0]%></h1>
+               <h2><%= @dgs[i][1]%></h2>
+               <div class="dg" id="<%= @dgs[i][2] %>"></div>
+             </div></a>
+         <%end%>
+         <%= image_tag "animation_swipe_icon", class:"icon_swiper" %>
+         <%end%>
+       </div>
+                <!-- Slide Page 3 -->
+       <div class="swiper-slide"> 
+            <% for i in 12..13%>
+              <%= link_to @dgs[i][3], :action => @dgs[i][3], target:"_blank" do %>
+             <div class="limit">
+               <h1><%= @dgs[i][0]%></h1>
+               <h2><%= @dgs[i][1]%></h2>
+               <div class="dg" id="<%= @dgs[i][2] %>"></div>
+             </div></a>
+         <%end%>
+         <%= image_tag "animation_swipe_icon", class:"icon_swiper" %>
+         <%end%>
+       </div>
+    </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+    </div>
+       </div>
+</section>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>

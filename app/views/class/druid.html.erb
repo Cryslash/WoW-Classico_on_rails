@@ -1,0 +1,95 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Druida • WoW-Clássico</title>
+
+  <section>
+	<div class="card" id="druid_card">
+          <div class="container">
+            <!--img src="../img/classes/druid-128.png"-->
+            <%= image_tag 'classes/druid-128'%>
+            <h1>Builds para Druidas!</h1>
+
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..5 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @druid_builds[i][1],@druid_builds[i][0]%>
+                   <p><%=@druid_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+</section>
+<section>
+  <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag 'classes/druid-128', id:"img-lvl"%> 
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+           <li>Tier 1: Nossos primeiros 5 pontos serão gastos inteiramente em <a href="https://pt.classic.wowhead.com/spell=16938/ferocidade">Ferocidade</a> para reduzir a quantidade de recursos que suas habilidades custam.</li>
+           <li>Tier 2: Em seguida coloque 5 pontos em <a href="https://pt.classic.wowhead.com/spell=16862/agress%C3%A3o-feral">Agressão Feral</a> isso aumentará seu dano e nos deixará mais perto do tier 3.</li>
+           <li>Tier 3: Comece com 2 pontos em <a href="https://pt.classic.wowhead.com/spell=24866/rapidez-felina">Rapidez Felina</a>, velocidade de movimento é exelente para o leveling. Após isso você pode pegar Investida Feral mas, iremos passá-la e usar 3 pontos em <a href="https://pt.classic.wowhead.com/spell=16944/garras-afiadas">Garras Afiadas</a> para irmos para o Tier 4.</li>
+           <li>Tier 4: Comece com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=16975/golpes-predat%C3%B3rios">Golpes Predatórios</a> e então use 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16954/frenesi-de-sangue">Frenesi de Sangue</a>. Essa foi a ordem que gastamos esses pontos, de outra forma também funciona, desde que você pegue esses 5 pontos.</li>
+           <li>Tier 5: Comece pegando <a href="https://pt.classic.wowhead.com/spell=16857/fogo-fe%C3%A9rico-feral">Fogo Feérico (Feral)</a>, você usará isso em cada mob que você lutar. Agora use 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16999/f%C3%BAria-selvagem">Fúria Selvagem</a>, e então nós podemos escolher <a href="https://pt.classic.wowhead.com/spell=16979/investida-feral">Investida Feral</a> e 1 ponto em <a href="https://pt.classic.wowhead.com/spell=16966/despeda%C3%A7ar-aprimorado">Despedaçar Aprimorado</a>.</li>
+           <li>Tier 6: Esse é fácil, 5 pontos em <a href="https://pt.classic.wowhead.com/spell=24894/cora%C3%A7%C3%A3o-das-selvas">Coração das Selvas</a>.</li>
+           <li>Tier 7: Siga em frente e pqgue seu talento de 31 pontos <a href="https://pt.classic.wowhead.com/spell=17007/l%C3%ADder-do-bando">Líder do Bando</a>.</li>
+           <li>Tier 8: Eu gosto de entrar na árvore Balance aqui, começando com 1 ponto em <a href="https://pt.classic.wowhead.com/spell=16689/enredamento">Enredamento</a> e atualizando 4 vezes via <a href="https://pt.classic.wowhead.com/spell=17249/enredamento-aprimorado">Enredamento Aprimorado</a>.</li>
+           <li>Tier 9: Você irá pegar 5 pontos em <a href="https://pt.classic.wowhead.com/spell=16906/armas-naturais">Armas Naturais</a> para aumento no dano.</li>
+           <li>Tier 10: Aqui voê vai querer pegar <a href="https://pt.classic.wowhead.com/spell=16864/press%C3%A1gio-de-clareza">Presságio de Clareza</a>. Como eu mencionei acima, algumas pessoas pegam isso antes da árvore Feral pelo tão bom que isso é, você vai definitivamente querer fazer uso disso para o resto da sua experiencia de leveling.</li>
+           <li>Tier 11: Nesse ponto você tem basicamente completado o leveling mas, para preencher seus talentos o mais eficiente possível, iremos pegar 5 pontos em <a href="https://pt.classic.wowhead.com/spell=17061/furor">Furor</a>, 3 pontos em <a href="https://pt.classic.wowhead.com/spell=16835/metamorfo-natural">Metamorfo Natural</a>, e finalmentean um segundo ponto comemorativo em <a href="https://pt.classic.wowhead.com/spell=16968/despeda%C3%A7ar-aprimorado">Despedaçar Aprimorado</a> ao alcançar 60.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+           <li><a href="https://pt.classic.wowhead.com/spell=1126/marca-do-indomado">Marca do Indomado</a>: Esse é seu buff de classe principal, sempre vale a pena atualizar esse feitiço quando puder. Você pode treiná-lo nos seguintes níveis: 10, 20, 30, 40, 50, 60.</li>
+           <li> <a href="https://pt.classic.wowhead.com/spell=1082/garra">Garra</a>: Uma vez que você conseguiu a Forma de Felino no nível 20, você irá usar isso como seu consumidor de energia primário. Você pode treiná-lo nos seguintes níveis: 20, 28, 38, 48, 58.</li>
+           <li> <a href="https://pt.classic.wowhead.com/spell=16857/fogo-fe%C3%A9rico-feral">Fogo Feérico (Feral)</a>: Você irá usar isso em seus inimigos para reduzir a armadura. Você pode treiná-lo nos seguintes níveis: 30, 42, 54.</li>
+           <li> <a href="https://pt.classic.wowhead.com/spell=22568/mordida-feroz">Mordida Feroz</a>: Esse irá ser o seu finalizador. Você pode treiná-lo nos seguintes níveis: 32, 40, 48, 56, 60.</li>
+        </ul>
+        </div> <br>
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/druid-leveling-classic-wow" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+</section>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+
+
+

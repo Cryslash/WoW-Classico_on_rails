@@ -1,0 +1,104 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Bruxo • WoW-Clássico</title>
+
+  <section>
+	<div class="card" id="warlock_card">
+		  <div class="container">             
+            <%= image_tag "classes/warlock-128"%>
+            <h1>Builds para Bruxos!</h1>
+           
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..2 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @warlock_builds[i][1],@warlock_builds[i][0]%>
+                   <p><%=@warlock_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+  </section>
+  <section>
+    <div id="leveling">
+    <div class="container">
+      <div class="header">            
+        <%= image_tag "classes/warlock-128", id:"img-lvl"%>   
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+          <li>Esta é a base da construção do Drain Tanking. Explicando o que cada talento faz abaixo:</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=17814/corrup-o-aprimorada"></a>: Amplamente considerado o único talento obrigatório para o bruxo, 5 pontos em Corrupção Melhorada deixarão sua <a href="https://pt.classic.wowhead.com/spell=172/corrup-o"></a> com cast instantâneo, permitindo que você se mova enquanto conjura <a href="https://pt.classic.wowhead.com/spell=172/corrup-o"></a> e abra mais espaço entre você e seu inimigo para lançar <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a>.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18176/supress-o"></a>: A maioria dos feitiços usados ​​pela compilação Drain Tanking são feitiços de Aflição, então a Supressão ajuda com eventuais resistências. Apenas 3 pontos são necessários para chegar ao talento final requerido, para que você possa terminar de adicionar pontos em Supressão depois.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18183/convers-o-de-vida-aprimorada"></a>: Como o Drain Tanking é uma questão de trocar vida por mana,é muito bem-vindo fazer com que seu <a href="https://pt.classic.wowhead.com/spell=1454/convers-o-de-vida"></a> retorne mais mana por cast.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=17808/drenar-vida-aprimorado"></a> : Uma melhoria direta em <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a>, 5 pontos em Drenar Vida Melhorada aumenta a saúde drenada pelo feitiço em 10%.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18288/amplificar-maldi-o"></a>: Essa habilidade aumenta sua próxima <a href="https://pt.classic.wowhead.com/spell=980/maldi-o-da-agonia"></a> em 50% e possui um cooldown de 3 minutos. Para um ponto de talento, essa é uma habilidade muito forte - pode ser usada em mobs de elite ou mais fortes, para ajudá-lo sempre que você for emboscado por dois ou mais mobs, ou simplesmente para aumentar sua velocidade de matança.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=17787/concentra-o-vil"></a>: Indiscutivelmente o talento mais importante para o Tanque de Drenagem - Com 5 pontos, você terá 70% de chance para não ser interrompido ao lançar seus feitiços de Drenar. Esse talento é indispensável, pois você perderá um tique de <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a> se for interrompido por ataques corpo a corpo, e isso torna sua <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a> menos eficaz, pois o custo total de mana do feitiço é usado quando você inicia o cast.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18219/borda-sinistra"></a>: Com 2 pontos em borda sinistra, seu <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a> terá um alcance máximo de 24 jardas e seus DOTs terão um alcance máximo de 36 jardas. Útil para puxar monstros de mais longe, além de permitir um alcance extra para lançar <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a> antes de sofrer dano.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18094/martelo-do-ocaso"></a>: Com 1 ponto nesse talento, seus tiques de <a href="https://pt.classic.wowhead.com/spell=172/corrup-o"></a> e <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a> terão 2% de chance de garantir <a href="https://pt.classic.wowhead.com/spell=17941/transe-sombrio"></a>, fazendo com que o sua <a href="https://pt.classic.wowhead.com/spell=686/seta-sombria"></a> seja instant cast por 8 segundos! Embora 2% pareça ser uma baixa taxa de proc, você verá procs com bastante frequência, e isso realmente o ajudará a matar os inimigos mais rapidamente.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18265/sif-o-de-vida"></a>: A versão DOT do <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a>! Esse feitiço tem uma longa duração de 30 segundos, então você normalmente não precisará renovar a Sifão de Vida antes que um mob morra. Embora cause menos dano que seus outros pontos, é muito útil, pois devolve todo o dano à sua saúde.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18275/maestria-em-sombras"></a>: Talento bastante simples - 10% de dano extra (ou drenagem) para todos os seus feitiços de dano de Sombra. Como não gostar?</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=18938/pacto-sombrio"></a> : É o talento final necessário para o Drain Tanking - <a href="https://pt.classic.wowhead.com/spell=18938/pacto-sombrio"></a> rouba Mana de seus demônios para você, permitindo que você regenere rapidamente Mana sem ter que comer ou sacrificar a saúde. Esse talento suaviza o tanque de drenagem e facilita a sua vida.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+          <li>Os 10 primeiros níveis: Os 10 primeiros níveis não costumam ser um problema, pois é provável que você esteja entregando missões ao lado de um treinador o tempo todo. Warlock, como eu disse antes, é um nivelador excepcionalmente bom recebendo a quest <a href="https://pt.classic.wowhead.com/spell=688/evocar-diabrete"></a> no nível 1, obtendo acesso à <a href="https://pt.classic.wowhead.com/spell=348/imola-o"></a> quando você tiver 10 de cobre e também recebendo  <a href="https://pt.classic.wowhead.com/spell=172/corrup-o"></a>, <a href="https://pt.classic.wowhead.com/spell=980/maldi-o-da-agonia"></a> e <a href="https://pt.classic.wowhead.com/spell=5782/medo"></a> nos dez primeiros níveis. O nível 10 é importante porque você receberá a missão de seu voidwalker e poderá aprender seu primeiro rank de <a href="https://pt.classic.wowhead.com/spell=1120/drenar-alma"></a>.</li>
+          <li>Nível 14: Este é o primeiro ponto de parada de fato, você pode obter o rank 2 de <a href="https://pt.classic.wowhead.com/spell=6222/corrup-o"></a>, rank 3 de <a href="https://pt.classic.wowhead.com/spell=705/seta-sombria"></a>, e acho que vale a pena pegar seu primeiro rank de <a href="https://pt.classic.wowhead.com/spell=689/drenar-vida"></a>.</li>
+          <li>Nível 18: Aqui nós escolhemos outro ranking de <a href="https://pt.classic.wowhead.com/spell=1014/maldi-o-da-agonia"></a> e enquanto você está no treinador, eu treinaria <a href="https://pt.classic.wowhead.com/spell=6202/criar-pedra-de-vida-inferior"></a>. assim como <a href="https://pt.classic.wowhead.com/spell=5697/folego-interminavel"></a> para missões subaquáticas.</li>
+          <li>Nível 24: Este é um ótimo momento para treinar, à medida que obtém novos ranks de <a href="https://pt.classic.wowhead.com/spell=6223/corrup-o"></a> e <a href="https://pt.classic.wowhead.com/spell=8288/drenar-alma"></a>, além dessas duas, você pode atualizar os seguintes feitiços: <a href="https://pt.classic.wowhead.com/spell=706/armadura-demoniaca"></a>, <a href="https://pt.classic.wowhead.com/spell=1094/imola-o"></a>, <a href="https://pt.classic.wowhead.com/spell=1088/seta-sombria"></a>, <a href="https://pt.classic.wowhead.com/spell=8289/drenar-alma"></a> e <a href="https://pt.classic.wowhead.com/spell=6202/criar-pedra-de-vida-inferior"></a>.</li>
+          <li>Nível 28: Um novo ranking de <a href="https://pt.classic.wowhead.com/spell=6217/maldi-o-da-agonia"></a> está disponível aqui, o que é bom, mas, se você tiver indo bem e não quiser voltar à cidade, sinta-se à vontade para adiar esta compra. Também é importante notar que você também pode obter um novo rank em <a href="https://pt.classic.wowhead.com/spell=1106/seta-sombria"></a>.</li>
+          <li>Nível 34: Essa será sua última compra antes do 40: você obtém um novo ranking de <a href="https://pt.classic.wowhead.com/spell=7648/corrup-o"></a>; e, enquanto estiver lá, aproveite e treine os seguintes feitiços:  <a href="https://pt.classic.wowhead.com/spell=5699/criar-pedra-de-vida"></a>, <a href="https://pt.classic.wowhead.com/spell=2941/imola-o"></a>, <a href="https://pt.classic.wowhead.com/spell=709/drenar-vida"></a>, <a href="https://pt.classic.wowhead.com/spell=1086/armadura-demoniaca"></a> e qualquer outra coisa que você desejar antes de sair para as missões.</li>
+          <li>Nível 40: Finalmente chegou a hora de conseguir sua montaria (principalmente) gratuita no <a href="https://pt.classic.wowhead.com/spell=5784/evocar-corcel-vil"></a>, aprendida diretamente com o treinador. Além disso, você também pode atualizar alguns feitiços enquanto estiver aqui. Alguns dos feitiços mais notáveis ​​incluem: <a href="https://pt.classic.wowhead.com/spell=11711/maldi-o-da-agonia"></a>, <a href="https://pt.classic.wowhead.com/spell=7651/drenar-vida"></a>, <a href="https://pt.classic.wowhead.com/spell=8289/drenar-alma"></a>, <a href="https://pt.classic.wowhead.com/spell=18879/sif-o-de-vida"></a> e <a href="https://pt.classic.wowhead.com/spell=11665/imola-o"></a>.</li>
+          <li>Nível 42: Se você estiver em um reino pvp, sugiro voltar no 42 porque provavelmente vale a pena obter por si só <a href="https://pt.classic.wowhead.com/spell=6789/espiral-da-morte"></a>.</li>
+          <li>Nível 44: Aqui você pode continuar a atualizar seus feitiços de Affliction <a href="https://pt.classic.wowhead.com/spell=11671/corrup-o"></a> (rank 5) e outro rank de <a href="https://pt.classic.wowhead.com/spell=11659/seta-sombria"></a>.</li>
+          <li>Nível 48: Você tem duas atualizações de DoT <a href="https://pt.classic.wowhead.com/spell=11712/maldi-o-da-agonia"></a> e <a href="https://pt.classic.wowhead.com/spell=18880/sif-o-de-vida"></a>.</li>
+          <li>Nível 54: Próximo ao nível máximo, você pode voltar no 54 para treinar <a href="https://pt.classic.wowhead.com/spell=11672/corrup-o"></a> (Rank 6), <a href="https://pt.classic.wowhead.com/spell=11700/drenar-vida"></a> (Rank 6), <a href="https://pt.classic.wowhead.com/spell=11660/seta-sombria"></a> (Rank 8) e seu rank final de <a href="https://pt.classic.wowhead.com/spell=11675/drenar-alma"></a>.</li>
+          <li>Nível 58: Importante notar que, no 58, você obtém novos ranks em <a href="https://pt.classic.wowhead.com/spell=11713/maldi-o-da-agonia"></a> e <a href="https://pt.classic.wowhead.com/spell=18881/sif-o-de-vida"></a>.</li>
+        </ul>
+        </div>
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/warlock-leveling-classic-wow#leveling-60" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+  </section>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+
+
+

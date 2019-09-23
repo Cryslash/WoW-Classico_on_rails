@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+	margin:0px;
+	padding: 0;
+}
+
+html,body{
+	height:100%;
+	width: 100%;
+}
+
+section{
+	height:100%;
+	
+}
+
+.cover{
+	position: relative;
+/*	background: url("../img/wow-classic-bg.jpg");  */
+    background: url("wow-classic-bg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 0;
+	width:100%;
+	height:100%;
+	overflow: hidden;	
+}
+
+#img-logo{	
+	position: absolute;	
+	right: 0;	
+	margin-right: 35px;
+	margin-top: 35px;
+	height:auto;
+	width: 450px;	
+	transition: .5s;	
+}
+
+.cover .cover_text{
+	position: absolute;		
+	font-size: 2.8em;
+	font-family: poppins;
+	top: 32%;	
+	left:50%;
+    transform: translate(-50%, 0);
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	transition: .5s;	
+}
+
+.cover .cover_text2{
+	position: absolute;	
+	font-size: 1.4em;
+	font-family: poppins;    
+	top: 40%;
+	left: 50%;
+    transform: translate(-30%, 0); 
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	transition: .5s;	
+}
+
+#container-classes{	
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, 0);
+    transition: .5s;    
+}
+
+#container-classes a:focus{
+	outline:none;
+}
+
+.classes{
+	position: relative;
+	display: inline-block;
+	width:128px;
+	height:128px;
+	border-radius: 65px;    
+	margin:15px 15px;			
+}
+
+.classes p{
+	display:none;
+	font-weight: lighter;
+	font-family: poppins;
+	font-size: .9em;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+	background: rgba(0,0,0,.6);
+}
+
+#druid.classes:hover p,#hunter.classes:hover p,#mage.classes:hover p,#paladin.classes:hover p,#priest.classes:hover p,
+#rogue.classes:hover p,#shaman.classes:hover p,#warlock.classes:hover p,#warrior.classes:hover p{
+	position: absolute;
+	display: inline;
+	top:20%;
+	left:80px;	
+	padding: 8px;
+	width:250px;
+	border-radius: 10px;
+	transform: rotate(45deg);	
+	animation: anim 3.2s ease-in-out;
+}
+
+.classes p span{
+	 font-size: 1.6em;
+	 font-weight: bolder;
+	 border-bottom: solid .5px #fff;
+}
+
+#druid{background-image: url("classes/druid-128");background-repeat: no-repeat;background-size: cover; transition: .5s;} 
+#druid:hover{transform: rotate(-45deg);} 
+#hunter{background-image: url("classes/hunter-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#hunter:hover{transform: rotate(-45deg);}
+#mage{background-image: url("classes/mage-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#mage:hover{transform: rotate(-45deg);}
+#paladin{background-image: url("classes/paladin-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#paladin:hover{transform: rotate(-45deg);}
+#priest{background-image: url("classes/priest-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#priest:hover{transform: rotate(-45deg);}
+#rogue{background-image: url("classes/rogue-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#rogue:hover{transform: rotate(-45deg);}
+#shaman{background-image: url("classes/shaman-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#shaman:hover{transform: rotate(-45deg);}
+#warlock{background-image: url("classes/warlock-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#warlock:hover{transform: rotate(-45deg);}
+#warrior{background-image: url("classes/warrior-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#warrior:hover{transform: rotate(-45deg);}
+
+#auto_adjustment{
+	background-image: url("DG's/Maps/Azeroth_map2.jpg");
+	background-size: 100% 100%;
+	background-position: 50% 50%; 
+	width:100%;
+	text-align: center;
+	/*background:#0E0E0E; */
+}
+
+.layer{
+	height:100%;
+	width: 100%;
+	background: rgba(0,0,0,.6);
+}
+
+#auto_adjustment ol{
+	position: absolute;
+	top:103vh;
+	left:32vw;
+	list-style: none;
+	padding-top: 50px;
+    font-family: poppins, sans-serif;    
+	color:white;
+	transition: all .3s ease;
+}
+
+#auto_adjustment img{
+	position: relative;
+	box-sizing: border-box;
+	top:5.5vh;
+	left:-23vw;
+	transition: all .6s ease;
+}
+
+#auto_adjustment ol li{    
+	font-size: 2.5em;
+	font-weight:800;
+}
+
+.container_dg{
+	position: absolute;
+    top: 120vh;
+	left: 0;
+	width: 100%;	
+}
+
+section a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.limit{
+	position: relative;
+	display: inline-block !important;	
+	height: 300px;
+	width: 25vw;
+	overflow: hidden;
+    margin: 10px 20px 10px 10px;
+    transition: all .6s ease;    
+}
+
+.dg{
+/*	width: 450px;   */      
+    height: 300px;
+    width: 100%;
+    transition: all .6s ease;
+}
+
+.dg:hover{
+	transform: scale(1.2);
+}
+
+#auto_adjustment h1{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	transform: translate(-50%, 0);
+    font-family: poppins, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 1.6em;
+    z-index: 1000
+}
+
+#auto_adjustment h2{
+	position: absolute;
+	top: 85%;
+	right:30px;
+    font-family: poppins, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 1em;
+    font-weight: lighter;
+    z-index: 1001
+}
+
+.limit #Ragefire{background-image: url("DG's/Ragefire_Chasm_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Wailing{background-image: url("DG's/Wailing_Caverns_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Deadmines{background-image: url("DG's/The_Deadmines_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Shadowfang{background-image: url("DG's/Shadowfang_Keep_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Blackfathom{background-image: url("DG's/Blackfathom_Deeps_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Stockade{background-image: url("DG's/The_Stockade_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Gnomeregan{background-image: url("DG's/Gnomeregan_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #RazorfenK{background-image: url("DG's/Razorfen_Kraul_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Monastery{background-image: url("DG's/Scarlet_Monastery_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #RazorfenD{background-image: url("DG's/Razorfen_Downs_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Uldaman{background-image: url("DG's/Uldaman_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Zul{background-image: url("DG's/Zul'Farrak_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Maraudon{background-image: url("DG's/Maraudon_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Atal{background-image: url("DG's/Temple_of_Atal'Hakkar_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+
+
+  .swiper-container {
+  	  position:absolute;
+  	  top: 10vh;
+	  left: 0;
+	  width: 100%;      
+    /*  height: 100%; */
+    }
+  
+  .swiper-container .icon_swiper{
+     display:none;
+}   
+
+/*
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;      
+      /* Center slide text vertically  *
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;      
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; 
+    }
+*/
+
+
+
+@keyframes anim {
+	0%{
+        opacity: 0;
+        left:50px;        
+	}
+
+	20%{
+        opacity:1;
+        left:80px;        
+	}
+
+	100%{
+        opacity:1;
+        left:80px;        
+	}
+}
+
+@media only screen and (max-width: 1619px){
+	#img-logo{	
+	left: 50% !important;
+	transform: translate(-50%, 0);}
+
+	.cover h1{		
+	font-size: 2.2em;
+	top:33%;	
+    }
+
+    .cover h2{	    
+	font-size: 1.1em;
+	top: 40%; }
+
+    .classes{    	
+	width:96px;
+	height:96px;	    
+	margin:10px 10px; }
+    
+    #auto_adjustment{
+	height: 1200px;}   
+}
+
+/*@media only screen and (max-width: 1169px){ */
+@media only screen and (max-width: 1450px){
+.cover h2{	    
+	font-size: 1.1em;
+	top: 50%; }
+
+#container-classes{	    
+    top: 55%; }    
+
+.limit{
+		height: 300px;
+		width: 40%;		
+	}
+}
+
+@media only screen and (max-width: 900px){
+	#img-logo{	
+	right: 50%;	
+	width: 300px;
+	height:auto; }
+
+	.cover h1{		
+	font-size: 1.1em;
+	top:30%;	
+    }
+
+    .cover h2{	    
+	font-size: .8em;
+	top: 37%; }
+
+	#container-classes{
+	width:60%;
+    top: 45%; }
+
+    .classes{    	
+	width:80px;
+	height:80px;	    
+	margin:3px 3px; }
+
+    #auto_adjustment{
+    background-image: none;
+    background:#0E0E0E;
+	height: 2400px;}
+
+    #auto_adjustment img{
+    	left: -40vw;
+    }
+
+    #auto_adjustment ol{      
+      left: 20vw;      
+    }
+
+    #auto_adjustment ol li{
+      font-size: 1.8em;      
+    }
+    
+   section h1{
+   	top:60%;
+    left:30%;}
+
+   section h2{
+   	top: 75%;}
+
+	.limit{
+		height: 350px;
+		width: 60%;		
+	}
+	
+}
+
+@media only screen and (max-width:480px){
+    
+    .cover{
+    	min-height: 500px;
+    }
+
+    #img-logo{
+    margin-top: 15px;}
+
+    .cover h1{		
+	font-size: 1.1em;
+	top:30%;
+	transform: translate( -50%, 0); }
+
+    .cover h2{	    
+	font-size: .7em;
+	top: 36%;
+	transform: translate( -50%, 0); }
+
+	#container-classes{
+	width:85%;
+    top: 45%; }
+    
+    .classes {
+     	margin:0 9px; }
+    
+    #auto_adjustment img{
+      top:5vh;
+      left: -35vw;  
+      height:80px;
+      width:90px;
+    }
+
+    #auto_adjustment ol{      
+     top: 88vh;      
+    }
+     #auto_adjustment ol li{      
+     font-size: 1.3em;  
+    }
+
+    .swiper-container .icon_swiper{
+    position: absolute;
+    display: block !important;
+    top: 95% !important;
+    left:50% !important;
+    transform: translate(-50%, 0);       
+    height: 48px !important;
+    width: 80px !important;}
+
+    .swiper-button-next{
+    	display: none;
+    }
+    .swiper-button-prev{
+    	display: none;
+    }
+
+    .limit {
+    	padding: 0;
+    	margin: 0;
+    	height: 350px;
+		width: 100%;	
+    }
+}

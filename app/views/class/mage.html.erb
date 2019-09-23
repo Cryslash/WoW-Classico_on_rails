@@ -1,0 +1,94 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Mago • WoW-Clássico</title>
+
+  <section>
+	<div class="card" id="mage_card">
+		  <div class="container">             
+            <%= image_tag "classes/mage-128"%>
+            <h1>Builds para Magos!</h1>  
+          
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..3 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @mage_builds[i][1],@mage_builds[i][0]%>
+                   <p><%=@mage_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+  </section>
+  <section>
+    <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag "classes/mage-128", id:"img-lvl"%>
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+           <li>Tier 1: Comece com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=29440/precis-o-elemental"></a> para ajudar os seus feitiços acertarem seus inimigos use 2 pontos em <a href="https://pt.classic.wowhead.com/spell=12473/seta-de-gelo-aprimorada"></a> para chegar ao tier 2.</li>
+           <li>Tier 2: Aqui você levará 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12571/permafrio"></a> e 2 pontos em <a href="https://pt.classic.wowhead.com/spell=12475/nova-congelante-aprimorada"></a>. Ambos os talentos vão lhe dar muito mais controle sobre os inimigos e irão ajudá-lo com o kite quando você começar a treinar AoE.</li>
+           <li>Tier 3: Você vai querer começar com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12488/nevasca-aprimorada"></a>, já que será o mais útil para staxkar o AoE; então, você pode usar 1 ponto em <a href="https://pt.classic.wowhead.com/spell=12472/ruptura-do-gelo"></a> que lhe dá um CD tanto para PVE como PVP. Por fim, ponha um ponto em <a href="https://pt.classic.wowhead.com/spell=11151/gelo-perfurante"></a>.</li>
+           <li>Tier 4: Aqui você deve começar com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12519/canaliza-o-glacial"></a> para ajudar a reduzir a quantidade de mana que você está gastando, e então você vai por 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16758/alcance-artico"></a>.</li>
+           <li>Tier 5: Neste ponto você deve pegar o <a href="https://pt.classic.wowhead.com/spell=11958/bloco-de-gelo"></a>, 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12490/cone-de-frio-aprimorado"></a>, e outro ponto no <a href="https://pt.classic.wowhead.com/spell=12952/gelo-perfurante"></a>. Se você estiver se metendo em muito World PVP, você deve começar com o Bloco de Gelo, mas, se você não estiver morrerendo, pegue os talentos de dano primeiro.</li>
+           <li>Tier 6: Comece este tier completando <a href="https://pt.classic.wowhead.com/spell=12953/gelo-perfurante"></a>, depois pode colocar 4 pontos em <a href="https://pt.classic.wowhead.com/spell=15052/estilha-os-de-gelo"></a>.</li>
+           <li>Tier 7: Vá em frente e pegue seu talento de 31 pontos, <a href="https://pt.classic.wowhead.com/spell=11426/barreira-de-gelo"></a>.</li>
+           <li>Tier 8: Para começar a árvore arcana, você colocará 2 pontos em <a href="https://pt.classic.wowhead.com/spell=12592/subterfugio-arcano"></a> e 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12840/concentra-o-arcana"></a>. Ambos os talentos aumentarão sua chance de acertar inimigos com seus feitiços.</li>
+           <li>Tier 9: Aqui você vai querer por 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12577/concentra-o-arcana"></a>, esse talento aumentará muito sua eficiência de mana.</li>
+           <li>Neste ponto, você estará no nível 50, e os talentos que escolher não terão tanto impacto na sua experiência de leveling. De volta à árvore Frost, você deve finalizar <a href="https://pt.classic.wowhead.com/spell=15053/estilha-os-de-gelo"></a> e depois adicionar mais 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12985/estilha-ar"></a>. O preenchimento desses talentos permitirá que você cause grandes quantidades de dano "burst".</li>
+           <li>Arcano: De volta ao Arcano, você precisará pegar o <a href="https://pt.classic.wowhead.com/spell=28574/resiliencia-arcana"></a> para aumentar sua durabilidade e, em seguida, finalizar a <a href="https://pt.classic.wowhead.com/spell=12842/concentra-o-arcana"></a>. Seu último ponto não importa tanto, vá em frente e pegue o que quiser.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+           <li><a href="https://pt.classic.wowhead.com/spell=116/seta-de-gelo"></a>: A melhor opção contra inimigos single target. Você pode treiná-la nos seguintes níveis: 8, 14, 20, 26, 32, 38, 44, 50, e 56.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=122/nova-congelante"></a>: Usada para controlar inimigos que você agrupou. Você pode treiná-la nos seguintes níveis: 10, 26, 40, e 54.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=1459/inteligencia-arcana"></a>: Buff de classe do Mago, Manter esse atualizado irá ajudar você a aumentar sua mana durante o leveling. Você pode treiná-la nos seguintes níveis: 14, 28, 42, e 56.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=1449/explos-o-arcana"></a>: Um dos seus ataques AoE primários, você pode usar o rank 1 para procar <a href="https://pt.classic.wowhead.com/spell=12536/abstra-o"></a>. Você pode treiná-la nos seguintes níveis: 14, 22, 30, 38, 46, e 54.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=10/nevasca"></a>: Esta será a sua habilidade mais eficiente, em termos de mana, para usar em situações AoE. Você pode treiná-la nos seguintes níveis: 20, 28, 36, 44, 52, e 60.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=120/cone-de-frio"></a>: Uma spell instantanea AoE que aplica slow nos inimigos. YVocê pode treiná-la nos seguintes níveis: 26, 34, 42, 50, e 58.</li>
+        </ul>
+        </div> <br>
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/mage-leveling-classic-wow#leveling-frost-51-60" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+  </section>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>

@@ -1,0 +1,106 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+  <title>Hunter • WoW-Clássico</title>
+
+  <section>
+  <div class="card" id="hunter_card">
+          <div class="container">             
+            <%= image_tag 'classes/hunter-128'%>
+            <h1>Builds para Caçadores!</h1>
+
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..5 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @hunter_builds[i][1],@hunter_builds[i][0]%>
+                   <p><%=@hunter_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+</section>
+<section>
+  <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag 'classes/hunter-128', id:"img-lvl"%>       
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+           <li>Tier 1: Você irá gastar os seus primeiros 5 pontos em <a href="https://pt.classic.wowhead.com/spell=19556/aspecto-do-falc%C3%A3o-aprimorado">Aspecto do Falcão Aprimorado</a>, Esse proc é um bom aumento de dano durante todo o seu leveling.</li>
+           <li>Tier 2: Você irá por 3 pontos em <a href="https://pt.classic.wowhead.com/spell=19612/pelego-grosso">Pelego Grosso</a> e 2 pontos em <a href="https://pt.classic.wowhead.com/spell=19575/reviver-ajudante-aprimorado">Recicer Ajudante Aprimorado</a>, você poderá escolhé-los na ordem que desejar, se precisar reviver seu pet com frequência, isso deve ser um bom indicativo de qual você deve escolher.</li>
+           <li>Tier 3: Esse é um tier Essencial, porque velocidade de movimento é provavelmente o melhor status para o leveling. Comece com 2 pontos em <a href="https://pt.classic.wowhead.com/spell=19560/desbravamento">Desbravamento</a>, então pegue <a href="https://pt.classic.wowhead.com/spell=19596/rapidez-bestial">Rapidez Bestial</a>, e finalmente use 2 pontos em <a href="https://pt.classic.wowhead.com/spell=19617/f%C3%BAria-liberada">Fúria Liberada</a> depois que você tenha peguo os talentos de velocidade de movimento.</li>
+           <li>Tier 4: A ordem que você pegará os próximos talentos, mais um vez, é da sua escolha preferencial mas, Irei começar com mais 3 pontos em <a href="https://pt.classic.wowhead.com/spell=19617/f%C3%BAria-liberada">Fúria Liberada</a> com 2 pontos em <a href="https://pt.classic.wowhead.com/spell=19599/ferocidade">Ferocidade</a> para alcançar o tier 5.</li>
+           <li>Tier 5: Comece o nível 5 pegando <a href="https://pt.classic.wowhead.com/spell=19577/intimida%C3%A7%C3%A3o">Intimidação</a>, que é útil especialmente para o World PVP. Depois disso, termine <a href="https://pt.classic.wowhead.com/spell=19599/ferocidade">Ferocidade</a> pegando os 3 pontos. Para alcançar o tier 6 use 1 ponto em <a href="https://pt.classic.wowhead.com/spell=19578/v%C3%ADnculo-espiritual">Vínculo Espiritual</a>, esse talento pode ser útil durante longas lutas ou em situações em que você pode estar tankando um mob.</li>
+           <li>Tier 6: Iremos apenas por 5 pontos em <a href="https://pt.classic.wowhead.com/spell=19625/frenesi">Frenesi</a> para fortalecer seu pet ainda mais.</li>
+           <li>Tier 7: No 40 você pegará <a href="https://pt.classic.wowhead.com/spell=19574/ira-bestial">Ira Bestial</a> que é um incrível cooldown para Hunters, seu pet irá causar um dano tremendo e não poderá ser alvo de habilidades de controle até o fim da duração da Irá Bestial.</li>
+           <li>Tier 8: Comece a árvore de Marksmanship com 5 pontos em <a href="https://pt.classic.wowhead.com/spell=19420/eficiencia"></a> para ajudar você com algum problema de mana que possa estar tendo. Se você estiver tendo confrontos em World PVP, você pode escolher <a href="https://pt.classic.wowhead.com/spell=19415/tiro-de-concuss-o-aprimorado">Tiro de Concussão Aprimorado</a> ao invés.</li>
+           <li>Tier 9: Aqui você irá pegar 5 pontos em <a href="https://pt.classic.wowhead.com/spell=19431/disparos-letais">Disparos Letais</a> Para ter aumento na chance de critico em seus ataques.</li>
+           <li>Tier 10: A medida que você se aproxima do 60 a ordem agora não importa mais apenas tenha certeza que você pegue <a href="https://pt.classic.wowhead.com/spell=19434/tiro-certo">Tiro Certo</a>, 3 pontos em <a href="https://pt.classic.wowhead.com/spell=19500/olho-de-aguia">Olho de Águia</a> e 1 ponto em <a href="https://pt.classic.wowhead.com/spell=19415/tiro-de-concuss-o-aprimorado"></a> ou em <a href="https://pt.classic.wowhead.com/spell=19420/eficiencia"></a> caso não o tenha escolhido.</li>
+           <li>Tier 11: Seus últimos 5 pontos devem ser usados em <a href="https://pt.classic.wowhead.com/spell=19490/tiros-mortais"></a>.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+          <li> Os primeiros 10 níveis: As primeiras spells não são tão caras, então você pode comprar todas que quiser sem se preocupar em gastar todo o seu silver. Mas de modo geral, você deverá prestar atenção quando os ranks de <a href="https://pt.classic.wowhead.com/spell=3044/tiro-arcano"></a> e <a href="https://pt.classic.wowhead.com/spell=2643/tiro-multiplo"></a> estarão disponíveis a fim de treiná-los o mais rápido possível. Nível 10 é muito importante porque você terá a quest para domar o seu primeiro pet. Você também consiguirá o rank 1 do <a href="https://pt.classic.wowhead.com/spell=13165/aspecto-do-falc-o"></a>.</li>
+          <li>Level 12: Você não deverá estar tão longe de um treinador, e poderá treinar um novo rank de <a href="https://pt.classic.wowhead.com/spell=14281/tiro-arcano"></a>, bem como os seus primeiros ranks de <a href="https://pt.classic.wowhead.com/spell=2974/cortar-asas"></a> e <a href="https://pt.classic.wowhead.com/spell=136/curar-ajudante"></a>.</li>
+          <li>Level 18: Aqui você irá treinar um novo rank of <a href="https://pt.classic.wowhead.com/spell=14318/aspecto-do-falc-o"></a> e o seu primeiro rank de <a href="https://pt.classic.wowhead.com/spell=2643/tiro-multiplo"></a>. Você também pode dar upgrade na <a href="https://pt.classic.wowhead.com/spell=13550/picada-de-serpente"></a> e conseguir o seu primeiro rank da <a href="https://pt.classic.wowhead.com/spell=13795/armadilha-imolante"></a>.</li>
+          <li>Level 20: Tenha certeza de retornar ao treinador nesse nível para treinar <a href=""></a>Aspecto do Guepardo. Enquanto tiver no treinador você pode treinar novos ranks de <a href="https://pt.classic.wowhead.com/spell=14282/tiro-arcano"></a>Tiro Arcano, <a href="https://pt.classic.wowhead.com/spell=3111/curar-ajudante"></a>Curar Ajudante, and <a href="https://pt.classic.wowhead.com/spell=1499/armadilha-congelante"></a>Armadilha Congelante.</li>
+          <li>Level 26: Você pode esperar até o nivel 28 para comprar essas spells, mas é importante notar que <a href="https://pt.classic.wowhead.com/spell=3045/tiro-rapido"></a> e <a href="https://pt.classic.wowhead.com/spell=13551/picada-de-serpente"></a> se tornam disponíveis nesse nível.</li>
+          <li>Level 28: Aqui você vai treinar novos ranks de ambos <a href="https://pt.classic.wowhead.com/spell=14319/aspecto-do-falc-o"></a> e <a href="https://pt.classic.wowhead.com/spell=14283/tiro-arcano"></a>.</li>
+          <li>Level 30: No 30 <a href="https://pt.classic.wowhead.com/spell=5384/fingir-de-morto"></a> se torna disponível, bem como um novo rank de <a href="https://pt.classic.wowhead.com/spell=14288/tiro-multiplo"></a>.</li>
+          <li>Level 34-38: Se você está em um bom ritmo, você pode esperar para comprar, mas, note que novas categorias das seguintes habilidades se tornam disponíveis: <a href="https://pt.classic.wowhead.com/spell=14282/tiro-arcano"></a>, <a href="https://pt.classic.wowhead.com/spell=14320/aspecto-do-falc-o"></a>, <a href="https://pt.classic.wowhead.com/spell=14303/armadilha-imolante"></a>, <a href="https://pt.classic.wowhead.com/spell=13552/picada-de-serpente"></a>.</li>
+          <li>Level 40: Provavelmente você estará na cidade para comprar a montaria então, aproveite a oportunidade para treinar algumas spells. <a href="https://pt.classic.wowhead.com/spell=13159/aspecto-da-matilha"></a> bem como a habilidade para equipar malha.</li>
+          <li>Level 42-44: 42 da a você acesso a novos ranks de <a href="https://pt.classic.wowhead.com/spell=14289/tiro-multiplo"></a> e <a href="https://pt.classic.wowhead.com/spell=13553/picada-de-serpente"></a> enquanto o 44 oferece a você um novo rank de <a href="https://pt.classic.wowhead.com/spell=14285/tiro-arcano"></a>. Você pode treiná-los sempre que for conveniente.</li>
+          <li>Level 48-50: 48 oferece um novo rank de <a href="https://pt.classic.wowhead.com/spell=14321/aspecto-do-falc-o"></a> e 50 oferece a você o proximo rank de <a href="https://pt.classic.wowhead.com/spell=13554/picada-de-serpente"></a>.</li>
+          <li>Level 52-58: Nesse ponto, você está quase lá e não precisa se preocupar em comprar spells sempre que elas estiverem disponíveis. Algumas melhorias notáveis nestes níveis são: <a href="https://pt.classic.wowhead.com/spell=14282/tiro-arcano"></a> no 52, <a href="https://pt.classic.wowhead.com/spell=14290/tiro-multiplo"></a> no 54 e <a href="https://pt.classic.wowhead.com/spell=14322/aspecto-do-falc-o"></a> no 58.</li>
+        </ul>
+        </div> <br>
+        <div>
+          <h2>Pets</h2>
+          <ul>
+          <li>Felino(gato): O pet mais acessível, felinos tem uma alta velocidade de ataque e causa mais dano que outras espécies de pet. Na Aliança especialmente, você tem muitp mais acesso aos felinos no leveling, você irá pegar um felino como seu primeiro pet tanto na Aliança quanto na horda. A habilidade primaria que os felinos usam é <a href="https://pt.classic.wowhead.com/spell=16827/garra"></a>, vale ressaltar que há um debate na comunidade sobre se você deve ou não usar o <a href="https://pt.classic.wowhead.com/spell=17253/morder"></a> do seu pet, pois é um inicializador eficiente. De qualquer maneira, os Felinos são um dos melhores tipos de pets que você pode domar.</li>
+          <li>Wind Serpent: A primeira vez que você pode obter uma Serpente do vento é no lado de fora de "Wailing Cavers" e, por isso, não é viável obter uma como Aliança no início. O principal benefício do uso de uma serpente do vento é que o ataque principal é um feitiço e, portanto, ignora a armadura. <a href="https://pt.classic.wowhead.com/spell=24844/sopro-eletrico"></a> também tem muito menos ranks para treinar do que a <a href="https://pt.classic.wowhead.com/spell=16827/garra"></a>.</li>
+         </ul>
+        </div>
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/hunter-leveling-classic-wow" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+</section>    
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>

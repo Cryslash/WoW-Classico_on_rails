@@ -1,0 +1,98 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Ladino • WoW-Clássico</title>
+
+  <section>
+	<div class="card" id="rogue_card">
+		  <div class="container">             
+            <%= image_tag "classes/rogue-128"%>
+            <h1>Builds para Ladinos!</h1>
+            
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..3 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @rogue_builds[i][1],@rogue_builds[i][0]%>
+                   <p><%=@rogue_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+ </section>
+ <section>
+      <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag "classes/rogue-128", id:"img-lvl"%>           
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+          <li>Tier 1: comece com 2 pontos em <a href="https://pt.classic.wowhead.com/spell=13863/golpe-sinistro-aprimorado"></a> e 3 pontos em <a href="https://pt.classic.wowhead.com/spell=13792/esfaquear-aprimorado"></a>.</li>
+          <li>Tier 2: Seus próximos 5 pontos serão postos em <a href="https://pt.classic.wowhead.com/spell=13845/precis-o"></a>, esse talento é crucial, já que é difícil hitar nos primeiros níveis.</li>
+          <li>Tier 3: A partir daqui, eu colocaria 5 pontos em <a href="https://pt.classic.wowhead.com/spell=13856/deflex-o"></a> para conseguir o Ripostar.</li>
+          <li>Tier 4: Como gastamos 5 pontos para liberá-lo, prossiga e pegue <a href="https://pt.classic.wowhead.com/spell=14251/ripostar"></a>. Depois disso pegue 2 pontos em <a href="https://pt.classic.wowhead.com/spell=13872/resistencia"></a> e 2 pontos em <a href="https://pt.classic.wowhead.com/spell=13875/disparada-aprimorada"></a>. Todos esses talentos são especialmente bons se você estiver fazendo leveling sozinho em um reino PVP.</li>
+          <li>Tier 5: Vá em frente e pegue <a href="https://pt.classic.wowhead.com/spell=13877/rajada-de-laminas"></a> para reduzir o dano, seguido por 4 pontos em <a href="https://pt.classic.wowhead.com/spell=13851/especializa-o-em-duas-armas"></a> para chegar ao próximo tier.</li>
+          <li>Tier 6: Esse tier, você deve distribuir 3 pontos em <a href="https://pt.classic.wowhead.com/spell=18429/agress-o"></a> e 2 pontos em <a href="https://pt.classic.wowhead.com/spell=30920/aptid-o-com-arma"></a>.</li>
+          <li>Tier 7: Vá em frente e termine a árvore de combate com seu talento de 31 pontos <a href="https://pt.classic.wowhead.com/spell=13750/adrenalina"></a>, você também pode voltar e colocar mais 1 ponto em <a href="https://pt.classic.wowhead.com/spell=13852/especializa-o-em-duas-armas"></a> antes de passar para a Árvore de Assassinato.</li>
+          <li>Tier 8: Tudo será bem direto daqui para frente, pegue 5 pontos em <a href="https://pt.classic.wowhead.com/spell=14142/malicia"></a>.</li>
+          <li>Tier 9: Você precisará de 2 pontos em <a href="https://pt.classic.wowhead.com/spell=14159/assassinato"></a> e 3 pontos em <a href="https://pt.classic.wowhead.com/spell=14164/eviscerar-aprimorado"></a> ou <a href="https://pt.classic.wowhead.com/spell=14161/malevolencia"></a>, dependendo da sua preferência pessoal, pois você os preencherá mais tarde.</li>
+          <li>Tier 10: Nesse ponto, você colocará 1 ponto em <a href="https://pt.classic.wowhead.com/spell=14179/golpes-implacaveis"></a> ​​e 4 pontos em <a href="https://pt.classic.wowhead.com/spell=14136/letalidade"></a>.</li>
+          <li>Tier 11: A partir daqui, basta preencher o que está faltando na árvore, começando com <a href="https://pt.classic.wowhead.com/spell=14137/letalidade"></a>, e aí está! Você está no nível 60.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+           <li>Os 10 primeiros níveis: no início, as skills não são muito caras, então você pode comprar o que quiser sem se preocupar muito com sua prata. O treinamento de Ladino é especialmente simples, pois você terá <a href="https://pt.classic.wowhead.com/spell=1752/golpe-sinistro"></a> como especificação de espada ou <a href="https://pt.classic.wowhead.com/spell=53/punhalada-pelas-costas"></a> como especificação de Adaga; você também vai querer atualizar o <a href="https://pt.classic.wowhead.com/spell=2098/eviscerar"></a> o mais rápido possível. Como sempre, você deve voltar ao seu treinador de classe ao 10, pois eles oferecem uma pequena busca por uma arma verde de uma mão.</li>
+           <li>Como os Ladinos são simples, você usa <a href="https://pt.classic.wowhead.com/spell=1752/golpe-sinistro"></a> ou <a href="https://pt.classic.wowhead.com/spell=53/punhalada-pelas-costas"></a> para gerar pontos de combo e <a href="https://pt.classic.wowhead.com/spell=2098/eviscerar"></a> como seu finalizador, vou listar os níveis em que você pode atualizar essas três skills. Vale ressaltar que essas skills estão sempre na mesma ordem, separados por dois níveis cada: por exemplo, Punhalada pelas Costas (rank 2) é nível 12, Golpe Sinistro (rank 3) é nível 14 e Eviscerar (rank 3) é nível 16.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=53/punhalada-pelas-costas"></a>: Os níveis 12, 20, 28, 36, 44 e 52 será quando você terá que visitar o treinador se estiver jogando Daggers.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=1752/golpe-sinistro"></a>: Níveis 14, 22, 30, 38, 46 e 54 será quando você terá que visitar o treinador se estiver jogando com Swords.</li>
+           <li><a href="https://pt.classic.wowhead.com/spell=2098/eviscerar"></a>: Os níveis 16, 24, 32, 40, 48 e 56 são onde você pode atualizar o Eviscerate.</li>
+           <li>Outra skill que vale a pena considerar se você estiver jogando com Adagas é o <a href="https://pt.classic.wowhead.com/spell=8676/emboscar"></a>: você pode treinar essa habilidade nos 18, 26, 34, 42, 50 e 58. Essa habilidade causa grandes danos, mas requer que você esteja em <a href="https://pt.classic.wowhead.com/spell=1784/furtividade"></a>.</li>
+           <li>Se você estiver em um servidor PVP, certifique-se de adquirir suas habilidades de controle, como <a href="https://pt.classic.wowhead.com/spell=1833/golpe-baixo"></a> no nível 26, <a href="https://pt.classic.wowhead.com/spell=408/golpe-no-rim"></a> no nível 30 e <a href="https://pt.classic.wowhead.com/spell=2094/cegar"></a> no nível 34.</li>
+
+        </ul>
+        </div>
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/rogue-leveling-classic-wow" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+</section>   
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>

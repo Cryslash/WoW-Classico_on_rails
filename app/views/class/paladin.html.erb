@@ -1,0 +1,105 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Paladino • WoW-Clássico</title>
+
+  <section>
+	<div class="card" id="paladin_card">
+		  <div class="container">             
+            <%= image_tag "classes/paladin-128"%>
+            <h1>Builds para Paladinos!</h1>
+          
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..3 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @paladin_builds[i][1],@paladin_builds[i][0]%>
+                   <p><%=@paladin_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+  </section>
+  <section>
+    <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag "classes/paladin-128", id:"img-lvl"%>
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+           <li>Tier 1: Os seus primeiros 5 pontos serão gastos em <a href="https://pt.classic.wowhead.com/spell=20266/for-a-divina"></a>. Estes primeiros 12 talentos serão apenas para aumento de dano antes do seu respec.</li>
+           <li>Tier 2: Seus próximos 5 pontos serão inteiramente gastos em <a href="https://pt.classic.wowhead.com/spell=20332/selo-da-retid-o-aprimorado"></a>, é importante notar que você deve usar o selo da justiça neste nível.</li>
+           <li>Tier 3: Eu gastaria 2 pontos em <a href="https://pt.classic.wowhead.com/spell=20045/ben-o-do-poder-aprimorada"></a>, já que a intenção é pegar mais dano antes do respec.</li>
+                        <center> <span class="aviso">Vá até o treinador e faça o ReSpec!!</span> </center>
+           <li>Tier 1: Depois do Respec use os pontos da seguinte forma, 5 pontos em <a href="https://pt.classic.wowhead.com/spell=20048/ben-o-do-poder-aprimorada"></a>, este é um ótimo talento para solo e grupo.</li>
+           <li>Tier 2: Seus próximos 5 pontos devem ser em <a href="https://pt.classic.wowhead.com/spell=20064/deflex-o"></a>, esse talento aumentará seu dano e sua durabilidade; Quando você desviar um ataque, você mitigará completamente o ataque e seu swing timer será reduzido, permitindo que você ataque com mais frequência.</li>
+           <li>Tier 3: Você vai querer usar <a href="https://pt.classic.wowhead.com/spell=20375/selo-de-comando"></a>Selo de Comando, e eu recomendo usá-lo como seu selo principal pelo resto de sua experiência de leveling.</li>
+           <li>Tier 4: <a href="https://pt.classic.wowhead.com/spell=26023/busca-de-justi-a"></a> é o motivo pelo qual você respeca nesse momento, a velocidade de movimento durante o leveling nunca pode ser subestimada.</li>
+           <li>Tier 5: Coloque 5 pontos em <a href="https://pt.classic.wowhead.com/spell=20118/convic-o">.</a></li>
+           <li>Tier 6: Agora 2 pontos em <a href="https://pt.classic.wowhead.com/spell=25988/olho-por-olho"></a></li>
+           <li>Tier 7:Comece aqui com um ponto na <a href="https://pt.classic.wowhead.com/spell=20218/aura-de-santidade"></a> e, em seguida, 3 pontos em <a href="https://pt.classic.wowhead.com/spell=20113/especializa-o-em-arma-de-duas-m-os"></a>; ambos os talentos serão um bom aumento para o seu dano. Depois destes dois, você tem outro ponto livre; Eu prefiro apenas colocar 1 ponto em <a href="https://pt.classic.wowhead.com/spell=9452/vindica-o"></a>.</li>
+           <li>Tier 8: Aqui você terá <a href="https://pt.classic.wowhead.com/spell=20059/vingan-a"></a>, uma boa maneira de fazer o seu caminho até o nível 40.</li>
+           <li>Tier 9: Finalizando a árvore de Retribution pegue <a href="https://pt.classic.wowhead.com/spell=20066/contri-o"></a></li>
+           <center><span class="aviso">Agora a partir daqui, você vai colocar 10 pontos em proteção e 10 pontos em sagrado, se você estiver tendo embates PVP, eu começaria com a árvore de proteção, mas se você está em um lugar confortável sem muitos confrontos, comece com a árvore sagrada.</span></center>
+           <li>Tier 10: Começando em Proteção 5 pontos em <a href="https://pt.classic.wowhead.com/spell=20142/aura-de-devo-o-aprimorada"></a>, isso pode ser bastante útil se você precisar ficar na defensiva e é bastante útil em um ambiente de grupo.</li>
+           <li>Tier 11: Para finalizar a árvore de Proteção, pegue esses talentos na ordem que quiser: 2 pontos em <a href="https://pt.classic.wowhead.com/spell=20175/estima-do-guardi-o"></a> e 3 pontos em <a href="https://pt.classic.wowhead.com/spell=20193/precis-o"></a>.</li>
+           <li>Tier 12: Na árvore Sagrada, comece com 5 pontos em <a href="https://pt.classic.wowhead.com/spell=20266/for-a-divina"></a>.</li>
+           <li>Tier 13: Os últimos 5 pontos ficam em <a href="https://pt.classic.wowhead.com/spell=20261/intelecto-divino"></a>.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+          <li>Os primeiros 10 níveis: No início, os feitiços não são muito caros, então você pode comprar o que quiser sem causar muito dano ao seu bolso. A única coisa que eu gostaria de mencionar é que você estará usando o <a href="https://pt.classic.wowhead.com/spell=20154/selo-da-retid-o"></a> até o nível 22, então certifique-se de atualizá-lo enquanto estiver usando-o.</li>
+          <li>Nível 12: uma novo rank de <a href="https://pt.classic.wowhead.com/spell=19834/ben-o-do-poder"></a> se torna disponível e vale a pena ser obtida.</li>
+          <li>Nível 18: Você vai querer treinar nesse nível principalmente para o <a href="https://pt.classic.wowhead.com/spell=20154/selo-da-retid-o"></a>, mas, você deve aproveitar e pegar <a href="https://pt.classic.wowhead.com/spell=1044/ben-o-da-liberdade"></a> e <a href="https://pt.classic.wowhead.com/spell=19742/ben-o-de-sabedoria"></a> enquanto estiver no treinador.</li>
+          <li>Nível 22: Volte para o seu treinador para respec-lo, você também pode pegar um novo rank de <a href="https://pt.classic.wowhead.com/spell=19836/ben-o-do-poder"></a>.</li>
+          <li>Nível 30: Volte ao treinador para adquirir uma novo rank de <a href="https://pt.classic.wowhead.com/spell=20918/selo-de-comando"></a>.</li>
+          <li>Nível 32: Apesar de um tanto desajeitado retornar apenas dois níveis depois, vale a pena notar que um novo rank de <a href="https://pt.classic.wowhead.com/spell=19836/ben-o-do-poder"></a> se torna disponível aqui.</li>
+          <li>Nível 40: Volte ao seu treinador para obter <a href="https://pt.classic.wowhead.com/spell=13819/evocar-cavalo-de-guerra"></a>, você também pode treinar a habilidade de usar armaduras de placas, bem como pegar outro rank de <a href="https://pt.classic.wowhead.com/spell=20918/selo-de-comando"></a>. Se você ainda não o fez, provavelmente vale a pena pegar o <a href="https://pt.classic.wowhead.com/spell=1020/escudo-divino"></a>.</li>
+          <li>Nível 42: Este nível traz consigo uma nova classificação de <a href="https://pt.classic.wowhead.com/spell=19836/ben-o-do-poder"></a>, bem como o acesso à habilidade <a href="https://pt.classic.wowhead.com/spell=4987/purifica-o"></a>.</li>
+          <li>Nível 50: Provavelmente uma das últimas vezes em que você precisa parar e comprar habilidades, você obtém seu rank final de <a href="https://pt.classic.wowhead.com/spell=20918/selo-de-comando"></a>, e você também pode pegar o rank máximo de <a href="https://pt.classic.wowhead.com/spell=1020/escudo-divino"></a>. Se você ainda não comprou, vale a pena pegar <a href="https://pt.classic.wowhead.com/spell=24275/martelo-da-ira"></a>.</li>
+          <li>Nível 52-60: Nesse ponto você não precisa voltar a cidade apenas para treinar, você começa a ter acesso às suas maiores bênçãos, começando com <a href="https://pt.classic.wowhead.com/spell=25782/ben-o-maior-de-poder"></a>, se você estiver na cidade, eu pararia no treinador para ver o que eles têm para oferecer ..</li>
+        </ul>
+        </div> <br> 
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/paladin-leveling-classic-wow#leveling-22-to-60" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+  </section>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>

@@ -1,0 +1,102 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Build para Xamans!</title>
+
+  <section>
+	<div class="card" id="shaman_card">
+		  <div class="container">
+            <%= image_tag "classes/shaman-128"%>
+            <h1>Builds para Shamans!</h1>
+            
+           <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..4 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @shaman_builds[i][1],@shaman_builds[i][0]%>
+                   <p><%=@shaman_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+  </section>
+  <section>
+       <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag "classes/shaman-128", id:"img-lvl"%>       
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+          <li>Tier 1: Seus 5 primeiros pontos serão postos em <a href="https://pt.classic.wowhead.com/spell=17489/conhecimento-ancestral"></a>, embora possa não parecer muito empolgante, esse talento evita que você tenha problemas de mana a longo prazo.</li>
+          <li>Tier 2: Os próximos 5 pontos serão destinados para <a href="https://pt.classic.wowhead.com/spell=16305/golpes-trovejantes"></a> para um pouco de crítico e preparar-nos para o tier 4.</li>
+          <li>Tier 3: Aqui iremos por 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16287/lobo-fantasma-aprimorado"></a>, 2 pontos no <a href="https://pt.classic.wowhead.com/spell=16290/escudo-de-raios-aprimorado"></a>, além de pegar <a href="https://pt.classic.wowhead.com/spell=16269/ma-as-e-machados-de-duas-m-os"></a> antes de passar para o tier 4. Eu sugiro pegar o lobo fantasma primeiro e só pegar machados/maças com duas mãos quando você obtiver uma arma que exija o talento.</li>
+          <li>Tier 4: obtenha 5 pontos no <a href="https://pt.classic.wowhead.com/spell=16284/impeto"></a>, como foi pre-estabelecido no tier 2.</li>
+          <li>Tier 5: Coloque 3 pontos em <a href="https://pt.classic.wowhead.com/spell=29080/armas-elementais"></a> para aprimorar sua arma de fúria do vento(windfury weapon), depois pegue 1 ponto em <a href="https://pt.classic.wowhead.com/spell=16268/aparar"></a> e use seu ponto final para finalizar o <a href="https://pt.classic.wowhead.com/spell=16291/escudo-de-raios-aprimorado"></a>.</li>
+          <li>Tier 6: essa especificação é relativamente simples e, como você já deve ter notado, são muitos talentos 5/5; vamos prosseguir com essa tendência e por 5 pontos em <a href="https://pt.classic.wowhead.com/spell=29088/maestria-em-armas"></a> e ficar 5 passos mais próximo de terminar esta árvore.</li>
+          <li>Tier 7: Termine a árvore com <a href="https://pt.classic.wowhead.com/spell=17364/ataque-da-tempestade"></a>, uma das skills mais emblemáticas dos Shamans.</li>
+          <li>Tier 8: Para começar a árvore Elemental, você pode aumentar o dano ou reduzir o custo, eu gosto de ir com custo reduzido, 5 pontos em <a href="https://pt.classic.wowhead.com/spell=16112/convec-o"></a>.</li>
+          <li>Tier 9: Agora, pegue 5 pontos no talento que você não escolheu, no meu caso seria o <a href="https://pt.classic.wowhead.com/spell=16108/concuss-o"></a>.</li>
+          <li>Tier 10: Comece este tier com 1 ponto em <a href="https://pt.classic.wowhead.com/spell=16164/concentra-o-elemental"></a> e depois 4 pontos em <a href="https://pt.classic.wowhead.com/spell=16115/reverbera-o"></a>.</li>
+          <li>Tier 11: Nesse ponto, você basicamente termina o leveling, mas antes deve por mais 3 pontos em <a href="https://pt.classic.wowhead.com/spell=29180/devasta-o-elemental"></a> antes de terminar a <a href="https://pt.classic.wowhead.com/spell=16116/reverbera-o"></a> e, depois de atingir 60, pode colocar 1 ponto no que quiser.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+          <li>Os 10 primeiros níveis: no início, as skills não são muito caras, então você pode comprar o que quiser sem se preocupar muito com sua prata. Mas você deve se certificar de obter novos ranks de <a href="https://pt.classic.wowhead.com/spell=324/escudo-de-raios"></a> e <a href="https://pt.classic.wowhead.com/spell=8017/arma-trinca-pedra"></a> (ou <a href="https://pt.classic.wowhead.com/spell=8232/arma-de-furia-dos-ventos"></a> 30+). O nível 10 é importante porque você receberá a missão de seu totem de fogo.</li>
+          <li>Nível 16: Esse é um excelente momento para shamans treinarem, aproveitando que você treinará um novo ranking de <a href="https://pt.classic.wowhead.com/spell=325/escudo-de-raios"></a> e <a href="https://pt.classic.wowhead.com/spell=8019/arma-trinca-pedra"></a>, também é possível comprar um novo ranking de <a href="https://pt.classic.wowhead.com/spell=8045/choque-terreno"></a> que ficou disponível no nível 14.</li>
+          <li>Nível 20: Mais notavelmente, você recebe o <a href="https://pt.classic.wowhead.com/spell=2645/lobo-fantasma"></a> nesse nível, o que reduzirá significativamente seu tempo de viagem; e você pode pegar seu primeiro rank de <a href="https://pt.classic.wowhead.com/spell=8056/choque-gelido"></a>. Mesmo que esteja disponível, eu não me incomodaria em fazer sua missão de totem de água antes do nível máximo.</li>
+          <li>Nível 24: Esse é um excelente momento que eu não perderia de cvoltar ao trienador, você obtém novos ranks de várias skills boas, incluindo: <a href="https://pt.classic.wowhead.com/spell=905/escudo-de-raios"></a>, <a href="https://pt.classic.wowhead.com/spell=10399/arma-trinca-pedra"></a>, <a href="https://pt.classic.wowhead.com/spell=8160/totem-da-for-a-da-terra"></a>, <a href="https://pt.classic.wowhead.com/spell=8046/choque-terreno"></a> e você pode até obter <a href="https://pt.classic.wowhead.com/spell=131/respira-o-aquatica"></a> para qualquer missão subaquática.</li>
+          <li>Nível 30: Você deve retornar ao seu treinador antes de mais nada para <a href="https://pt.classic.wowhead.com/spell=8232/arma-de-furia-dos-ventos"></a>, e enquanto estiver lá, poderá adquirir várias skills de utilidade, como: <a href="https://pt.classic.wowhead.com/spell=20608/reencarna-o"></a>, <a href="https://pt.classic.wowhead.com/spell=556/revoca-o-astral"></a> e <a href="https://pt.classic.wowhead.com/spell=546/andar-sobre-a-agua"></a>.</li>
+          <li>Nível 32: Você pode voltar ao 32 para treinar <a href="https://pt.classic.wowhead.com/spell=945/escudo-de-raios"></a> (rank 4), e se você estiver frequentemente em grupos, definitivamente deveria pegar o <a href="https://pt.classic.wowhead.com/spell=8512/totem-de-furia-dos-ventos"></a>.</li>
+          <li>Nível 40: Espero que você esteja na cidade comprando sua montaria neste momento, mas certifique-se de também treinar novos ranks de <a href="https://pt.classic.wowhead.com/spell=8134/escudo-de-raios"></a> e <a href="https://pt.classic.wowhead.com/spell=8235/arma-de-furia-dos-ventos"></a>. Se você tiver dinheiro extra, também deve continuar atualizando seus totens de choque/buff nesta fase do jogo.</li>
+          <li>Nível 48: Nesse momento, você provavelmente já conhece as skills que deseja treinar e, sinceramente, eu não voltaria à cidade a menos que fosse conveniente. Com isso dito, você pode treinar novos ranks de <a href="https://pt.classic.wowhead.com/spell=10413/choque-terreno"></a> e <a href="https://pt.classic.wowhead.com/spell=10431/escudo-de-raios"></a>.</li>
+          <li>Nível 50: Você também pode atrasar a volta do nível 48 e esperar até o 50, porque há um novo ranking de <a href="https://pt.classic.wowhead.com/spell=10486/arma-de-furia-dos-ventos"></a>.</li>
+          <li>Nível 56: Você pode praticamente ficar sem treinar a essa altura, mas, se for conveniente, pode verificar o treinador quanto os novos ranks das suas melhores skills, como <a href="https://pt.classic.wowhead.com/spell=10432/escudo-de-raios"></a> estiverem disponíveis.</li>
+          <li>E logo depois disso, você estará no nível 60!</li>
+        </ul>
+        </div>
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/shaman-leveling-classic-wow" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+  </section>
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
+

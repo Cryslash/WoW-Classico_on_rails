@@ -1,0 +1,261 @@
+// Place all the styles related to the class controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+	margin:0px;
+	padding: 0;
+}
+
+html,body{
+	height:100%;
+	width: 100%;
+}
+
+section{
+	height:100%;
+	width: 100%;
+}
+
+.card{
+	position: static;
+	display: block;
+	width: 100%;
+	height:100vh;
+}
+
+#druid_card{background-image: url("cards/druid");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#hunter_card{background-image: url("cards/hunter");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#mage_card{background-image: url("cards/mage");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#paladin_card{background-image: url("cards/paladin");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#priest_card{background-image: url("cards/priest");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#rogue_card{background-image: url("cards/rogue");background-repeat: no-repeat;background-size: cover; background-position: 100% 100%;}
+#shaman_card{background-image: url("cards/shaman");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#warlock_card{background-image: url("cards/warlock");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#warrior_card{background-image: url("cards/warrior");background-repeat: no-repeat;background-size: cover; background-position: center;}
+
+
+.container{
+	position:relative;
+	top:5%;
+	left:3%;	
+	max-width: 94%;
+	height:90%;
+	border-radius: 60px;
+	overflow: auto;
+	background:rgba(0,0,0,.6);	
+}
+
+.card .container img{
+	position: relative;
+	margin:25px 25px;
+	width:96px;
+	height: auto;
+	transition: .5s;
+}
+.card .container h1{
+	position:absolute;
+	top:6%;
+	left:8%;
+	font-family: 'poppins', sans-serif;
+	font-size: 2.2em;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+    transition: .5s;
+}
+
+.container .swiper-container {
+      width: 100%;
+      top: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+.container .swiper-slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40vw;
+      height: 56vh;
+    }   
+
+.container .swiper-slide p{
+	position: absolute;
+	top:-8%;
+	left:1%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size:1.5em;
+}
+
+.container .swiper-slide .link{
+     text-decoration: none;
+     color: #fff;
+     text-shadow: 1px 1px 1px #000;
+     font-size:1.5em;
+    }
+
+/* Leveling */
+
+
+#leveling{
+	background: url("lvl-bg") no-repeat;	
+	background-size: cover;
+	height:100%;	
+}
+
+#leveling .container .header img{
+    position: relative;
+	margin:25px 25px;
+	width:96px;
+	height: auto;
+	transition: .5s;
+}
+
+#leveling .container .header h1{
+    position:absolute;
+	top:6%;
+	left:8%;
+	font-family: 'poppins', sans-serif;
+	font-size: 2.2em;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+    transition: .5s;
+}
+
+.body_build h2{
+	font-family: 'poppins', sans-serif;
+	font-weight: 800;
+	color: #fff;
+	margin-left:1em;
+}
+
+.body_build ul{
+    margin:1em 0; 
+}
+
+.body_build ul .aviso{	
+	color: Red;
+}
+
+.body_build ul li{
+	font-family: 'poppins', sans-serif;
+	font-size: 1.2em;
+	color: #fff;
+    line-height: 1.7em;
+	margin-left: 2em;
+}
+
+.body_build ul li a{
+	text-decoration: none;
+	color: #ffd100;		
+}
+
+.body_build ul li a:hover{
+	color: #5dade2;
+}
+
+.footer p{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+	font-size: .9em;
+	font-weight: lighter;
+	color: #fff;
+}
+
+.footer p a{
+	text-decoration: none;	
+	color: #ffd100;	
+}
+
+.footer p a:hover{
+	color: #5dade2;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+/* Responsivity */
+
+@media only screen and (max-width:1619px){
+.container h1{	
+	left:10%;}
+}
+
+@media only screen and (max-width: 1169px){
+.container h1{	
+	left:20%;}
+}
+
+@media only screen and (max-width: 600px){
+.container h1{
+	top:16%;}
+
+.container img{
+    left:50%;
+    margin:25px 0px;
+    transform:translate(-50%, 0);}
+
+.container .swiper-container {
+    position: relative;
+    top: 10%;}    
+}
+
+@media only screen and (max-width:480px){
+    .container img{
+    	position: absolute;
+    	top:0px;
+    	left:60px;    	
+    }
+
+    .container h1{
+    	position: absolute;
+    	top:35px;
+    	left:130px;
+    	font-size: 25px;
+    }
+  
+    .container .swiper-container {        
+        top: 24%;}
+   
+    .header{   	   
+   	    display: block;
+    }
+
+    .header img{
+        position: absolute;
+    	top:0px;
+    	left:60px;  
+    }
+
+    .header h1{
+    	position: absolute;
+    	top:35px;
+    	left:130px;
+    	font-size: 25px;
+    }
+
+    .body_build{    	
+    	display: block;
+    	margin-top: 130px;
+    	/*top: 130px;    	*/
+    }
+    .body_build h2{
+    	font-size: 20px;
+    }
+
+    .footer{    	
+    	display: block;
+    }
+
+}

@@ -1,0 +1,114 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+  <title>Guerreiro • WoW-Clássico</title>
+
+  <section>
+  <div class="card" id="warrior_card">
+      <div class="container">             
+            <%= image_tag "classes/warrior-128"%>
+            <h1>Builds para Guerreiros!</h1>
+            
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..5 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @warrior_builds[i][1],@warrior_builds[i][0]%>
+                   <p><%=@warrior_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+  </section>
+  <section>
+     <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag "classes/warrior-128", id:"img-lvl"%>
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+          <center> <span class="aviso">Upando Warrior em Armas!!</span> </center>
+          <li>Tier 1: Seus primeiros 5 pontos serão distribuídos da seguinte forma 3 em <a href="https://pt.classic.wowhead.com/spell=12659/dilacerar-aprimorado"></a>, seguidos por 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16463/deflex-o"></a>, que te prepara para o seu 3º e 4º tiers de talentos.</li>
+          <li>Tier 2: Seus próximos 5 pontos serão postos inteiramente em <a href="https://pt.classic.wowhead.com/spell=12679/proficiencia-tatica"></a>, isso o prepara para o tier 3, e é um talento de qualidade de vida muito bom.</li>
+          <li>Tier 3: <a href="https://pt.classic.wowhead.com/spell=12296/controle-de-raiva"></a> deve ser seu primeiro ponto no nível 20 e é considerado um dos pontos de talento mais valiosos que um guerreiro pode ter. Depois disso, você precisará de 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12867/feridas-profundas"></a> para se preparar para o tier 4. Por fim, faça 1 ponto no <a href="https://pt.classic.wowhead.com/spell=12290/subjugar-aprimorado"></a> para poder passar para o tier 4.</li>
+          <li>Tier 4: 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16494/empalar"></a> é prioridade, já que foi estabelecido nos últimos três níveis, juntamente com o Impalar, prossiga com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12712/especializa-o-em-arma-de-duas-m-os"></a> para um pouco de dano adicional.</li>
+          <li>Tier 5: <a href="https://pt.classic.wowhead.com/spell=12292/golpes-a-esmo"></a> é provavelmente o principal motivo para usar Armas, pois permite matar vários mobs ao mesmo tempo e com um tempo de espera relativamente curto, dominar o uso dessa habilidade aumentará bastante sua velocidade de leveling. É provável que você acabe colocando suas mãos em um <a href="https://pt.classic.wowhead.com/item=6975/machado-redemoinho"></a>, então eu colocaria 4 pontos em <a href="https://pt.classic.wowhead.com/spell=12784/especializa-o-em-machado"></a>, mas vale a pena notar que você deve priorizar (e até mesmo refazer) qualquer especificação de arma que corresponda à que você está usando.</li>
+          <li>Tier 6: Este não é um tier muito emocionante, pois você simplesmente preencherá outros pontos de talento incompletos: finalize <a href="https://pt.classic.wowhead.com/spell=12785/especializa-o-em-machado"></a>, <a href="https://pt.classic.wowhead.com/spell=12714/especializa-o-em-arma-de-duas-m-os"></a>, <a href="https://pt.classic.wowhead.com/spell=12963/subjugar-aprimorado"></a> e coloque seu ponto final no que desejar , Eu prefiro <a href="https://pt.classic.wowhead.com/spell=12289/cortar-tend-o-aprimorado"></a>.</li>
+          <li>Tier 7: <a href="https://pt.classic.wowhead.com/spell=12294/golpe-mortal"></a>, você termina a árvore de Armas pegando o talento de 31 pontos. Depois disso, você começa a trabalhar na árvore de fúria.</li>
+          <li>Tier 8: Você pegará apenas 4 talentos na árvore de fúria, começando com 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12856/crueldade"></a>.</li>
+          <li>Tier 9: Ponha 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12838/voz-estrondosa"></a> pelo aumento da duração dos gritos de batalha.</li>
+          <li>Tier 10: Depois, ponha 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12861/brado-de-batalha-aprimorado"></a> para dano extra.</li>
+          <li>Tier 11: Neste ponto, você terminou o leveling, mas não é nem preciso dizer que <a href="https://pt.classic.wowhead.com/spell=13048/enfurecer"></a> deve ser os seus 5 pontos finais.</li>
+        </ul>
+        <ul>
+          <center> <span class="aviso">Upando Warrior em Fúria!!</span> </center>
+          <li>Tier 1: Começe pegando 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12856/crueldade"></a>.</li>
+          <li>Tier 2: Você pegará 5 pontos em <a href="https://pt.classic.wowhead.com/spell=12838/voz-estrondosa"></a> pelo aumento da duração dos gritos de batalha.</li>
+          <li>Tier 3: Em seguida, pegue um ponto em <a href="https://pt.classic.wowhead.com/spell=12323/uivo-perfurante"></a>, seguido de 4 pontos em <a href="https://pt.classic.wowhead.com/spell=12861/brado-de-batalha-aprimorado"></a>, para dano extra. Se você sentir que precisa de mais sustein, poderá por 3 pontos em <a href="https://pt.classic.wowhead.com/spell=16492/fervor-sangrento"></a> e apenas 1 ponto no <a href="https://pt.classic.wowhead.com/spell=12861/brado-de-batalha-aprimorado"></a>, dependendo do que você escolher aqui no Nível 3, você terá os outros talentos do Nível 5.</li>
+          <li>Tier 4: Esse nível é um dos principais motivos pelos quais você escolheu Fúria para o leveling; <a href="https://pt.classic.wowhead.com/spell=13048/enfurecer"></a> permite aumentar seu dano em 25% sempre que um inimigo o atingir criticamente.</li>
+          <li>Tier 5: <a href="https://pt.classic.wowhead.com/spell=12328/desejo-de-matar"></a> é outro motivo, um cooldown de dano de 3 minutos muito valioso e aumenta a de dano que fúria causa. Os próximos 4 pontos dependem do que você escolheu no Nível 3; após esse nível, você deve ter 3 pontos no <a href="https://pt.classic.wowhead.com/spell=16492/fervor-sangrento"></a> e 5 pontos no <a href="https://pt.classic.wowhead.com/spell=12861/brado-de-batalha-aprimorado"></a>.</li>
+          <li>Tier 6: Os próximos 5 pontos devem ser em <a href="https://pt.classic.wowhead.com/spell=12974/impeto"></a> apenas mais um talento que aumenta o seu dano.</li>
+          <li>Tier 7: Termine a árvore de Fury com <a href="https://pt.classic.wowhead.com/spell=23881/sede-de-sangue"></a>.</li>
+          <li>Tier 8: Seus primeiros 5 pontos em armas consistirão em 3 <a href="https://pt.classic.wowhead.com/spell=12659/dilacerar-aprimorado"></a>, seguidos por 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16463/deflex-o"></a>.
+          <li>Tier 9: Seus próximos 5 pontos em Armas serão postos inteiramente em <a href="https://pt.classic.wowhead.com/spell=12679/proficiencia-tatica"></a>, isso o prepara para o tier 3 e é um talento de qualidade de vida muito agradável.</li>
+          <li>Tier 10: <a href="https://pt.classic.wowhead.com/spell=12296/controle-de-raiva"></a> deve ser o seu primeiro ponto nesse nível e é considerado um dos pontos de talento mais valiosos que um guerreiro pode ter. Depois disso, você precisará de 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12867/feridas-profundas"></a> para se preparar para o tier 4. Por fim, 1 ponto em <a href="https://pt.classic.wowhead.com/spell=12290/subjugar-aprimorado"></a> para passar para o tier 4.</li>
+          <li>O Tier 11: 2 pontos em <a href="https://pt.classic.wowhead.com/spell=16494/empalar"></a> é prioridade absoluta, pois foi estabelecido nos últimos três níveis, juntamente com o empalar, prossiga com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=12712/especializa-o-em-arma-de-duas-m-os"></a>, para um pouco de dano adicional.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+          <li>Os 10 primeiros níveis: No início, as skills não são muito caras, então você pode comprar o que quiser sem se preocupar muito com isso. Você deverá certificar-se em obter os novos ranks de <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a> e <a href="https://pt.classic.wowhead.com/spell=6673/brado-de-batalha"></a> assim que eles estiverem disponíveis. O nível 10 é importante porque você terá a missão de postura defensiva/arma de uma mão.</li>
+          <li>Nível 12: O <a href="https://pt.classic.wowhead.com/spell=6673/brado-de-batalha"></a>, rank 2, fica disponível, juntamente com <a href="https://pt.classic.wowhead.com/spell=7384/subjugar"></a> e <a href="https://pt.classic.wowhead.com/spell=72/trombada-com-escudo"></a>, os quais, na minha opinião, valem a pena.</li>
+          <li>Nível 16: <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a> Rank 3 fica disponível, pegue <a href="https://pt.classic.wowhead.com/spell=694/golpe-zombeteiro"></a> e <a href="https://pt.classic.wowhead.com/spell=2565/levantar-escudo"></a> enquanto estiver no treinador.</li>
+          <li>Nível 24: Aqui você ficará um tempo sem voltar ao treinador. Do nível 16 ao 24, até o nível 24, você obtém acesso a todas as seguintes habilidades/rank que você deve adquirir: <a href="https://pt.classic.wowhead.com/spell=20230/retalia-o"></a>, <a href="https://pt.classic.wowhead.com/spell=6673/brado-de-batalha"></a> rank 3, <a href=""></a><a href="https://pt.classic.wowhead.com/spell=5246/brado-intimidador"></a>, <a href="https://pt.classic.wowhead.com/spell=5308/executar"></a> (no nível 24) e <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a> rank 4.</li>
+          <li>Nível 30: Eu sempre volto ao treinador para a missão <a href="https://pt.classic.wowhead.com/spell=2458/postura-de-berserker"></a> que leva à busca de <a href="https://pt.classic.wowhead.com/item=6975/machado-redemoinho"></a>.</li>
+          <li>Nível 32: O nível 32 é um ótimo momento para treinar, pois você obtém o rank 2 de <a href="https://pt.classic.wowhead.com/spell=5308/executar"></a>, <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a> rank 5 e <a href="https://pt.classic.wowhead.com/spell=6673/brado-de-batalha"></a> rank 4.</li>
+          <li>Nível 36: <a href="https://pt.classic.wowhead.com/spell=1680/redemoinho"></a> vale a pena treinar por si só.</li>
+          <li>Nível 40: Outro upgrade do <a href="https://pt.classic.wowhead.com/spell=5308/executar"></a> e <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a> está disponível. Você também pode treinar armadura de placa nesse nível.</li>
+          <li>Nível 48: Embora outro upgrade do <a href="https://pt.classic.wowhead.com/spell=6673/brado-de-batalha"></a> esteja disponível ao 42, eu esperaria até o 48 para treinar o <a href="https://pt.classic.wowhead.com/spell=7384/subjugar"></a> Rank 3 (disponível em 44), o 2º rank da sua habilidade de 31 pontos (<a href="https://pt.classic.wowhead.com/spell=23892/sede-de-sangue"></a> se fúria ou <a href="https://pt.classic.wowhead.com/spell=21552/golpe-mortal"></a> se armas). Você também ganha acesso a outro rank de <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a> e <a href="https://pt.classic.wowhead.com/spell=5308/executar"></a> (Note que essas duas skills estão alinhadas há algum tempo).</li>
+          <li>Nível 54: Entre 50-54, você pode treinar algumas skills se estiver na cidade, mas 54 é quando você DEVE retornar. Você obtém acesso a <a href="https://pt.classic.wowhead.com/spell=1719/temeridade"></a> ao 50, <a href="https://pt.classic.wowhead.com/spell=6673/brado-de-batalha"></a> rank 6 no nível 52 e outro rank de <a href="https://pt.classic.wowhead.com/spell=21552/golpe-mortal"></a> ou <a href="https://pt.classic.wowhead.com/spell=23892/sede-de-sangue"></a> ao 54.</li>
+          <li>Nível 56: A última vez que você realmente precisa treinar é o nível 56 para novamente fazer upgrade conjunto em <a href="https://pt.classic.wowhead.com/spell=5308/executar"></a> e <a href="https://pt.classic.wowhead.com/spell=284/golpe-heroico"></a>.</li>
+        </ul>
+        </div> <br> 
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/warrior-leveling-classic-wow#leveling-arms"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>    
+  </section>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>

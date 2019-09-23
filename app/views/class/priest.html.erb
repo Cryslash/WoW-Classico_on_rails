@@ -1,0 +1,94 @@
+  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+	<title>Sacerdote • WoW-Clássico</title>
+
+  <section>
+	<div class="card" id="priest_card">
+		  <div class="container">             
+            <%= image_tag "classes/priest-128"%>
+            <h1>Builds para Sacerdotes!</h1>
+           
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                 <% for i in 0..3 %>
+                 <div class="swiper-slide">                   
+                   <%= link_to @priest_builds[i][1],@priest_builds[i][0]%>
+                   <p><%=@priest_builds[i][1]%></p>
+                 </div>
+                 <%end%>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>          
+          </div>
+        </div>
+
+  </section>
+  <section>
+    <div id="leveling">
+    <div class="container">
+      <div class="header">        
+        <%= image_tag "classes/priest-128", id:"img-lvl"%>
+        <h1>Dicas para o Leveling:</h1>
+      </div>
+      <div class="body_build">
+        <div>
+        <h2>Fazendo a Build!</h2>
+        <ul>
+          <li>Tier 1: Os melhores 5 pontos que você pode gastar aqui é <a href="https://pt.classic.wowhead.com/spell=15338/transfus-o-de-espirito"></a>. Com esse talento, você raramente precisará beber entre os pulls. É importante notar que você precisa obter o crédito do golpe fatal para receber esse bônus.</li>
+          <li>Tier 2: Comece a árvore de Disciplina com 5 pontos em <a href="https://pt.classic.wowhead.com/spell=14528/especializa-o-em-varinha"></a>, essa é apenas uma preferência pessoal, pois Atirar será uma das suas fontes de dano mais consistentes.</li>
+          <li>Tier 3: Eu começaria com 3 pontos em <a href="https://pt.classic.wowhead.com/spell=15328/concentra-o-sombria"></a> para que seus feitiços possam atingir de forma confiável seu alvo, e também pegaria os 2 pontos de <a href="https://pt.classic.wowhead.com/spell=15317/palavra-sombria-aprimorada-dor"></a> que estão disponíveis para você.</li>
+          <li>Tier 4: No 20, você deve pegar <a href="https://pt.classic.wowhead.com/spell=15407/a-oite-mental"></a>, e depois eu pegaria os últimos 2 pontos na <a href="https://pt.classic.wowhead.com/spell=15330/concentra-o-sombria"></a>. Eu também recomendaria pegar <a href="https://pt.classic.wowhead.com/spell=15448/grito-psiquico-aprimorado"></a>, especialmente se você estiver em um reino PVP.</li>
+          <li>Tier 5: Aqui você irá de <a href="https://pt.classic.wowhead.com/spell=15334/trama-sombria"></a> para o debuff de dano.</li>
+          <li>Tier 6: Esse nível é muito bom se você estiver em um reino PVP, pegue <a href="https://pt.classic.wowhead.com/spell=15487/silencio"></a>, alcance extra em suas habilidades com <a href="https://pt.classic.wowhead.com/spell=17325/alcance-sombrio"></a> e, finalmente, você precisará de <a href="https://pt.classic.wowhead.com/spell=15286/abra-o-vampirico"></a> para ir ao tier 7.</li>
+          <li>Tier 7: Não há razão para pegar nada diferente de 5 pontos em <a href="https://pt.classic.wowhead.com/spell=15310/trevas"></a>.</li>
+          <li>Tier 8: Termine a árvore das Sombras com seu talento de 31 pontos <a href="https://pt.classic.wowhead.com/spell=15473/forma-de-sombra"></a>.</li>
+          <li>Tier 9: Esse tier, você precisará de 3 pontos em <a href="https://pt.classic.wowhead.com/spell=14769/palavra-de-poder-aprimorada-escudo"></a> e 2 pontos em <a href="https://pt.classic.wowhead.com/spell=14774/martirio"></a>.</li>
+          <li>Tier 10: Ao chegar no 60, você terá a <a href="https://pt.classic.wowhead.com/spell=14751/concentra-o-interior"></a>, 3 pontos em <a href="https://pt.classic.wowhead.com/spell=14777/medita-o"></a> e 1 ponto em <a href="https://pt.classic.wowhead.com/spell=14749/palavra-de-poder-aprimorada-fortitude"></a>.</li>
+          <li>Tier 11: A essa altura você basicamente completou o leveling, pegue 3 pontos em <a href="https://pt.classic.wowhead.com/spell=14771/fogo-interior-aprimorado"></a> e 2 pontos em <a href="https://pt.classic.wowhead.com/spell=14772/exaurir-mana-aprimorado"></a>.</li>
+        </ul>
+        </div> <br>
+        <div> 
+           <h2>Prioridades para Treinar!</h2>
+        <ul>
+          <li><a href="https://pt.classic.wowhead.com/spell=585/puni-o"></a>: Antes que você obtenha os talentos que aumentam seu dano de sombra, vale a pena investir em Punição, e pode ser usado para dar o último golpe nos inimigos para ativar a <a href="https://pt.classic.wowhead.com/spell=15338/transfus-o-de-espirito"></a>. Você pode treinar punição nos seguintes níveis: 6, 14, 22, 30, 38, 46 e 54.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=8092/impacto-mental"></a>: Impacto Mental é a spell ideal a ser usada para ativar a <a href="https://pt.classic.wowhead.com/spell=15338/transfus-o-de-espirito"></a>, ao atingir um inimigo. Depois de ter os talentos de Sombra mais evoluidos que aumentam seu dano, você vai usar o impacto mental para acabar com as multidões inimigas. Você pode treinar o impacto mental nos seguintes níveis: 10, 16, 22, 28, 34, 40, 46, 52 e 58.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=1243/palavra-de-poder-fortitude"></a> Buff de assinatura do Priest, usar isso em você e para os possíveis membros do grupo sempre valerá a pena. Você pode treinar esse feitiço nos seguintes níveis: 12, 24, 36, 48 e 60.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=588/fogo-interior"></a> Um auto-buff que fornece um ganho significativo de armadura. Considerando que você usa tecido, isso pode ser muito útil se você estiver prevendo sofrer muito dano corpo a corpo. Você pode treinar esse feitiço nos seguintes níveis: 12, 20, 30, 40, 50, 60.</li>
+          <li><a href="https://pt.classic.wowhead.com/spell=17/palavra-de-poder-escudo"></a>: Outro feitiço essencial no leveling, um escudo de absorção instantânea é fantástico para situações de cura de emergência e PVP. Você pode treinar esse feitiço nos seguintes níveis: 6, 12, 18, 24, 30, 36, 42, 48, 54, 60.</li>
+          <li> <a href="https://pt.classic.wowhead.com/spell=589/palavra-sombria-dor"></a> esse será o feitiço companheiro para o <a href="https://pt.classic.wowhead.com/spell=5019/atirar"></a> da sua varinha, é um dos seus feitiços mais eficientes em mana para o leveling. Você pode treinar esse feitiço nos seguintes níveis: 4, 10, 18, 26, 34, 42, 50, 58.</li>
+        </ul>
+        </div> <br> 
+      </div>            
+      <div class="footer">
+          <p>OBS: Esse guia é uma abstração em parte do guia: <a href="https://pt.classic.wowhead.com/guides/priest-leveling-classic-wow" target="alt_blank"></a> veja o guia completo para mais informações.</p>
+      </div>       
+    </div>
+  </div>
+  </section>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
