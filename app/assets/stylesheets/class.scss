@@ -124,22 +124,22 @@ section{
     transition: .5s;
 }
 
-.body_build h2{
+#leveling .container .body_build h2{
 	font-family: 'poppins', sans-serif;
 	font-weight: 800;
 	color: #fff;
 	margin-left:1em;
 }
 
-.body_build ul{
+#leveling .container .body_build ul{
     margin:1em 0; 
 }
 
-.body_build ul .aviso{	
+#leveling .container .body_build ul .aviso{	
 	color: Red;
 }
 
-.body_build ul li{
+#leveling .container .body_build ul li{
 	font-family: 'poppins', sans-serif;
 	font-size: 1.2em;
 	color: #fff;
@@ -147,12 +147,12 @@ section{
 	margin-left: 2em;
 }
 
-.body_build ul li a{
+#leveling .container .body_build ul li a{
 	text-decoration: none;
 	color: #ffd100;		
 }
 
-.body_build ul li a:hover{
+#leveling .container .body_build ul li a:hover{
 	color: #5dade2;
 }
 
@@ -188,20 +188,20 @@ section{
 /* Responsivity */
 
 @media only screen and (max-width:1619px){
-.container h1{	
+.card .container h1{	
 	left:10%;}
 }
 
 @media only screen and (max-width: 1169px){
-.container h1{	
+.card .container h1{	
 	left:20%;}
 }
 
 @media only screen and (max-width: 600px){
-.container h1{
+.card .container h1{
 	top:16%;}
 
-.container img{
+.card .container img{
     left:50%;
     margin:25px 0px;
     transform:translate(-50%, 0);}
@@ -212,13 +212,13 @@ section{
 }
 
 @media only screen and (max-width:480px){
-    .container img{
+    .card .container img{
     	position: absolute;
     	top:0px;
     	left:60px;    	
     }
 
-    .container h1{
+    .card .container h1{
     	position: absolute;
     	top:35px;
     	left:130px;
@@ -228,30 +228,29 @@ section{
     .container .swiper-container {        
         top: 24%;}
    
-    .header{   	   
+    #leveling .container .header{   	   
    	    display: block;
     }
 
-    .header img{
+    #leveling .container .header img{
         position: absolute;
-    	top:0px;
-    	left:60px;  
+    	top:0;
+    	left:0;  
     }
 
-    .header h1{
+    #leveling .container .header h1{
     	position: absolute;
-    	top:35px;
-    	left:130px;
-    	font-size: 25px;
+    	top:9vh;
+    	left:28vw;
+    	font-size: 1.6em;
     }
 
     .body_build{    	
     	display: block;
-    	margin-top: 130px;
-    	/*top: 130px;    	*/
+    	margin-top: 130px;    	
     }
     .body_build h2{
-    	font-size: 20px;
+    	font-size: 1.2em;        
     }
 
     .footer{    	

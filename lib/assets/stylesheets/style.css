@@ -54,7 +54,7 @@ section{
 	font-family: poppins;    
 	top: 40%;
 	left: 50%;
-    transform: translate(-30%, 0); 
+    transform: translate(-50%, 0); 
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
 	transition: .5s;	
@@ -251,27 +251,6 @@ section a{
      display:none;
 }   
 
-/*
-  .swiper-slide {
-      text-align: center;
-      font-size: 18px;      
-      /* Center slide text vertically  *
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;      
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center; 
-    }
-*/
-
-
 
 @keyframes anim {
 	0%{
@@ -295,31 +274,31 @@ section a{
 	left: 50% !important;
 	transform: translate(-50%, 0);}
 
-	.cover h1{		
+	.cover .cover_text{
 	font-size: 2.2em;
-	top:33%;	
+	top:33%;
     }
 
-    .cover h2{	    
+    .cover .cover_text2{
 	font-size: 1.1em;
 	top: 40%; }
 
-    .classes{    	
+    .classes{
 	width:96px;
-	height:96px;	    
+	height:96px;
 	margin:10px 10px; }
     
     #auto_adjustment{
-	height: 1200px;}   
+	height: 1200px;}
 }
 
 /*@media only screen and (max-width: 1169px){ */
 @media only screen and (max-width: 1450px){
-.cover h2{	    
+.cover .cover_text2{	    
 	font-size: 1.1em;
 	top: 50%; }
 
-#container-classes{	    
+.cover #container-classes{	    
     top: 55%; }    
 
 .limit{
@@ -334,16 +313,16 @@ section a{
 	width: 300px;
 	height:auto; }
 
-	.cover h1{		
+	.cover .cover_text{		
 	font-size: 1.1em;
 	top:30%;	
     }
 
-    .cover h2{	    
+    .cover .cover_text2{	    
 	font-size: .8em;
 	top: 37%; }
 
-	#container-classes{
+	.cover #container-classes{
 	width:60%;
     top: 45%; }
 
@@ -392,19 +371,19 @@ section a{
     #img-logo{
     margin-top: 15px;}
 
-    .cover h1{		
+    .cover .cover_text{		
 	font-size: 1.1em;
 	top:30%;
 	transform: translate( -50%, 0); }
 
-    .cover h2{	    
+    .cover .cover_text2{	    
 	font-size: .7em;
 	top: 36%;
 	transform: translate( -50%, 0); }
 
-	#container-classes{
+	.cover #container-classes{
 	width:85%;
-    top: 45%; }
+    top: 45%;}
     
     .classes {
      	margin:0 9px; }
@@ -417,7 +396,7 @@ section a{
     }
 
     #auto_adjustment ol{      
-     top: 88vh;      
+     top: 100vh;      
     }
      #auto_adjustment ol li{      
      font-size: 1.3em;  
