@@ -209,7 +209,7 @@ section a{
     font-family: poppins, sans-serif;
     text-shadow: 1px 1px 1px #000000;
     font-size: 1.6em;
-    z-index: 1000
+    z-index: 1000;
 }
 
 #auto_adjustment h2{
@@ -220,7 +220,7 @@ section a{
     text-shadow: 1px 1px 1px #000000;
     font-size: 1em;
     font-weight: lighter;
-    z-index: 1001
+    z-index: 1001;
 }
 
 .limit #Ragefire{background-image: url("DG's/Ragefire_Chasm_BG");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
@@ -288,12 +288,15 @@ section a{
 	height:96px;
 	margin:10px 10px; }
     
-    #auto_adjustment{
-	height: 1200px;}
+/*  #auto_adjustment{
+	height: 1200px;}   */
 }
 
 /*@media only screen and (max-width: 1169px){ */
 @media only screen and (max-width: 1450px){
+.cover .cover_text{	
+	top:38%;}
+
 .cover .cover_text2{	    
 	font-size: 1.1em;
 	top: 50%; }
@@ -301,10 +304,29 @@ section a{
 .cover #container-classes{	    
     top: 55%; }    
 
+#auto_adjustment img{	
+	top: 3vh;
+	left:-25vw;	}
+
+#auto_adjustment ol{
+    top:100vh;}
+
+#auto_adjustment ol li{    
+	font-size: 2em;	}
+
+.swiper-container{
+ 	top: 2vh;}
+
 .limit{
-		height: 300px;
-		width: 40%;		
+		height: 210px;  /*300px*/
+		width: 28%;		/*40%*/
 	}
+
+#auto_adjustment h1{
+    font-size: 1.3em; }
+
+#auto_adjustment h2{
+    font-size: 1em; }
 }
 
 @media only screen and (max-width: 900px){
@@ -389,14 +411,14 @@ section a{
      	margin:0 9px; }
     
     #auto_adjustment img{
-      top:5vh;
-      left: -35vw;  
+      top:2vh;
+      left: -38vw;  
       height:80px;
       width:90px;
     }
 
     #auto_adjustment ol{      
-     top: 100vh;      
+     top: 98vh;
     }
      #auto_adjustment ol li{      
      font-size: 1.3em;  
@@ -424,4 +446,8 @@ section a{
     	height: 350px;
 		width: 100%;	
     }
+    #auto_adjustment h1{
+        top: 65%;}
+    #auto_adjustment h2{
+        top: 75%;}
 }
