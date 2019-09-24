@@ -1,12 +1,8 @@
-  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-  <script src="https://wow.zamimg.com/widgets/power.js"></script>
-  <title>Uldaman</title>
-
- <section>
+<title>Uldaman</title>
+<section>
 
 <div class="right_side">
-   <div class="rs_top" id="uldaman_map">
-     
+   <div class="rs_top" id="uldaman_map">     
    </div>
    <div class="rs_bottom">
      <ol>            
@@ -21,117 +17,25 @@
           <li>Missões para fazer em: Uldaman.</li>
        </ol>
 
-<div class="quests">
- <div class="quest_text">
- <ul>
-  <li><span class="line1">[35] - [<a href="https://pt.classic.wowhead.com/quest=721/um-sinal-de-esperan%C3%A7a"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=2910"></a> nos Ermos.</li>
-  <li>A missão faz parte de uma chain <a href="https://pt.classic.wowhead.com/quest=720/um-sinal-de-esperan%C3%A7a"></a> que inicia com <a href="https://pt.classic.wowhead.com/object=2868"></a> nos Ermos.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
+<%for i in 0..10%>
+ <div class="quests">
+   <div class="quest_text">
+     <ul>
+          <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
+       <%if @q[i][5] == ""%>  
+          <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>. </li>       
+       <%end%>
+       <%if (@q[i][5] != "") && (@q[i][7] != "")%>
+          <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>. </li>   
+          <li>A missão faz parte de uma chain <a href="<%=@q[i][5]%>"></a> que inicia com <a href="<%=@q[i][6]%>"></a> em: <%=@q[i][7]%> <a href="<%=@q[i][8]%>"></a> <%=@q[i][9]%>.</li>
+       <%end%>
+       <%if (@q[i][5] != "") && (@q[i][7] == "")%>
+          <li>A missão inicia com <a href="<%=@q[i][2]%>"></a> em <%=@q[i][3]%> e com <a href="<%=@q[i][5]%>"></a> <%=@q[i][6]%>.</li>
+       <%end%>       
+     </ul>
+   </div>
+<div class="<%=@q[i][4]%>"></div>
 </div> 
+<%end%>
 
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[38] - [<a href="https://pt.classic.wowhead.com/quest=704/o-destino-de-agmundo"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=1344"></a> em Loch Modan.</li>
-  <li>A missão faz parte de uma chain <a href="https://pt.classic.wowhead.com/quest=707/bandaferro-quer-voc%C3%AA"></a> que inicia com <a href="https://pt.classic.wowhead.com/npc=1356"></a> em Loch Modan.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[40] - [<a href="https://pt.classic.wowhead.com/quest=2398/the-lost-dwarves"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=1356"></a> em Altaforja.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[42] - [<a href="https://pt.classic.wowhead.com/quest=17/uldaman-reagent-run"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=1470"></a> em Loch Modan para a Aliança e com <a href="https://pt.classic.wowhead.com/npc=6868"></a> nos Ermos para a Horda.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[43] - [<a href="https://pt.classic.wowhead.com/quest=1360/reclaimed-treasures"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=6294"></a> em Altaforja para a Aliança e com <a href="https://pt.classic.wowhead.com/npc=5651"></a> em Cidade Baixa para a Horda.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[41] - [<a href="https://pt.classic.wowhead.com/quest=2198/the-shattered-necklace"></a>]</span></li>
-  <li>A missão inicia com o drop do item <a href="https://pt.classic.wowhead.com/item=7666/shattered-necklace"></a> nos Ermos.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[41] - [<a href="https://pt.classic.wowhead.com/quest=2283/necklace-recovery"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=6986"></a> em Orgrimmar.</li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[36] - [<a href="https://pt.classic.wowhead.com/quest=2418/power-stones"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=2817"></a> nos Ermos.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[40] - [<a href="https://pt.classic.wowhead.com/quest=709/solution-to-doom"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=2785"></a> nos Ermos.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[47] - [<a href="https://pt.classic.wowhead.com/quest=2279/the-platinum-discs"></a>]</span></li>
-  <li>A missão inicia com o drop do item <a href="https://pt.classic.wowhead.com/item=6064"></a> no final da DG.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[45] - <a href="https://pt.classic.wowhead.com/quest=1139/the-lost-tablets-of-will"></a></span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=2918"></a> em Altaforja.</li>
-  <li>A missão faz parte de uma chain <a href="https://pt.classic.wowhead.com/quest=725/passing-word-of-a-threat"></a> que inicia com <a href="https://pt.classic.wowhead.com/npc=2916"></a> em Altaforja.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-</div>
- </section>
+</section>

@@ -1,12 +1,8 @@
-  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-  <script src="https://wow.zamimg.com/widgets/power.js"></script>
-  <title>Zul'Farrak</title>
-
- <section>
+<title>Zul'Farrak</title>
+<section>
 
 <div class="right_side">
-   <div class="rs_top" id="zul_map">
-     
+   <div class="rs_top" id="zul_map">     
    </div>
    <div class="rs_bottom">
      <ol>            
@@ -21,87 +17,19 @@
           <li>Missões para fazer em: Zul'Farrak.</li>            
        </ol>
 
-<div class="quests">
- <div class="quest_text">
- <ul>
-  <li><span class="line1">[47] - [<a href="https://pt.classic.wowhead.com/quest=2768/bast%C3%A3o-divinom%C3%A1tico"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7407"></a> em Tanaris.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
+<%for i in 0..7%>
+ <div class="quests">
+   <div class="quest_text">
+     <ul>
+       <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
+       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>.</li>
+       <%if @q[i][5] != ""%>
+         <li>A missão faz parte de uma chain <a href="<%=@q[i][5]%>"></a> que inicia com <a href="<%=@q[i][6]%>"></a> em: <%=@q[i][7]%>.</li>
+       <%end%>
+     </ul>
+   </div>
+<div class="<%=@q[i][4]%>"></div>
 </div> 
+<%end%>
 
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[50] - [<a href="https://pt.classic.wowhead.com/quest=2770/gahzrilla"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=4453"></a> em Mil Agulhas.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[47] - [<a href="https://pt.classic.wowhead.com/quest=2991/medalh%C3%A3o-de-nekrum"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=8022"></a> em Barreira do inferno.</li>
-  <li>A missão faz parte de uma chain <a href="https://pt.classic.wowhead.com/quest=2988/jaulas-cascasseca"></a> que inicia com <a href="https://pt.classic.wowhead.com/npc=5636"></a> em Terras Agrestes.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[45] - [<a href="https://pt.classic.wowhead.com/quest=2865/coura%C3%A7as-de-escaravelho"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7876"></a> em Tanaris.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[47] - [<a href="https://pt.classic.wowhead.com/quest=3527/a-profecia-de-mosharu"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=8579"></a> em Tanaris.</li>
-  <li>A missão faz parte de uma chain <a href="https://pt.classic.wowhead.com/quest=3520/esp%C3%ADritos-guinchadores"></a> que inicia com <a href=https://pt.classic.wowhead.com/npc=8579"></a> em Tanaris.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[45] - [<a href="https://pt.classic.wowhead.com/quest=2936/a-deusa-aranha"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=3188"></a> em Durotar.</li>
-  <li>A missão faz parte de uma chain <a href="https://pt.classic.wowhead.com/quest=2933/garrafas-de-pe%C3%A7onha"></a> que inicia com o drop do item <a href="https://pt.classic.wowhead.com/object=142702"></a> no acampamento de trolls Witherbark em Terras Agrestes.</li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[45] - [<a href="https://pt.classic.wowhead.com/quest=2846/tiara-das-profundezas"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=6546"></a> em Pântano Vadeoso.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[45] - [<a href="https://pt.classic.wowhead.com/quest=3042/t%C3%AAmpera-de-troll"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7804"></a> em Tanaris.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-</div>
- </section>
+</section>

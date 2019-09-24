@@ -139,29 +139,55 @@ class DungeonsController < ApplicationController
 		    3 =>["27","https://pt.classic.wowhead.com/quest=378/the-fury-runs-deep","https://pt.classic.wowhead.com/npc=1074","Ventobravo","alliance_icon",
 		    	 "https://pt.classic.wowhead.com/quest=303/the-dark-iron-war","https://pt.classic.wowhead.com/npc=1074","Pantanal"],
 		    4 =>["29","https://pt.classic.wowhead.com/quest=391/the-stockade-riots","https://pt.classic.wowhead.com/npc=1719","Ventobravo","alliance_icon",
-		    	 "https://pt.classic.wowhead.com/item=2874/an-unsent-letter","https://classic.wowhead.com/npc=639","boss de Deadmines"],
+		    	 "https://pt.classic.wowhead.com/item=2874/an-unsent-letter","https://pt.classic.wowhead.com/npc=639","boss de Deadmines"],
 		    5 =>["25","https://pt.classic.wowhead.com/quest=386/what-comes-around","https://pt.classic.wowhead.com/npc=859","Montanhas Cristarrubra","alliance_icon","","",""]
         }    
 	end
 	def uldaman
+		@q = {
+            0 =>["3","https://pt.classic.wowhead.com/quest=721/um-sinal-de-esperan%C3%A7a","https://pt.classic.wowhead.com/npc=2910","Ermos","alliance_icon",
+            	 "https://pt.classic.wowhead.com/quest=720/um-sinal-de-esperan%C3%A7a","https://pt.classic.wowhead.com/object=2868","Ermos"],
+		    1 =>["38","https://pt.classic.wowhead.com/quest=704/o-destino-de-agmundo","https://pt.classic.wowhead.com/npc=1344","Loch Modan","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=707/bandaferro-quer-voc%C3%AA","https://pt.classic.wowhead.com/npc=1356","Loch Modan"],
+		    2 =>["40","https://pt.classic.wowhead.com/quest=2398/the-lost-dwarves","https://pt.classic.wowhead.com/npc=1356","Altaforja","alliance_icon","","",""],
+		    3 =>["42","https://pt.classic.wowhead.com/quest=17/uldaman-reagent-run","https://pt.classic.wowhead.com/npc=1470","Loch Modan para a Aliança",
+		    	 "horde_alliance_icon","https://pt.classic.wowhead.com/npc=6868","nos Ermos para a Horda",""],
+		    4 =>["43","https://pt.classic.wowhead.com/quest=1360/reclaimed-treasures","https://pt.classic.wowhead.com/npc=6294","Altaforja para a Aliança","horde_alliance_icon",
+		    	 "https://pt.classic.wowhead.com/npc=5651","Cidade Baixa para a Horda",""],
+		    5 =>["41","https://pt.classic.wowhead.com/quest=2198/the-shattered-necklace","https://pt.classic.wowhead.com/item=7666/shattered-necklace","Ermos","alliance_icon","","",""],
+		    6 =>["41","https://pt.classic.wowhead.com/quest=2283/necklace-recovery","https://pt.classic.wowhead.com/npc=6986","Orgrimmar","horde_icon","","",""],
+		    7 =>["36","https://pt.classic.wowhead.com/quest=2418/power-stones","https://pt.classic.wowhead.com/npc=2817","Ermos","horde_alliance_icon","","",""],
+		    8 =>["40","https://pt.classic.wowhead.com/quest=709/solution-to-doom","https://pt.classic.wowhead.com/npc=2785","Ermos","horde_alliance_icon","","",""],
+		    9 =>["47","https://pt.classic.wowhead.com/quest=2279/the-platinum-discs","https://pt.classic.wowhead.com/item=6064","no final da DG","horde_alliance_icon","","",""],
+		   10 =>["45","https://pt.classic.wowhead.com/quest=1139/the-lost-tablets-of-will","https://pt.classic.wowhead.com/npc=2918","Altaforja","alliance_icon",
+		   	     "https://pt.classic.wowhead.com/quest=725/passing-word-of-a-threat","https://pt.classic.wowhead.com/npc=2916","Altaforja"]		   
+	    }
 	end
 	def wailing_caverns
+		@q = {
+            0 =>["17","https://pt.classic.wowhead.com/quest=1486/deviate-hides","https://pt.classic.wowhead.com/npc=5767","Sertões","alliance_icon","","",""],
+		    1 =>["18","https://pt.classic.wowhead.com/quest=962/serpentbloom","https://pt.classic.wowhead.com/npc=3419","Penhasco do Trovão","horde_icon","","",""],
+		    2 =>["18","https://pt.classic.wowhead.com/quest=959/trouble-at-the-docks","https://pt.classic.wowhead.com/npc=3665","Vila Catraca","alliance_icon","","",""],
+		    3 =>["18","https://pt.classic.wowhead.com/quest=1491/smart-drinks","https://pt.classic.wowhead.com/npc=3446","Vila Catraca","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=865/raptor-horns","https://pt.classic.wowhead.com/npc=3446","Sertões"],
+		    4 =>["21","https://pt.classic.wowhead.com/quest=1487/deviate-eradication","https://pt.classic.wowhead.com/npc=5768","Sertões","horde_alliance_icon","","",""],
+		    5 =>["22","https://pt.classic.wowhead.com/quest=914/leaders-of-the-fang","https://pt.classic.wowhead.com/npc=5770","Penhasco do Trovão","horde_icon","","",""],
+		    6 =>["22","https://pt.classic.wowhead.com/quest=914/leaders-of-the-fang","https://pt.classic.wowhead.com/npc=5770","Penhasco do Trovão","horde_icon",
+		    	 "https://pt.classic.wowhead.com/quest=1489/hamuul-runa-totem","https://pt.classic.wowhead.com/npc=3448","Sertões"]
+        }
 	end
 	def zulfarrak
+		@q = {
+            0 =>["47","https://pt.classic.wowhead.com/quest=2768/bast%C3%A3o-divinom%C3%A1tico","https://pt.classic.wowhead.com/npc=7407","Tanaris","horde_alliance_icon","","",""],
+		    1 =>["50","https://pt.classic.wowhead.com/quest=2770/gahzrilla","https://pt.classic.wowhead.com/npc=4453","Mil Agulhas","horde_alliance_icon","","",""],
+		    2 =>["47","https://pt.classic.wowhead.com/quest=2991/medalh%C3%A3o-de-nekrum","https://pt.classic.wowhead.com/npc=8022","Barreira do inferno","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=2988/jaulas-cascasseca","https://pt.classic.wowhead.com/npc=5636","Terras Agrestes"],
+		    3 =>["45","https://pt.classic.wowhead.com/quest=2865/coura%C3%A7as-de-escaravelho","https://pt.classic.wowhead.com/npc=7876","Tanaris","horde_alliance_icon","","",""],
+		    4 =>["47","https://pt.classic.wowhead.com/quest=3527/a-profecia-de-mosharu","https://pt.classic.wowhead.com/npc=8579","Tanaris","horde_alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=3520/esp%C3%ADritos-guinchadores","https://pt.classic.wowhead.com/npc=8579","Tanaris"],
+		    5 =>["45","https://pt.classic.wowhead.com/quest=2936/a-deusa-aranha","https://pt.classic.wowhead.com/npc=3188","Durotar","horde_icon","https://pt.classic.wowhead.com/quest=2933/garrafas-de-pe%C3%A7onha","https://pt.classic.wowhead.com/object=142702","no acampamento de trolls Witherbark em Terras Agrestes"],
+		    6 =>["45","https://pt.classic.wowhead.com/quest=2846/tiara-das-profundezas","https://pt.classic.wowhead.com/npc=6546","Pântano Vadeoso","horde_alliance_icon","","",""],
+		    7 =>["45","https://pt.classic.wowhead.com/quest=3042/t%C3%AAmpera-de-troll","https://pt.classic.wowhead.com/npc=7804","Tanaris","horde_alliance_icon","","",""]
+        }
 	end
 end
-
-#	@q = {
-#           0 =>["","","","","","","",""],
-#		    1 =>["","","","","","","",""],
-#		    2 =>["","","","","","","",""],
-#		    3 =>["","","","","","","",""],
-#		    4 =>["","","","","","","",""],
-#		    5 =>["","","","","","","",""],
-#		    6 =>["","","","","","","",""],
-#		    7 =>["","","","","","","",""],
-#		    8 =>["","","","","","","",""],
-#		    9 =>["","","","","","","",""],
-#		    10 =>["","","","","","","",""],
-#		    11 =>["","","","","","","",""],
-#	    }

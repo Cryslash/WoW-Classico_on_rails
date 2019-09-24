@@ -1,12 +1,8 @@
-  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-  <script src="https://wow.zamimg.com/widgets/power.js"></script>
-  <title>Wailing Caverns</title>
-
- <section>
+<title>Wailing Caverns</title>
+<section>
 
 <div class="right_side">
-   <div class="rs_top" id="wailing_map">
-     
+   <div class="rs_top" id="wailing_map">     
    </div>
    <div class="rs_bottom">
      <ol>            
@@ -15,84 +11,25 @@
         <li><span>Local:</span> Kalimdor, Sertões.</li>
      </ol>
    </div>
-
 </div>  
-
 <div class="body" id="wailing_bg">
    <ol>            
      <li>Missões para fazer em: Cavernas Ululantes</li>
    </ol>
-<div class="quests">
- <div class="quest_text">
- <ul>
-  <li><span class="line1">[17] - [<a href="https://pt.classic.wowhead.com/quest=1486/deviate-hides">Deviate Hides</a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=5767">Napalk</a> nos Sertões.</li>  
- </ul>
-</div>
-<div class="alliance_icon"></div>
+
+<%for i in 0..6%>
+ <div class="quests">
+   <div class="quest_text">
+     <ul>
+       <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
+       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em <%=@q[i][3]%>.</li>
+       <%if @q[i][5] != ""%>
+         <li>A missão faz parte de uma chain <a href="<%=@q[i][5]%>"></a> que inicia com <a href="<%=@q[i][6]%>"></a> em <%=@q[i][7]%>.</li>
+       <%end%>
+     </ul>
+   </div>
+<div class="<%=@q[i][4]%>"></div>
 </div> 
+<%end%>
 
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[18] - [<a href="https://pt.classic.wowhead.com/quest=962/serpentbloom">Serpent Bloom</a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=3419">Apothecary Zamah</a> em Penhasco do Trovão.</li>  
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[18] - [<a href="https://pt.classic.wowhead.com/quest=959/trouble-at-the-docks">Trouble at the docks</a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=3665">Crane Operator Bigglefuzz</a> em Ratchet.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[18] - [<a href="https://pt.classic.wowhead.com/quest=1491/smart-drinks">Smart Drinks</a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=3446">Mebok Mizzyrix</a> em Ratchet.</li>
-  <li>A missão faz parte de uma chain <a href="https://classic.wowhead.com/quest=865/raptor-horns"></a> que inicia com <a href="https://classic.wowhead.com/npc=3446"></a></li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[21] - [<a href="https://pt.classic.wowhead.com/quest=1487/deviate-eradication">Deviate Erradication</a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=5768">Ebru</a> nos Sertões.</li>  
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[22] - [<a href="https://pt.classic.wowhead.com/quest=914/leaders-of-the-fang">Leaders of the Fang</a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=5770">Nara Wildmane</a> em Penhasco do Trovão.</li>
-  <li>A missão faz parte de uma chain que inicia com <a href="https://pt.classic.wowhead.com/npc=3448"> Tonga runa totem.</a></li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[25] - [<a href="">The Glowing Shard</a>]</span></li>
-  <li>Drop Boss <a href="https://pt.classic.wowhead.com/npc=3654">Mutanus</a>.</li>
-  
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-</div>
- </section>
+</section>
