@@ -1,8 +1,5 @@
-  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-  <script src="https://wow.zamimg.com/widgets/power.js"></script>
-  <title>Gnomeregan</title>
-
- <section>
+<title>Gnomeregan</title>
+<section>
 
 <div class="right_side">
    <div class="rs_top" id="gnomeregan_map">
@@ -15,130 +12,30 @@
         <li><span>Local:</span> Reinos do Leste, Dun Murogh.</li>
      </ol>
    </div>
-
-</div>  
-
+</div>
 <div class="body" id="gnomeregan_bg">
     <ol>            
         <li>Missões para fazer em Gnomeregan</li>            
     </ol>
-<div class="quests">
- <div class="quest_text">
- <ul>
-  <li><span class="line1">[26] - [<a href="https://pt.classic.wowhead.com/quest=2922/salve-o-cérebro-do-tecnobô"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7944/mestre-faz-tudo-superchispa"></a> em Altaforja.</li>  
- </ul>
-</div>
-<div class="alliance_icon"></div>
+
+<%for i in 0..10%>
+ <div class="quests">
+   <div class="quest_text">
+     <ul>
+         <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
+       <%if @q[i][5] == ""%>
+         <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>.</li>
+       <%end%>
+       <%if @q[i][5] == "np"%>
+         <li><%=@q[i][2]%>.</li>
+       <%end%> 
+       <%if (@q[i][5] != "np") && (@q[i][5] != "")%>
+         <li>A missão é um drop de um item <a href="<%=@q[i][2]%>"></a> que dropa de <a href="<%=@q[i][3]%>"></a> em: <%=@q[i][5]%>.</li>
+       <%end%>       
+     </ul>
+   </div>
+<div class="<%=@q[i][4]%>"></div>
 </div> 
+<%end%>
 
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[27] - [<a href="https://pt.classic.wowhead.com/quest=2926/gnogaína"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=1268/ozzie-mudavolt"></a> em Dun Morogh.</li>
-  <li> - </li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[30] - [<a href="https://pt.classic.wowhead.com/quest=2924/artifícios-essenciais"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=6169/cronomorfus-espanafuso"></a> em Altaforja.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[30] - [<a href="https://pt.classic.wowhead.com/quest=2928/escavacionadores-girobrocamáticos"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=6579/shoni-a-shilenchiosa"></a> em Ventobravo.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[30] - [<a href="https://pt.classic.wowhead.com/quest=2930/o-resgate-dos-dados"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7950/mestre-mecânico-fundecano"></a> em Altaforja.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[35] - [<a href="https://pt.classic.wowhead.com/quest=2929/a-grande-traição"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7937/grão-faz-tudo-mekkatorque"></a> em Altaforja.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[35] - [<a href="https://pt.classic.wowhead.com/quest=2842/engenheiro-chefe-scooty"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=3413/sovik"></a> em Orgrimmar.</li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[35] - [<a href="https://pt.classic.wowhead.com/quest=2841/guerra-dos-robôs"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=3412/nogg"></a> em Orgrimmar.</li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[34] - [<a href="https://pt.classic.wowhead.com/quest=2945/anel-encardido"></a>]</span></li>
-  <li>A missão é um drop <a href="https://pt.classic.wowhead.com/item=9326/anel-encardido"></a> do <a href="https://pt.classic.wowhead.com/npc=6212/agente-ferro-negro"></a> dentro da DG.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[30] - [<a href="https://pt.classic.wowhead.com/quest=2904/uma-bela-bagunça"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=7850/kernobill"></a> dentro da DG.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">  
- <ul>
-  <li><span class="line1">[30] - [<a href="https://pt.classic.wowhead.com/quest=2951/a-brastematic-5200"></a>]</span></li>
-  <li>A missão inicia em uma maquina dentro da DG.</a></li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-</div>
- </section>	
-
-<style>
-  .right_side .rs_top{
-    background: url("../../img/DG's/Maps/Eastern_Kingdoms_dg_entries.png") 100% 100%/100% 100% no-repeat;
-   }
-   .body{
-    background: url("../../img/DG's/Gnomeregan_BG.jpg") 50% 50%/160% 180% no-repeat;
-</style>
+</section>
