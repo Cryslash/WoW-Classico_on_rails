@@ -1,8 +1,5 @@
-  <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-  <script src="https://wow.zamimg.com/widgets/power.js"></script>
-  <title>Razorfen Downs</title>
-
- <section>
+<title>Razorfen Downs</title>
+<section>
 
 <div class="right_side">
    <div class="rs_top" id="razorfend_map">
@@ -21,54 +18,16 @@
           <li>Missões para fazer em: Razorfen Downs.</li>
        </ol>
 
-<div class="quests">
- <div class="quest_text">
- <ul>
-  <li><span class="line1">[35] - [<a href="https://pt.classic.wowhead.com/quest=6626/a-hoste-do-mal"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=12866"></a> no sul de Sertões.</li>
- </ul>
+<%for i in 0..4%>
+ <div class="quests">
+   <div class="quest_text">
+     <ul>
+       <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
+       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em <%=@q[i][3]%>.</li>
+     </ul>
+   </div>
+<div class="<%=@q[i][4]%>"></div>
 </div>
-<div class="horde_alliance_icon"></div>
-</div> 
+<%end%>
 
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[37] - <a href="https://pt.classic.wowhead.com/quest=6521/uma-alian%C3%A7a-profana"></a></span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=2425"></a> em Cidade Baixa.</li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[42] - [<a href="https://pt.classic.wowhead.com/quest=3341/arauto-do-fim"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=2308"></a> em Cidade Baixa.</li>
- </ul>
-</div>
-<div class="horde_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[42] - [<a href="https://pt.classic.wowhead.com/quest=3636/trazer-a-luz"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=1284"></a> em Ventobravo.</li>
- </ul>
-</div>
-<div class="alliance_icon"></div>
-</div>
-
-<div class="quests">
-<div class="quest_text">	
- <ul>
-  <li><span class="line1">[37] - [<a href="https://pt.classic.wowhead.com/quest=3523/o-flagelo-do-urzal"></a>]</span></li>
-  <li>A missão inicia com <a href="https://pt.classic.wowhead.com/npc=8516"></a> dentro da DG.</li>
- </ul>
-</div>
-<div class="horde_alliance_icon"></div>
-</div>
-</div>
- </section>
+</section>

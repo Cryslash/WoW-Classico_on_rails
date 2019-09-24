@@ -66,10 +66,36 @@ class DungeonsController < ApplicationController
 		}
 	end
 	def razorfen_downs
+		@q = {
+            0 =>["35","https://pt.classic.wowhead.com/quest=6626/a-hoste-do-mal","https://pt.classic.wowhead.com/npc=12866","sul de Sertões","horde_alliance_icon","","",""],
+		    1 =>["37","https://pt.classic.wowhead.com/quest=6521/uma-alian%C3%A7a-profana","https://pt.classic.wowhead.com/npc=2425","Cidade Baixa","horde_icon","","",""],
+		    2 =>["42","https://pt.classic.wowhead.com/quest=3341/arauto-do-fim","https://pt.classic.wowhead.com/npc=2308","Cidade Baixa","horde_icon","","",""],
+		    3 =>["42","https://pt.classic.wowhead.com/quest=3636/trazer-a-luz","https://pt.classic.wowhead.com/npc=1284","Ventobravo","alliance_icon","","",""],
+		    4 =>["37","https://pt.classic.wowhead.com/quest=3523/o-flagelo-do-urzal","https://pt.classic.wowhead.com/npc=8516","dentro da DG","horde_alliance_icon","","",""]
+		}     
 	end
 	def razorfen_kraul
+		@q = {
+            0 =>["34","https://pt.classic.wowhead.com/quest=1102/um-destino-vingativo","https://pt.classic.wowhead.com/npc=4451","Penhasco do Trovão","horde_icon","","",""],
+		    1 =>["33","https://pt.classic.wowhead.com/quest=1109/mat%C3%A9ria-orgu%C3%A2nica","https://pt.classic.wowhead.com/npc=2055","Cidade Baixa","horde_icon","","",""],
+    	    2 =>["34","https://pt.classic.wowhead.com/quest=1101/a-bruxa-m%C3%A1-do-urzal","https://pt.classic.wowhead.com/npc=4048","Mil Agulhas","alliance_icon","","",""],
+		    3 =>["30","https://pt.classic.wowhead.com/quest=1142/a-mortalidade-se-esvanece","https://pt.classic.wowhead.com/npc=4510","dentro da DG","alliance_icon","","",""],
+		    4 =>["26","https://pt.classic.wowhead.com/quest=1221/tub%C3%A9rculos-folhazul","https://pt.classic.wowhead.com/npc=3446","Vila Catraca","horde_alliance_icon","","",""],
+		    5 =>["30","https://pt.classic.wowhead.com/quest=1144/importador-willix","https://pt.classic.wowhead.com/npc=4508","dentro da DG","horde_alliance_icon","","",""]
+       }
 	end
 	def scarlet_monastery
+		@q = {
+            0 =>["42","https://pt.classic.wowhead.com/quest=1048/adentrando-o-monast%C3%A9rio-escarlate","https://pt.classic.wowhead.com/npc=2425","Cidade Baixa","horde_icon","","",""],
+		    1 =>["33","https://pt.classic.wowhead.com/quest=1113/cora%C3%A7%C3%B5es-do-fanatismo","https://pt.classic.wowhead.com/npc=2055","Cidade Baixa","horde_icon","","",""],
+		    2 =>["38","https://pt.classic.wowhead.com/quest=1049/o-comp%C3%AAndio-dos-ca%C3%ADdos","https://pt.classic.wowhead.com/npc=3978","Penhasco do Trovão","horde_icon","","",""],
+    	    3 =>["36","https://pt.classic.wowhead.com/quest=1160/teste-de-saber","https://pt.classic.wowhead.com/npc=4488","Contraforte de Eira dos Montes","horde_icon",
+    	    	 "https://pt.classic.wowhead.com/quest=1149/teste-da-f%C3%A9","https://pt.classic.wowhead.com/npc=2986","Mil Agulhas"],
+		    4 =>["40","https://pt.classic.wowhead.com/quest=1053/em-nome-da-luz","https://pt.classic.wowhead.com/npc=3980","Contraforte de Eira dos Montes","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=6141/brother-anton","https://pt.classic.wowhead.com/npc=12336","VentoBravo"],
+		    5 =>["38","https://pt.classic.wowhead.com/quest=1050/mitologia-dos-tit%C3%A3s","https://pt.classic.wowhead.com/npc=3979","AltaForja","alliance_icon","","",""],
+		    6 =>["33","https://pt.classic.wowhead.com/quest=1051/a-vingan%C3%A7a-de-vorrel","https://pt.classic.wowhead.com/npc=3981","dentro da DG","horde_icon","","",""]
+		}    
 	end
 	def shadowfang_keep
 		@q = { # nvl                           quest                                          starter                         locale                   icon_class
@@ -79,10 +105,43 @@ class DungeonsController < ApplicationController
 		}
 	end
 	def temple_of_atalhakkar
+		@q = {
+            0 =>["53","https://pt.classic.wowhead.com/quest=1446/jammalan-o-profeta","https://pt.classic.wowhead.com/npc=5598","Terras Agrestes","horde_alliance_icon","","",""],
+		    1 =>["51","https://pt.classic.wowhead.com/quest=3446/nas-profundezas","https://pt.classic.wowhead.com/npc=7771","Tanaris","horde_alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=3445/the-sunken-temple","https://pt.classic.wowhead.com/npc=7900","Feralas para a aliança e com",
+		    	 "https://pt.classic.wowhead.com/npc=8115","em Feralas para a horda"],
+		    2 =>["51","https://pt.classic.wowhead.com/quest=3447/segredo-do-c%C3%ADrculo","https://pt.classic.wowhead.com/npc=7771","Tanaris","horde_alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=3444/the-stone-circle","https://pt.classic.wowhead.com/npc=7771","Tanaris"],
+		    3 =>["53","https://pt.classic.wowhead.com/quest=3528/o-deus-hakkar","https://pt.classic.wowhead.com/npc=8579","Tanaris","horde_alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=3520/esp%C3%ADritos-guinchadores","https://pt.classic.wowhead.com/npc=8579","Tanaris"],
+		    4 =>["55","https://pt.classic.wowhead.com/quest=3373/a-ess%C3%AAncia-de-er%C3%A2nicos","","Drop do último boss","horde_alliance_icon","","",""],
+		    5 =>["50","https://pt.classic.wowhead.com/quest=1445/the-temple-of-atalhakkar","https://pt.classic.wowhead.com/npc=1443","Pantano das Mágoas","horde_icon",
+		    	 "https://pt.classic.wowhead.com/quest=1424","https://pt.classic.wowhead.com/npc=1443","Pantano das Magoas"],
+		    6 =>["50","https://pt.classic.wowhead.com/quest=1475/into-the-temple-of-atalhakkar","https://pt.classic.wowhead.com/npc=5384","Ventobravo","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=1469/rhapsodys-tale","https://pt.classic.wowhead.com/npc=5634","Terras Agrestes"]
+       }
 	end
 	def the_deadmines
+		@q = {
+            0 =>["22","https://pt.classic.wowhead.com/quest=65/the-defias-brotherhood","","","alliance_icon","","https://pt.classic.wowhead.com/npc=234","Cerro Oeste"],
+		    1 =>["18","https://pt.classic.wowhead.com/quest=168/collecting-memories","https://pt.classic.wowhead.com/npc=656","Ventobravo","alliance_icon","","",""],
+		    2 =>["18","https://pt.classic.wowhead.com/quest=167/oh-brother","https://pt.classic.wowhead.com/npc=656","Ventobravo","alliance_icon","","",""],
+		    3 =>["18","https://pt.classic.wowhead.com/quest=2040/underground-assault","https://pt.classic.wowhead.com/npc=6579","Ventobravo","alliance_icon","","",""],
+		    4 =>["21","https://pt.classic.wowhead.com/quest=214/red-silk-bandanas","https://pt.classic.wowhead.com/npc=820","Cerro Oeste","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=155/a-irmandade-d%C3%A9fias","https://pt.classic.wowhead.com/npc=467","Cerro Oeste"]
+        }
 	end
 	def the_stockade
+		@q = {
+            0 =>["26","https://pt.classic.wowhead.com/quest=377/crime-and-punishment","https://pt.classic.wowhead.com/npc=270","Floresta do Crepúsculo","alliance_icon","","",""],
+		    1 =>["26","https://pt.classic.wowhead.com/quest=387/quell-the-uprising","https://pt.classic.wowhead.com/npc=1719","Ventobravo","alliance_icon","","",""],
+		    2 =>["26","https://pt.classic.wowhead.com/quest=388/the-color-of-blood","https://pt.classic.wowhead.com/npc=1721","Ventobravo","alliance_icon","","",""],
+		    3 =>["27","https://pt.classic.wowhead.com/quest=378/the-fury-runs-deep","https://pt.classic.wowhead.com/npc=1074","Ventobravo","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/quest=303/the-dark-iron-war","https://pt.classic.wowhead.com/npc=1074","Pantanal"],
+		    4 =>["29","https://pt.classic.wowhead.com/quest=391/the-stockade-riots","https://pt.classic.wowhead.com/npc=1719","Ventobravo","alliance_icon",
+		    	 "https://pt.classic.wowhead.com/item=2874/an-unsent-letter","https://classic.wowhead.com/npc=639","boss de Deadmines"],
+		    5 =>["25","https://pt.classic.wowhead.com/quest=386/what-comes-around","https://pt.classic.wowhead.com/npc=859","Montanhas Cristarrubra","alliance_icon","","",""]
+        }    
 	end
 	def uldaman
 	end
