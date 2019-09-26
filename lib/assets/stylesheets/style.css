@@ -577,10 +577,15 @@ nav ul li {
     }
 
 	#classes #container-classes{
-	top:65%;
-	width:68%;}
+	top:40%;
+	left:50%;
+	transform: translate(-50%, 0%);
+	width:75%;
+	height:58%;}
     
     .classes {
+    	height: 96px;
+    	width: 96px;
      	margin:0 9px; }
     
     #masmorras img{
@@ -591,7 +596,7 @@ nav ul li {
     }
 
     #masmorras ol{
-     top: 198vh;
+     top: 189vh;
     }
      #masmorras ol li{      
      font-size: 1.3em;  
