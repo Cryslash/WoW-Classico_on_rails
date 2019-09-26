@@ -50,9 +50,8 @@ nav li a:hover{
 
 .fixed {
 	position: fixed;
-	top: 0;
-	left:0;
-	width:100%;
+	top: 0;	
+	width:100%;	
 	height: 5vh;	
 	transition: .4s;
 	z-index: 1001;
@@ -120,8 +119,8 @@ nav #toggle.on #three {
 #resize #menu li {
       display: block;
       text-align: center;
-      padding: 1em 0;
-      font-size: 2.2em;
+      padding: .5em 0;
+      font-size: 1.8em;
       min-height: 50px;
       font-weight: bold;
       cursor: pointer;
@@ -526,6 +525,7 @@ nav ul li {
     
     nav {
     	width:55px;
+    	height:55px;
     	border-radius: 12px;
     }
     nav #toggle {
@@ -538,7 +538,7 @@ nav ul li {
       }     
 
     .fixed {    
-    left:82vw !important;    
+      
     top: 5vh;
     height: 55px;
     width: 55px; }
