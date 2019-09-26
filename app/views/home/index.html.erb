@@ -1,12 +1,27 @@
  <nav>
-     <ul>
+     <ul id="menu">
        <li> <%=link_to"idioma","" %>  </li>
        <li> <%=link_to"masmorras","#masmorras" %>  </li>
        <li> <%=link_to"classes","#classes" %>  </li>             
        <li> <%=link_to"início","#inicio" %>  </li>
        <!--p> --Cryslash--</p-->
      </ul>
+
+      <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
+      </div>
    </nav>
+
+<div id="resize">
+            <ul id="menu">
+                  <li><%= link_to "início", "#inicio", onclick:"$('#toggle').click()"%></li>
+                  <li><%= link_to "classes", "#classes", onclick:"$('#toggle').click()"%></li>
+                  <li><%= link_to "masmorras", "#masmorras", onclick:"$('#toggle').click()"%></li>                 
+                  <li><%= link_to "idioma", "#", onclick:"$('#toggle').click()"%></li>
+            </ul>
+</div>
 
 <section id="inicio">
   <%= image_tag 'wow-classic-logo', id:"img-logo" %>
@@ -142,3 +157,15 @@ $('a[href*="#"]')
 });
 });
      </script>
+
+    <script>
+
+      $("#toggle").click(function() {
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+      });
+   //  $(".btn_down").click(function() { 
+   //   $(this).toggleClass('on');
+   //   $("#resize").toggleClass("active");
+   //   });
+    </script>

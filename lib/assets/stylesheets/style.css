@@ -22,10 +22,11 @@ nav{
 	top: 7vh;
 	width: 55%;
 	background-color: rgba(0,0,0,.8); 
-	height: 8vh;
+	height: 7vh;
 	padding:0;    
-	transition: .4s;
-    z-index: 1000;
+	/*transition: .4s; */
+	transition: all 0.3s ease-out;
+    z-index: 1001;
 }
 
 nav ul li{
@@ -35,46 +36,118 @@ nav ul li{
 	color: #fff;
 	font-size: 1.2em;
 	font-weight:400;
+	transition: all 0.3s ease-out;
 }
 
 nav li a{
     color:#fff;
     text-decoration:none;
- /*   text-transform: uppercase;   */
 }
 
 nav li a:hover{
     color:#DF7401;
 }
 
-/*nav ul p{
-	float: left;
-	padding: 1.2em 1.5em;
-	color: #fff;
-	font-size: 1.2em;
-	font-family: poppins, sans-serif;
-}*/
-
 .fixed {
 	position: fixed;
 	top: 0;
 	left:0;
 	width:100%;
-	height: 5vh;
-	z-index: 1000;	
+	height: 5vh;	
 	transition: .4s;
+	z-index: 1001;
 }
 
 .navlifixed{
 	padding: .8em 5em;
 }
 
-/*.navimgfixed{
-	width:150px;
-	height:60px;
-	top:0%;
-    left:0%;	
-}*/
+
+nav #toggle {
+      position: absolute;
+      right: 13px;
+      top: 8px;
+      z-index: 999;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;      
+}
+
+nav #toggle .span {
+      height: 3px;
+      background: #fff;
+      transition: all 0.3s ease-out;
+      backface-visibility: hidden;
+      margin: 5px auto;
+}
+
+nav #toggle.on #one {
+      transform: rotate(45deg) translateX(2px) translateY(4px);      
+}
+
+nav #toggle.on #two {
+      opacity: 0;      
+}
+
+nav #toggle.on #three {
+      transform: rotate(-45deg) translateX(8px) translateY(-10px);      
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: fixed;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+      display: table;
+      z-index: 1000;
+}
+
+#resize #menu {
+      height: 90px;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 1em 0;
+      font-size: 2.2em;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top:140px;
+}
+
+#resize #menu li a {
+      color: #fff;
+      text-decoration: none;
+}
+
+#resize #menu li a:hover {
+	color:#DF7401;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 0.99;
+      
+}
+
+/**********************************************START**SECTIONS***************************************************************************************/
 
 #inicio{
 	position: relative;
@@ -450,9 +523,25 @@ nav ul li {
 }
 
 @media only screen and (max-width: 768px){  /*768*/
+    
+    nav {
+    	width:55px;
+    	border-radius: 12px;
+    }
+    nav #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+      }
+    nav #menu {
+            display: none;
+      }     
 
-    nav ul li {	
-	padding: 1.5em .8em;}
+    .fixed {    
+    left:82vw !important;    
+    top: 5vh;
+    height: 55px;
+    width: 55px; }
 
 	#img-logo{		
 	width: 300px;
@@ -541,11 +630,15 @@ nav ul li {
 
 }
 
-@media only screen and (max-width:480px){
-    
-    nav{
-    	display: none;}
 
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+
+@media only screen and (max-width:480px){
+  
     #img-logo{
     top:10%;
     left:50%;
