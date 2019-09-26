@@ -1,4 +1,14 @@
-<section>
+ <nav>
+     <ul>
+       <li> <%=link_to"idioma","" %>  </li>
+       <li> <%=link_to"masmorras","#masmorras" %>  </li>
+       <li> <%=link_to"classes","" %>  </li>             
+       <li> <%=link_to"início","#inicio" %>  </li>
+       <p> --Cryslash--</p>
+     </ul>
+   </nav>
+
+<section id="inicio">
 		<div class="cover">		
 		<%= image_tag 'wow-classic-logo', id:"img-logo" %>
 		    
@@ -16,7 +26,7 @@
 		</div>
 </section>
 
-<section id="auto_adjustment">
+<section id="masmorras">
           <div class="layer">          
           <%= image_tag "DG's/Treasure_chest", alt:"treasure chest" %>
           <ol>
@@ -78,3 +88,55 @@
       },
     });
 </script>
+
+<script> //ancora  
+   // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {// Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {// Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {// Callback after animation // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>
+
+  <script type="text/javascript">
+     $(document).ready(function() {
+     $(window).bind('scroll', function() {
+     var navHeight = $(window).height()*0.07;
+     if($(window).scrollTop() > navHeight) {
+          $('nav').addClass('fixed');
+      $('nav li').addClass('navlifixed');
+      $('nav img').addClass('navimgfixed');
+     }
+     else {
+          $('nav').removeClass('fixed');
+      $('nav li').removeClass('navlifixed');
+      $('nav img').removeClass('navimgfixed');
+     }
+});
+});
+     </script>

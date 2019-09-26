@@ -14,9 +14,68 @@ section{
 	
 }
 
+nav{
+	position: absolute;
+	display: block;
+	left:0;	
+	top: 2vh;
+	width: 100%;
+	background-color: rgba(0,0,0,.8); 
+	height: 5vh;	
+	padding:0;    
+	transition: .4s;
+    z-index: 1000;
+}
+
+nav ul li{
+	display: inline-block;
+	float: right;
+	padding: .7em 5em;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight:400;
+}
+
+nav li a{
+    color:#fff;
+    text-decoration:none;
+ /*   text-transform: uppercase;   */
+}
+
+nav li a:hover{
+    color:#DF7401;   
+}
+
+nav ul p{
+	float: left;
+	padding: .4em 5em;
+	color: #fff;
+	font-size: 1.3em;
+	font-family: poppins, sans-serif;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left:0;
+	width:100%;
+	height: 5vh;
+	z-index: 1000;	
+}
+
+.navlifixed{
+	padding: .8em 5em;	
+}
+
+/*.navimgfixed{
+	width:150px;
+	height:60px;
+	top:0%;
+    left:0%;	
+}*/
+
 .cover{
 	position: relative;
-/*	background: url("../img/wow-classic-bg.jpg");  */
     background: url("wow-classic-bg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -129,7 +188,7 @@ section{
 #warrior{background-image: url("classes/warrior-128");background-repeat: no-repeat;background-size: cover; transition: .5s;}
 #warrior:hover{transform: rotate(-45deg);}
 
-#auto_adjustment{
+#masmorras{
 	background-image: url("DG's/Maps/Azeroth_map2.jpg");
 	background-size: 100% 100%;
 	background-position: 50% 50%; 
@@ -144,7 +203,7 @@ section{
 	background: rgba(0,0,0,.6);
 }
 
-#auto_adjustment ol{
+#masmorras ol{
 	position: absolute;
 	top:103vh;
 	left:32vw;
@@ -155,7 +214,7 @@ section{
 	transition: all .3s ease;
 }
 
-#auto_adjustment img{
+#masmorras img{
 	position: relative;
 	box-sizing: border-box;
 	top:5.5vh;
@@ -163,7 +222,7 @@ section{
 	transition: all .6s ease;
 }
 
-#auto_adjustment ol li{    
+#masmorras ol li{    
 	font-size: 2.5em;
 	font-weight:800;
 }
@@ -201,7 +260,7 @@ section a{
 	transform: scale(1.2);
 }
 
-#auto_adjustment h1{
+#masmorras h1{
 	position: absolute;
 	top: 70%;
 	left: 30%;
@@ -212,7 +271,7 @@ section a{
     z-index: 1000;
 }
 
-#auto_adjustment h2{
+#masmorras h2{
 	position: absolute;
 	top: 85%;
 	right:30px;
@@ -288,7 +347,7 @@ section a{
 	height:96px;
 	margin:10px 10px; }
     
-/*  #auto_adjustment{
+/*  #masmorras{
 	height: 1200px;}   */
 }
 
@@ -304,14 +363,14 @@ section a{
 .cover #container-classes{	    
     top: 55%; }    
 
-#auto_adjustment img{	
+#masmorras img{	
 	top: 3vh;
 	left:-25vw;	}
 
-#auto_adjustment ol{
+#masmorras ol{
     top:100vh;}
 
-#auto_adjustment ol li{    
+#masmorras ol li{    
 	font-size: 2em;	}
 
 .swiper-container{
@@ -322,10 +381,10 @@ section a{
 		width: 28%;		/*40%*/
 	}
 
-#auto_adjustment h1{
+#masmorras h1{
     font-size: 1.3em; }
 
-#auto_adjustment h2{
+#masmorras h2{
     font-size: 1em; }
 }
 
@@ -353,20 +412,20 @@ section a{
 	height:80px;	    
 	margin:3px 3px; }
 
-    #auto_adjustment{
+    #masmorras{
     background-image: none;
     background:#0E0E0E;
 	height: 2400px;}
 
-    #auto_adjustment img{
+    #masmorras img{
     	left: -40vw;
     }
 
-    #auto_adjustment ol{      
+    #masmorras ol{      
       left: 20vw;      
     }
 
-    #auto_adjustment ol li{
+    #masmorras ol li{
       font-size: 1.8em;      
     }
     
@@ -410,17 +469,17 @@ section a{
     .classes {
      	margin:0 9px; }
     
-    #auto_adjustment img{
+    #masmorras img{
       top:2vh;
       left: -38vw;  
       height:80px;
       width:90px;
     }
 
-    #auto_adjustment ol{      
+    #masmorras ol{      
      top: 85vh;
     }
-     #auto_adjustment ol li{      
+     #masmorras ol li{      
      font-size: 1.3em;  
     }
 
@@ -446,8 +505,8 @@ section a{
     	height: 350px;
 		width: 100%;	
     }
-    #auto_adjustment h1{
+    #masmorras h1{
         top: 65%;}
-    #auto_adjustment h2{
+    #masmorras h2{
         top: 75%;}
 }
