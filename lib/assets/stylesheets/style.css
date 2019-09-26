@@ -580,7 +580,7 @@ nav ul li {
 	top:40%;
 	left:50%;
 	transform: translate(-50%, 0%);
-	width:75%;
+	width:90%;
 	height:58%;}
     
     .classes {
@@ -596,7 +596,7 @@ nav ul li {
     }
 
     #masmorras ol{
-     top: 189vh;
+     top: 180vh;
     }
      #masmorras ol li{      
      font-size: 1.3em;  
