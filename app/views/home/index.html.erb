@@ -2,28 +2,30 @@
      <ul>
        <li> <%=link_to"idioma","" %>  </li>
        <li> <%=link_to"masmorras","#masmorras" %>  </li>
-       <li> <%=link_to"classes","" %>  </li>             
+       <li> <%=link_to"classes","#classes" %>  </li>             
        <li> <%=link_to"início","#inicio" %>  </li>
-       <p> --Cryslash--</p>
+       <!--p> --Cryslash--</p-->
      </ul>
    </nav>
 
 <section id="inicio">
-		<div class="cover">		
-		<%= image_tag 'wow-classic-logo', id:"img-logo" %>
-		    
-		<h1 class="cover_text">QuickBuilds-Classic!</h1>
-		<h2 class="cover_text2">O acervo contém atualmente mais de 40 Builds!</h2>
-		
-        <div id="container-classes">
+  <%= image_tag 'wow-classic-logo', id:"img-logo" %>
+        
+    <h1 class="i_text">QuickBuilds-Classic!</h1>
+    <h2 class="i_text2">O acervo contém atualmente mais de 40 Builds!</h2>
+</section>   
+
+<section id="classes">		
+				<div class="layer">         
+        <h1 class="c_text">Classes WoW-Clássico.</h1> 
+        <div id="container-classes">          
           <% for i in 0..@classes.size %>            
             <%= link_to @classes[i], :action => @classes[i], target:"_blank" do %>
                  <div class="classes" id="<%=@classes[i]%>"><p><span><%=@classes[i]%></span><br>builds, guias e dicas.</p></div>            
             <%end%>
           <% end %>
         </div>
-	
-		</div>
+	      </div>		
 </section>
 
 <section id="masmorras">
@@ -126,7 +128,7 @@ $('a[href*="#"]')
   <script type="text/javascript">
      $(document).ready(function() {
      $(window).bind('scroll', function() {
-     var navHeight = $(window).height()*0.07;
+     var navHeight = $(window).height()*0.2;
      if($(window).scrollTop() > navHeight) {
           $('nav').addClass('fixed');
       $('nav li').addClass('navlifixed');

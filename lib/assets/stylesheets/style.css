@@ -11,17 +11,18 @@ html,body{
 
 section{
 	height:100%;
-	
+	overflow: hidden;
+	outline: none;
 }
 
 nav{
 	position: absolute;
 	display: block;
-	left:0;	
-	top: 2vh;
-	width: 100%;
+	right: 5vh;	
+	top: 7vh;
+	width: 55%;
 	background-color: rgba(0,0,0,.8); 
-	height: 5vh;	
+	height: 8vh;
 	padding:0;    
 	transition: .4s;
     z-index: 1000;
@@ -30,7 +31,7 @@ nav{
 nav ul li{
 	display: inline-block;
 	float: right;
-	padding: .7em 5em;
+	padding: 1.4em 5em;
 	color: #fff;
 	font-size: 1.2em;
 	font-weight:400;
@@ -43,16 +44,16 @@ nav li a{
 }
 
 nav li a:hover{
-    color:#DF7401;   
+    color:#DF7401;
 }
 
-nav ul p{
+/*nav ul p{
 	float: left;
-	padding: .4em 5em;
+	padding: 1.2em 1.5em;
 	color: #fff;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-family: poppins, sans-serif;
-}
+}*/
 
 .fixed {
 	position: fixed;
@@ -61,10 +62,11 @@ nav ul p{
 	width:100%;
 	height: 5vh;
 	z-index: 1000;	
+	transition: .4s;
 }
 
 .navlifixed{
-	padding: .8em 5em;	
+	padding: .8em 5em;
 }
 
 /*.navimgfixed{
@@ -74,9 +76,9 @@ nav ul p{
     left:0%;	
 }*/
 
-.cover{
+#inicio{
 	position: relative;
-    background: url("wow-classic-bg");
+	background: url("wow-classic-bg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 0;
@@ -85,46 +87,68 @@ nav ul p{
 	overflow: hidden;	
 }
 
+
 #img-logo{	
 	position: absolute;	
-	right: 0;	
-	margin-right: 35px;
-	margin-top: 35px;
+	left: 0;
 	height:auto;
 	width: 450px;	
 	transition: .5s;	
 }
 
-.cover .cover_text{
+#inicio .i_text{
 	position: absolute;		
 	font-size: 2.8em;
 	font-family: poppins;
-	top: 32%;	
+	top: 40%;	
 	left:50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -40%);
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
 	transition: .5s;	
 }
 
-.cover .cover_text2{
+#inicio .i_text2{
 	position: absolute;	
 	font-size: 1.4em;
 	font-family: poppins;    
-	top: 40%;
+	top: 48%;
 	left: 50%;
-    transform: translate(-50%, 0); 
+    transform: translate(-50%, -48%); 
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	transition: .5s;	
+}
+
+#classes{
+	position: relative;
+    background: url("classes/class_bg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+	width:100%;
+	height:100%;
+	overflow: hidden;	
+}
+
+#classes .c_text{
+	position: absolute;
+	font-size: 2.8em;
+	font-family: poppins;
+	top: 20%;	
+	left:50%;
+    transform: translate(-50%, -20%);
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
 	transition: .5s;	
 }
 
 #container-classes{	
-    position: absolute;
+    position: absolute;        
     top: 50%;
     left:50%;
-    transform: translate(-50%, 0);
-    transition: .5s;    
+    width: 43%;
+    transform: translate(-50%, -50%);
+    transition: .5s;       
 }
 
 #container-classes a:focus{
@@ -205,7 +229,7 @@ nav ul p{
 
 #masmorras ol{
 	position: absolute;
-	top:103vh;
+	top:203vh;
 	left:32vw;
 	list-style: none;
 	padding-top: 50px;
@@ -327,18 +351,27 @@ section a{
         left:80px;        
 	}
 }
+@media only screen and (max-width: 1834px){
+	nav ul li {
+		padding: 1.4em 3em;
+	}
+}
 
-@media only screen and (max-width: 1619px){
-	#img-logo{	
+@media only screen and (max-width: 1600px){
+/*	#img-logo{	
 	left: 50% !important;
-	transform: translate(-50%, 0);}
+	transform: translate(-50%, 0);}  */
+    nav ul li {
+    font-size: 1.2em; 
+    padding: 1.4em 4em;   
+    }
 
-	.cover .cover_text{
+	#inicio .i_text{
 	font-size: 2.2em;
 	top:33%;
     }
 
-    .cover .cover_text2{
+    #inicio .i_text2{
 	font-size: 1.1em;
 	top: 40%; }
 
@@ -351,24 +384,41 @@ section a{
 	height: 1200px;}   */
 }
 
-/*@media only screen and (max-width: 1169px){ */
-@media only screen and (max-width: 1450px){
-.cover .cover_text{	
-	top:38%;}
+/*@media only screen and (max-width: 1169px){   1366*/
+@media only screen and (max-width: 1440px){   
 
-.cover .cover_text2{	    
+nav ul li {
+    font-size: 1em; 
+    padding: 1.5em 4em;   
+}
+
+.fixed {	
+	height: 6vh;
+}
+
+.navlifixed{
+	padding: -0.4em 5em;
+}
+
+#inicio .i_text{
+	top: 50%;}
+
+#inicio .i_text2{    
 	font-size: 1.1em;
-	top: 50%; }
+	top: 60%; }
+ 
+#classes .c_text{
+     top: 15%;}
 
-.cover #container-classes{	    
-    top: 55%; }    
+/*#classes #container-classes{	    
+    top: 55%; }    */
 
 #masmorras img{	
 	top: 3vh;
 	left:-25vw;	}
 
 #masmorras ol{
-    top:100vh;}
+    top:200vh;}
 
 #masmorras ol li{    
 	font-size: 2em;	}
@@ -388,25 +438,43 @@ section a{
     font-size: 1em; }
 }
 
-@media only screen and (max-width: 900px){
-	#img-logo{	
-	right: 50%;	
+@media only screen and (max-width: 1298px){
+    
+    nav ul li {
+    font-size: 1em; 
+    padding: 1.5em 1.5em; }
+
+
+    .navlifixed {	
+	font-size: .9em;}
+}
+
+@media only screen and (max-width: 768px){  /*768*/
+
+    nav ul li {	
+	padding: 1.5em .8em;}
+
+	#img-logo{		
 	width: 300px;
 	height:auto; }
 
-	.cover .cover_text{		
+	#inicio .i_text{	
 	font-size: 1.1em;
 	top:30%;	
     }
 
-    .cover .cover_text2{	    
+    #inicio .i_text2{	    
 	font-size: .8em;
-	top: 37%; }
+	top: 37%; }   
 
-	.cover #container-classes{
+/*	#classes #container-classes{
 	width:60%;
-    top: 45%; }
-
+    top: 45%; }     */
+    
+    #classes #container-classes{
+	top:65%;
+	width:68%;}
+    
     .classes{    	
 	width:80px;
 	height:80px;	    
@@ -422,7 +490,8 @@ section a{
     }
 
     #masmorras ol{      
-      left: 20vw;      
+      left: 20vw;
+      top:200vh;      
     }
 
     #masmorras ol li{
@@ -435,49 +504,94 @@ section a{
 
    section h2{
    	top: 75%;}
-
+/*
 	.limit{
 		height: 350px;
-		width: 60%;		
-	}
+		width: 60%;
+	} */
 	
+
+ .swiper-container .icon_swiper{
+    position: absolute;
+    display: block !important;
+    top: 95% !important;
+    left:50% !important;
+    transform: translate(-50%, 0);       
+    height: 48px !important;
+    width: 80px !important;}
+
+    .swiper-button-next{
+    	display: none;
+    }
+    .swiper-button-prev{
+    	display: none;
+    }
+
+    .limit {
+    	padding: 0;
+    	margin: 0;
+    	height: 350px;
+		width: 100%;	
+    }
+    #masmorras h1{
+        top: 65%;}
+    #masmorras h2{
+        top: 75%;}
+
+
 }
 
 @media only screen and (max-width:480px){
     
-    .cover{
+    nav{
+    	display: none;}
+
+    #img-logo{
+    top:10%;
+    left:50%;
+    transform: translate(-50%, -10%); }
+
+    #inicio .i_text{
+	font-size: 2em;
+	top:50%;
+	left:24%;
+	transform: translate(-12%,-50%);
+	 }
+
+    #inicio .i_text2{  
+	font-size: 1em;
+	top: 65%;
+	left:24%;
+	transform: translate(-12%,-50%);
+	 }
+
+    #classes{
     	min-height: 500px;
     }
 
-    #img-logo{
-    margin-top: 15px;}
+    #classes .c_text{
+    	top:20%;
+    	left: 43%;
+    	transform: translate( -43%, -20%);
+    	font-size: 2.3em;
+    }
 
-    .cover .cover_text{		
-	font-size: 1.1em;
-	top:30%;
-	transform: translate( -50%, 0); }
-
-    .cover .cover_text2{	    
-	font-size: .7em;
-	top: 36%;
-	transform: translate( -50%, 0); }
-
-	.cover #container-classes{
-	width:85%;
-    top: 45%;}
+	#classes #container-classes{
+	top:65%;
+	width:68%;}
     
     .classes {
      	margin:0 9px; }
     
     #masmorras img{
       top:2vh;
-      left: -38vw;  
+      left: -38vw;
       height:80px;
       width:90px;
     }
 
-    #masmorras ol{      
-     top: 85vh;
+    #masmorras ol{
+     top: 198vh;
     }
      #masmorras ol li{      
      font-size: 1.3em;  

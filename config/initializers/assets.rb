@@ -13,6 +13,7 @@ Rails.application.config.assets.precompile += %w( wow-classic-logo
                                                   DG's/Treasure_chest
                                                   animation_swipe_icon
                                                   wow-classic-bg
+                                                  classes/class_bg
                                                   classes/druid-128
                                                   classes/hunter-128
                                                   classes/mage-128
