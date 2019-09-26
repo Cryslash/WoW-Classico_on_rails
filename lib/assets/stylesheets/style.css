@@ -570,14 +570,14 @@ nav ul li {
     }
 
     #classes .c_text{
-    	top:20%;
-    	left: 43%;
-    	transform: translate( -43%, -20%);
-    	font-size: 2.3em;
+    	top:15%;
+    	left: 35%;
+    	transform: translate( -35%, -10%);
+    	font-size: 2em;
     }
 
 	#classes #container-classes{
-	top:40%;
+	top:35%;
 	left:50%;
 	transform: translate(-50%, 0%);
 	width:100%;
@@ -596,7 +596,7 @@ nav ul li {
     }
 
     #masmorras ol{
-     top: 176vh;
+     top: 175vh;
     }
      #masmorras ol li{      
      font-size: 1.3em;  
