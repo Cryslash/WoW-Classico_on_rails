@@ -5,7 +5,7 @@ class HomeController < ApplicationController
    0=> ['Ragefire Chasm', "(12-18) - 5 quests.", "Ragefire", "ragefire_chasm"],
    1=> ['Wailing Caverns', "(16-25) - 7 quests.", "Wailing", "wailing_caverns"],
    2=> ['The Deadmines', "(16-22) - 5 quests.", "Deadmines", "the_deadmines"],
-   3=> ['Shadowfang Keeper', "(17-25) - 3 quests.", "Shadowfang", "shadowfang_keep"],
+   3=> ['Shadowfang Keep', "(17-25) - 3 quests.", "Shadowfang", "shadowfang_keep"],
    4=> ['Blackfathom Deeps', "(20-28) - 7 quests.", "Blackfathom", "blackfathom_deeps"],
    5=> ['The Stockade', "(21-27) - 6 quests.", "Stockade", "the_stockade"],
    6=> ['Gnomeregan', "(24-32) - 11 quests.", "Gnomeregan", "gnomeregan"],
