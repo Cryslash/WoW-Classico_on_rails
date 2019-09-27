@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope ":locale", locale: /en|pt-br/ do
+  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     resources :home
     get 'home/index'    
     root to: 'home#index'
