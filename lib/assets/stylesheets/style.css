@@ -18,15 +18,15 @@ section{
 nav{
 	position: absolute;
 	display: block;
-	right: 5vh;	
+	right: 5vw;	
 	top: 7vh;
 	width: 55%;
 	background-color: rgba(0,0,0,.8); 
-	height: 7vh;
+	height: 65px;
 	padding:0;    
 	/*transition: .4s; */
-	transition: all 0.3s ease-out;
-    z-index: 1001;
+	transition: all .6s ease-out;
+  z-index: 1001;
 }
 
 nav ul li{
@@ -36,7 +36,7 @@ nav ul li{
 	color: #fff;
 	font-size: 1.2em;
 	font-weight:400;
-	transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;  
 }
 
 nav li a{
@@ -50,9 +50,10 @@ nav li a:hover{
 
 .fixed {
 	position: fixed;
-	top: 0;	
-	width:100%;	
-	height: 5vh;	
+	top: 0;
+  right:0;
+	width:100vw;	
+	height: 45px;	
 	transition: .4s;
 	z-index: 1001;
 }
@@ -217,7 +218,7 @@ nav #toggle.on #three {
 	background-size: cover;
 	background-position: 100% 0;
 	width:100%;
-	height:100%;
+	height:100vw;
 	overflow: hidden;	
 }
 
@@ -526,10 +527,6 @@ nav ul li {
     padding: 1.5em 4em;   
 }
 
-.fixed {	
-	height: 6vh;
-}
-
 .navlifixed{
 	padding: -0.4em 5em;
 }
@@ -590,18 +587,20 @@ nav ul li {
     	height:55px;
     	border-radius: 12px;
     }
+
     nav #toggle {
             visibility: visible;
             opacity: 1;
             margin-top: 6px;
       }
+
     nav #menu {
             display: none;
       }     
 
-    .fixed {    
-      
-    top: 5vh;
+  .fixed {      
+    top: 7vh;
+    right: 5vw;
     height: 55px;
     width: 55px; }
 

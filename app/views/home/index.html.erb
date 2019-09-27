@@ -10,7 +10,7 @@
          </div>
        </li>
        <li> <%=link_to "#{t "menu.dungeons"}","#masmorras" %>  </li>
-       <li> <%=link_to "#{t "menu.class"}","#classes" %>  </li>             
+       <li> <%=link_to "#{t "menu.class"}","#classes" %>  </li>
        <li> <%=link_to "#{t "menu.begin"}","#inicio" %>  </li>
        <!--p> --Cryslash--</p-->
      </ul>
@@ -159,7 +159,7 @@ $('a[href*="#"]')
   <script type="text/javascript">
      $(document).ready(function() {
      $(window).bind('scroll', function() {
-     var navHeight = $(window).height()*0.2;
+     var navHeight = $(window).height()*0.1;
      if($(window).scrollTop() > navHeight) {
           $('nav').addClass('fixed');
       $('nav li').addClass('navlifixed');
