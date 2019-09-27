@@ -52,5 +52,7 @@ Rails.application.config.assets.precompile += %w( wow-classic-logo
                                                   DG's/Maps/Eastern_Kingdoms_dg_entries                                                  
                                                   horde_icon
                                                   alliance_icon
-                                                  horde_alliance_icon )
+                                                  horde_alliance_icon
+                                                  brazil
+                                                  united-states )
 

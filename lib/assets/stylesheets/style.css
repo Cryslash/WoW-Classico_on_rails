@@ -127,10 +127,26 @@ nav #toggle.on #three {
       transition: all 0.3s ease-out;
 }
 
-#resize li:nth-child(1) {
+#resize .main-menu-item:nth-child(1) {
       margin-top:140px;
 }
+/*******************************************************************/
 
+.submenu li{   
+      font-size: .6em !important;
+}
+
+.submenu li:nth-child(1){
+      margin-top: 30px;
+}
+
+.submenu {
+      display: none;      
+}
+
+
+
+/******************************************************************/
 #resize #menu li a {
       color: #fff;
       text-decoration: none;
