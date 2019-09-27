@@ -1,3 +1,10 @@
-"pt-BR":
-
-hello: "Olá Mundo"
+pt-br:
+  hello: "Olá Mundo"
+  app:
+    name: "WoW-Classico Builds!"
+    desc: "O acervo contém atualmente mais de 40 Builds!"
+  menu:
+    dungeons: "masmorras"
+    class: "classes"
+    begin: "início"
+    language: "idioma"    

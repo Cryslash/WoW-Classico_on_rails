@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  app:
+    name: "QuickBuilds-Classic!"
+    desc: "The collection currently contains over 40 Builds!"
+  menu:
+    dungeons: "dungeons"
+    class: "class"
+    begin: "begin"
+    language: "language"  

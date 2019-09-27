@@ -1,9 +1,17 @@
  <nav>
      <ul id="menu">
-       <li> <%=link_to"idioma","" %>  </li>
-       <li> <%=link_to"masmorras","#masmorras" %>  </li>
-       <li> <%=link_to"classes","#classes" %>  </li>             
-       <li> <%=link_to"início","#inicio" %>  </li>
+       <li> <%#=link_to"idioma","" %>
+         <div class="dropdown">
+         <button class="dropbtn"><%= t "menu.language"%> <i class="fa fa-caret-down"></i></button>
+         <div class="dropdown-content">
+           <%= link_to "English", locale: "en" %>
+           <%= link_to "Português", locale: "pt-br" %>
+         </div>
+         </div>
+       </li>
+       <li> <%=link_to "#{t "menu.dungeons"}","#masmorras" %>  </li>
+       <li> <%=link_to "#{t "menu.class"}","#classes" %>  </li>             
+       <li> <%=link_to "#{t "menu.begin"}","#inicio" %>  </li>
        <!--p> --Cryslash--</p-->
      </ul>
 
@@ -26,8 +34,8 @@
 <section id="inicio">
   <%= image_tag 'wow-classic-logo', id:"img-logo" %>
         
-    <h1 class="i_text">QuickBuilds-Classic!</h1>
-    <h2 class="i_text2">O acervo contém atualmente mais de 40 Builds!</h2>
+    <h1 class="i_text"><%= t "app.name"%></h1>
+    <h2 class="i_text2"><%= t "app.desc"%></h2>
 </section>   
 
 <section id="classes">		
