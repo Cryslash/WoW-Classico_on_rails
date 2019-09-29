@@ -19,8 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en:  
   app:
     name: "QuickBuilds-Classic!"
     desc: "The collection currently contains over 40 Builds!"
@@ -32,6 +31,7 @@ en:
   class:
     title: "WoW-Classic Class."
     desc: "builds, guides and tips."
+    text: "Builds to "
   class_name:
     druid: "druid"
     hunter: "hunter"
@@ -44,6 +44,14 @@ en:
     warrior: "warrior"
   dungeons:
     title: "Dungeons during Leveling!"
+    template_title: "Quests to do in "
+  quests:
+    quest_begin: "The quest starts with "
+    in: "in "
+    drop_item: "The quest is a drop of a item "
+    drop_from: "that drops from "
+    quest_chain: "The quest is part of a chain "
+    quest_chain_begin: "starting with "
   dungeons_name:
     Blackfathom Deeps: "Blackfathom Deeps"
     Gnomeregan: "Gnomeregan"
@@ -59,3 +67,48 @@ en:
     Uldaman: "Uldaman"
     Wailing Caverns: "Wailing Caverns"
     Zul'Farrak: "Zul'Farrak"
+  locales:
+    kalimdor: "Kalimdor"
+    eastern_kingdoms: "Eastern Kingdoms"
+    ashenvale: "Ashenvale"
+    dun_murogh: "Dun Murogh"
+    desolation: "Desolation"
+    orgrimmar: "Orgrimmar"
+    the_barrens: "The Barrens"
+    tirisfal_glades: "Tirisfal Glades"
+    silverpine_forest: "Silverpine Forest"
+    swamp_of_sorrows: "Swamp of Sorrows"
+    westfall: "Westfall"
+    stormwind: "Stormwind"
+    badlands: "Badlands"
+    tanaris: "Tanaris"
+    ironforge: "Ironforge"
+    darkshore: "Darkshore"
+    darnassus: "Darnassus"
+    thunder_bluff: "Thunder Bluff"
+    undercity: "Undercity"
+    thousand_needles: "Thousand Needles"
+    ratchet: "Ratchet"
+    hillsbrad_foothills: "Hillsbrad Foothills"
+    hinterlands: "Hinterlands"
+    duskwood: "Duskwood"
+    wetlands: "Wetlands"
+    redridge_mountains: "Redridge Mountains"
+    loch_modan: "Loch Modan"
+    durotar: "Durotar"
+    dustwallow_marsh: "Dustwallow Marsh"
+    blasted_lands: "Blasted Lands"
+    theramore: "Theramore"
+    feralas: "Feralas"
+    end_of_dungeon: "at the end of the dungeon"
+    inside_dg: "inside the dungeon"
+    dg_door: "dungeon doors"
+    final_boss: "the last boss"
+  others:
+    tap_me: "tap-me"
+    name: "Name"
+    level: "Level"
+    place: "Place"
+    for_the_alliance: "for the Alliance "
+    and_with: "and with "
+    for_the_horde: "for the Horde"

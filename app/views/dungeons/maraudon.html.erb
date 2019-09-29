@@ -7,15 +7,15 @@
    </div>
    <div class="rs_bottom">
      <ol>            
-        <li><span>Nome:</span>Maraudon</li>
-        <li><span>Nível:</span> 42 - 51</li>
-        <li><span>Local:</span> Kalimdor, Desolação.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Maraudon" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 42 - 51.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.kalimdor" %>, <%= t "locales.desolation" %>.</li>
      </ol>
    </div>
 </div>
 <div class="body" id="maraudon_bg">
        <ol>            
-          <li>Missões para fazer em: Maraudon.</li>            
+          <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Maraudon" %>.</li>   
        </ol>
 
 <%for i in 0..7%>
@@ -24,10 +24,11 @@
      <ul>
          <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
        <%if @q[i][5] == ""%>
-         <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>.</li>
+         <li> <%= t "quests.quest_begin" %> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}" %>.</li>
        <%end%>
-       <%if @q[i][5] != ""%>
-         <li>A missão inicia com <a href="<%=@q[i][2]%>"></a> <%=@q[i][3]%> <a href="<%=@q[i][5]%>"></a> <%=@q[i][6]%> </li>
+       <%if @q[i][5] != ""%>         
+         <li><%= t "quests.quest_begin"%> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}"%> <%= t "others.for_the_alliance" %> <%= t "others.and_with" %> <a href="<%=@q[i][5]%>"></a>
+              <%= t "quests.in" %> <%= t "locales.#{@q[i][6]}"%> <%= t "others.for_the_horde" %>.</li>
        <%end%>
      </ul>
    </div>

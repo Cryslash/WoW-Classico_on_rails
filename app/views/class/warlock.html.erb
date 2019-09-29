@@ -6,14 +6,14 @@
 	<div class="card" id="warlock_card">
 		  <div class="container">             
             <%= image_tag "classes/warlock-128"%>
-            <h1>Builds para Bruxos!</h1>
+            <h1><%= t "class.text" %><%= t "class_name.warlock" %></h1>
            
             <div class="swiper-container">
             <div class="swiper-wrapper">
 
                  <% for i in 0..2 %>
                  <div class="swiper-slide">                   
-                   <%= link_to @warlock_builds[i][1],@warlock_builds[i][0]%>
+                   <%= link_to "#{t"others.tap_me"}",@warlock_builds[i][0]%>
                    <p><%=@warlock_builds[i][1]%></p>
                  </div>
                  <%end%>

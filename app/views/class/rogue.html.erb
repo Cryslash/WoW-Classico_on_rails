@@ -6,14 +6,14 @@
 	<div class="card" id="rogue_card">
 		  <div class="container">             
             <%= image_tag "classes/rogue-128"%>
-            <h1>Builds para Ladinos!</h1>
+            <h1><%= t "class.text" %><%= t "class_name.rogue" %></h1>
             
             <div class="swiper-container">
             <div class="swiper-wrapper">
 
                  <% for i in 0..3 %>
                  <div class="swiper-slide">                   
-                   <%= link_to @rogue_builds[i][1],@rogue_builds[i][0]%>
+                   <%= link_to "#{t"others.tap_me"}",@rogue_builds[i][0]%>
                    <p><%=@rogue_builds[i][1]%></p>
                  </div>
                  <%end%>

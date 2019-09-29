@@ -7,9 +7,9 @@
    </div>
    <div class="rs_bottom">
      <ol>            
-        <li><span>Nome:</span> Ragefire Chasm</li>
-        <li><span>Nível:</span> 12 - 18</li>
-        <li><span>Local:</span> Kalimdor, Orgrimmar.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Ragefire Chasm" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 12 - 18.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.kalimdor" %>, <%= t "locales.orgrimmar" %>.</li>
      </ol>
    </div>
 
@@ -17,7 +17,7 @@
 
 <div class="body" id="ragefire_bg">
     <ol>            
-      <li>Missões para fazer em Ragefire Chasm.</li>            
+      <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Ragefire Chasm" %>.</li>       
     </ol>
 
 <%for i in 0..4%>
@@ -25,9 +25,9 @@
    <div class="quest_text">
      <ul>
        <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
-       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em <%=@q[i][3]%>.</li>
+       <li><%= t "quests.quest_begin" %> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}"%>.</li>
        <%if @q[i][5] != ""%>
-         <li>A missão faz parte de uma chain <a href="<%=@q[i][5]%>"></a> que inicia com <a href="<%=@q[i][6]%>"></a> em <%=@q[i][7]%>.</li>
+         <li> <%= t "quests.quest_chain" %> <a href="<%=@q[i][5]%>"></a> <%= t "quests.quest_chain_begin" %> <a href="<%=@q[i][6]%>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][7]}"%>.</li>
        <%end%>
      </ul>
    </div>

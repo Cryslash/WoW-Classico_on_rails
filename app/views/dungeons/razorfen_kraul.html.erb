@@ -7,15 +7,15 @@
    </div>
    <div class="rs_bottom">
      <ol>            
-        <li><span>Nome:</span> Razorfen Kraul (Urzal dos Tuscos)</li>
-        <li><span>Nível:</span> 23 - 33</li>
-        <li><span>Local:</span> Kalimdor, Sertões.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Razorfen Kraul" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 23 - 33.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.kalimdor" %>, <%= t "locales.the_barrens" %>.</li>
      </ol>
    </div>
 </div>
 <div class="body" id="razorfenk_bg">
        <ol>            
-          <li>Missões para fazer em: Urzal dos Tuscos.</li>            
+          <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Razorfen Kraul" %>.</li>
        </ol>
 
 <%for i in 0..5%>
@@ -23,7 +23,7 @@
    <div class="quest_text">
      <ul>
        <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
-       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em <%=@q[i][3]%>.</li>
+       <li><%= t "quests.quest_begin"%> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}"%>.</li>
      </ul>
    </div>
 <div class="<%=@q[i][4]%>"></div>

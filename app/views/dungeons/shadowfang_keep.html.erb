@@ -7,9 +7,9 @@
    </div>
    <div class="rs_bottom">
      <ol>            
-        <li><span>Nome:</span> Shadowfang Keep</li>
-        <li><span>Nível:</span> 17 - 25</li>
-        <li><span>Local:</span> Reinos do Leste, Floresta de PinhaPrata.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Shadowfang Keep" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 17 - 25.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.eastern_kingdoms" %>, <%= t "locales.silverpine_forest" %>.</li>
      </ol>
    </div>
 
@@ -17,7 +17,7 @@
 
 <div class="body" id="shadowfang_bg">
     <ol>            
-        <li>Missões para fazer em: Shadowfang Keep.</li>            
+        <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Shadowfang Keep" %>.</li>
     </ol>
 
 <%for i in 0..2%>
@@ -25,7 +25,7 @@
    <div class="quest_text">
      <ul>
        <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
-       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em <%=@q[i][3]%>.</li>
+       <li><%= t "quests.quest_begin"%> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}"%>.</li>
      </ul>
    </div>
 <div class="<%=@q[i][4]%>"></div>

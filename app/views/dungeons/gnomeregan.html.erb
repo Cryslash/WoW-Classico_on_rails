@@ -6,16 +6,16 @@
      
    </div>
    <div class="rs_bottom">
-     <ol>            
-        <li><span>Nome:</span> Gnomeregan</li>
-        <li><span>Nível:</span> 24 - 32</li>
-        <li><span>Local:</span> Reinos do Leste, Dun Murogh.</li>
+     <ol>        
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Gnomeregan" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 24 - 32.</li>        
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.eastern_kingdoms" %>, <%= t "locales.dun_murogh" %>.</li>
      </ol>
    </div>
 </div>
 <div class="body" id="gnomeregan_bg">
     <ol>            
-        <li>Missões para fazer em Gnomeregan</li>            
+        <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Gnomeregan" %>.</li>     
     </ol>
 
 <%for i in 0..10%>
@@ -24,13 +24,13 @@
      <ul>
          <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
        <%if @q[i][5] == ""%>
-         <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>.</li>
+         <li><%= t "quests.quest_begin" %> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}" %>.</li>
        <%end%>
        <%if @q[i][5] == "np"%>
-         <li><%=@q[i][2]%>.</li>
+         <li><%= t "locales.#{@q[i][2]}" %>.</li>
        <%end%> 
        <%if (@q[i][5] != "np") && (@q[i][5] != "")%>
-         <li>A missão é um drop de um item <a href="<%=@q[i][2]%>"></a> que dropa de <a href="<%=@q[i][3]%>"></a> em: <%=@q[i][5]%>.</li>
+         <li><%= t "quests.drop_item" %> <a href="<%=@q[i][2]%>"></a> <%= t "quests.drop_from" %> <a href="<%=@q[i][3]%>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][5]}" %>.</li>
        <%end%>       
      </ul>
    </div>

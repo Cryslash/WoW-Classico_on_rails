@@ -6,14 +6,14 @@
 	<div class="card" id="mage_card">
 		  <div class="container">             
             <%= image_tag "classes/mage-128"%>
-            <h1>Builds para Magos!</h1>  
+            <h1><%= t "class.text" %><%= t "class_name.mage" %></h1>
           
             <div class="swiper-container">
             <div class="swiper-wrapper">
 
                  <% for i in 0..3 %>
                  <div class="swiper-slide">                   
-                   <%= link_to @mage_builds[i][1],@mage_builds[i][0]%>
+                   <%= link_to "#{t"others.tap_me"}",@mage_builds[i][0]%>
                    <p><%=@mage_builds[i][1]%></p>
                  </div>
                  <%end%>

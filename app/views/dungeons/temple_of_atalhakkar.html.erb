@@ -7,26 +7,29 @@
    </div>
    <div class="rs_bottom">
      <ol>            
-        <li><span>Nome:</span> Templo de Atal'Hakkar</li>
-        <li><span>Nível:</span> 46 - 53</li>
-        <li><span>Local:</span> Reinos do Leste, Pântano das Mágoas.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Temple of Atal'Hakkar" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 46 - 53.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.eastern_kingdoms" %>, <%= t "locales.swamp_of_sorrows" %>.</li>
      </ol>
    </div>
 </div>
 <div class="body" id="atal_bg">
        <ol>            
-          <li>Missões para fazer em: Templo de Atal'Hakkar.</li>            
+          <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Temple of Atal'Hakkar" %>.</li>
        </ol>
 
 <%for i in 0..6%>
  <div class="quests">
    <div class="quest_text">
      <ul>
-          <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>       
-          <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>.</li>       
-       <%if @q[i][5] != ""%>
-          <li>A missão faz parte de uma chain <a href="<%=@q[i][5]%>"></a> que inicia com <a href="<%=@q[i][6]%>"></a> em <%=@q[i][7]%> <a href="<%=@q[i][8]%>"></a> <%=@q[i][9]%>.</li>
-       <%end%>            
+         <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>       
+         <li><%= t "quests.quest_begin" %> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}" %>.</li>       
+       <%if @q[i][5] != "" %>
+         <li> <%= t "quests.quest_chain" %> <a href="<%=@q[i][5]%>"></a> <%= t "quests.quest_chain_begin" %> <a href="<%=@q[i][6]%>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][7]}"%> </li>
+       <%end%> 
+       <%if @q[i][9] != "" %>
+         <li><%= t "others.for_the_alliance" %> <%= t "others.and_with" %> <a href="<%=@q[i][8]%>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][9]}"%> <%= t "others.for_the_horde" %></li>
+       <%end%>  
      </ul>
    </div>
 <div class="<%=@q[i][4]%>"></div>

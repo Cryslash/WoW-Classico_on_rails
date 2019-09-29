@@ -6,16 +6,16 @@
    </div>
    <div class="rs_bottom">
      <ol>
-        <li><span>Nome:</span> The Deadmines (As Minas Mortas)</li>
-        <li><span>Nível:</span> 16 - 22</li>
-        <li><span>Local:</span> Reinos do Leste, Cerro Oeste.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.The Deadmines" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 16 - 22.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.eastern_kingdoms" %>, <%= t "locales.westfall" %>.</li>
      </ol>
    </div>
 </div>
 
 <div class="body" id="deadmines_bg">
     <ol>
-       <li>Missões para fazer em: As Minas Mortas.</li>
+       <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.The Deadmines" %>.</li>
     </ol>
 
 <%for i in 0..4%>
@@ -24,10 +24,10 @@
      <ul>
           <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
        <%if @q[i][2] != ""%>
-          <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em <%=@q[i][3]%>.</li>
+          <li><%= t "quests.quest_begin"%> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}"%>.</li>
        <%end%>
       <%if @q[i][6] != ""%>
-          <li>A missão faz parte de uma chain <a href="<%=@q[i][5]%>"></a> que inicia com <a href="<%=@q[i][6]%>"></a> em <%=@q[i][7]%>.</li>
+          <li> <%= t "quests.quest_chain" %> <a href="<%=@q[i][5]%>"></a> <%= t "quests.quest_chain_begin" %> <a href="<%=@q[i][6]%>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][7]}"%>.</li>
       <%end%>
      </ul>
    </div>

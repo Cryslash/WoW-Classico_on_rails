@@ -5,16 +5,15 @@
   <section>
 	<div class="card" id="druid_card">
           <div class="container">
-            <!--img src="../img/classes/druid-128.png"-->
             <%= image_tag 'classes/druid-128'%>
-            <h1>Builds para Druidas!</h1>
+            <h1><%= t "class.text" %><%= t "class_name.druid" %></h1>
 
             <div class="swiper-container">
             <div class="swiper-wrapper">
 
                  <% for i in 0..5 %>
                  <div class="swiper-slide">                   
-                   <%= link_to @druid_builds[i][1],@druid_builds[i][0]%>
+                   <%= link_to "#{t"others.tap_me"}",@druid_builds[i][0]%>
                    <p><%=@druid_builds[i][1]%></p>
                  </div>
                  <%end%>

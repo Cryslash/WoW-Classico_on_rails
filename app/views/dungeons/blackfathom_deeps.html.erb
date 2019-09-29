@@ -7,15 +7,15 @@
    </div>
    <div class="rs_bottom">
      <ol>            
-        <li><span>Nome:</span> Blackfathom Deeps (Profundezas Negras)</li>
-        <li><span>Nível:</span> 20 - 28</li>
-        <li><span>Local:</span> Kalimdor, Vale Gris.</li>
+        <li><span><%= t "others.name" %>:</span> <%= t "dungeons_name.Blackfathom Deeps" %>.</li>
+        <li><span><%= t "others.level" %>:</span> 20 - 28.</li>
+        <li><span><%= t "others.place" %>:</span> <%= t "locales.kalimdor" %>, <%= t "locales.ashenvale" %>.</li>
      </ol>
    </div>
 </div>
 <div class="body" id="blackfathom_bg">
     <ol>
-      <li>Missões para fazer em Profundezas Negras.</li>
+      <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.Blackfathom Deeps" %>.</li>
     </ol>
 
 <%for i in 0..6%>
@@ -23,9 +23,9 @@
    <div class="quest_text">
      <ul>
        <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
-       <li>A missão inicia com <a href="<%=@q[i][2] %>"></a> em: <%=@q[i][3]%>.</li>
+       <li><%= t "quests.quest_begin" %> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}" %>.</li>
        <%if @q[i][5] != ""%>
-         <li>A missão é um drop de um item <a href="<%=@q[i][2]%>"></a> que dropa de <a href="<%=@q[i][3]%>"></a>.</li>
+         <li><%= t "quests.drop_item" %> <a href="<%=@q[i][5]%>"></a> <%= t "quests.drop_from" %> <a href="<%=@q[i][6]%>"></a>.</li>
        <%end%>
      </ul>
    </div>

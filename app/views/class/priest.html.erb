@@ -6,14 +6,14 @@
 	<div class="card" id="priest_card">
 		  <div class="container">             
             <%= image_tag "classes/priest-128"%>
-            <h1>Builds para Sacerdotes!</h1>
+            <h1><%= t "class.text" %><%= t "class_name.priest" %></h1>
            
             <div class="swiper-container">
             <div class="swiper-wrapper">
 
                  <% for i in 0..3 %>
                  <div class="swiper-slide">                   
-                   <%= link_to @priest_builds[i][1],@priest_builds[i][0]%>
+                   <%= link_to "#{t"others.tap_me"}",@priest_builds[i][0]%>
                    <p><%=@priest_builds[i][1]%></p>
                  </div>
                  <%end%>
