@@ -1,8 +1,8 @@
  <nav>
      <ul id="menu">
-       <li> <%#=link_to"idioma","" %>
-         <div class="dropdown">
-         <button class="dropbtn"><%= t "menu.language"%></button>
+       <li>
+         <div class="dropdown">         
+         <%= submit_tag "#{t "menu.language"}", class:"dropbtn" %> 
          <div class="dropdown-content">
            <%= link_to "english", locale: "en" %>
            <%= link_to "português", locale: "pt-br" %>
@@ -33,9 +33,7 @@
                   </li>
                   <li class="main-menu-item"><%= link_to "#{t "menu.begin"}", "#inicio", onclick:"$('#toggle').click()"%></li>
                   <li class="main-menu-item"><%= link_to "#{t "menu.class"}", "#classes", onclick:"$('#toggle').click()"%></li>
-                  <li class="main-menu-item"><%= link_to "#{t "menu.dungeons"}", "#masmorras", onclick:"$('#toggle').click()"%></li>                 
-                  <!--li><%#= link_to "idioma", "#", onclick:"$('#toggle').click()"%></i></li-->
-                  
+                  <li class="main-menu-item"><%= link_to "#{t "menu.dungeons"}", "#masmorras", onclick:"$('#toggle').click()"%></li>
             </ul>
 </div>
 
@@ -50,9 +48,10 @@
 				<div class="layer">         
         <h1 class="c_text"><%= t "class.title"%></h1> 
         <div id="container-classes">          
-          <% for i in 0..@classes.size %>            
-            <%= link_to @classes[i], :action => @classes[i], target:"_blank" do %>
-                 <div class="classes" id="<%=@classes[i]%>"><p><span><%= t "class_name.#{@classes[i]}"%></span><br><%= t "class.desc"%></p></div>            
+          <%# for i in 0..@classes.size %>
+          <% @classes.each do |classes| %>                       
+            <%= link_to classes, :action => classes, target:"_blank" do %>
+                 <div class="classes" id="<%=classes%>"><p><span><%= t "class_name.#{classes}"%></span><br><%= t "class.desc"%></p></div>            
             <%end%>
           <% end %>
         </div>
@@ -122,33 +121,29 @@
     });
 </script>
 
-<script> //ancora  
-   // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
+<script>     
+$('a[href*="#"]')  
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
-    // On-page links
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
-    ) {// Figure out element to scroll to
+    ) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {// Only prevent default if animation is actually gonna happen
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');      
+      if (target.length) {
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000, function() {// Callback after animation // Must change focus!
+        }, 1000, function() {
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) {
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1');
+            $target.focus();
           };
         });
       }
@@ -179,11 +174,7 @@ $('a[href*="#"]')
       $("#toggle").click(function() {
       $(this).toggleClass('on');
       $("#resize").toggleClass("active");
-      });
-   //  $(".btn_down").click(function() { 
-   //   $(this).toggleClass('on');
-   //   $("#resize").toggleClass("active");
-   //   });
+      });   
     </script>
 
    <script type="text/javascript">
@@ -242,7 +233,3 @@ $('a[href*="#"]')
             });
 
       </script>
-
-
-
- 

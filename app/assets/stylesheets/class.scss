@@ -226,7 +226,21 @@ section{
     }
   
     .container .swiper-container {        
-        top: 24%;}
+        top: 20%;}
+
+    .container .swiper-slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 92vw;
+      height: 56vh;
+    }   
+
+    .container .swiper-slide p{      
+      top:-5%;
+      left:5%;      
+      font-size:1em;
+    }
    
     #leveling .container .header{   	   
    	    display: block;
@@ -241,8 +255,8 @@ section{
     #leveling .container .header h1{
     	position: absolute;
     	top:9vh;
-    	left:28vw;
-    	font-size: 1.6em;
+    	left:30vw;
+    	font-size: 1.5em;
     }
 
     .body_build{    	
