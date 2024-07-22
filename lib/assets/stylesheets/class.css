@@ -236,6 +236,10 @@ section{
     	left:130px;
     	font-size: 25px;
     }
+	
+	#leveling .container .header h1{
+		top: 4% !important;
+	}
 
     .body_build{    	
     	display: block;

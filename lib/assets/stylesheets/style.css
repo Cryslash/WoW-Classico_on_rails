@@ -20,7 +20,7 @@ nav{
 	display: block;
 	right: 5vw;	
 	top: 7vh;
-	width: 55%;
+	width: 90%;
 	background-color: rgba(0,0,0,.8); 
 	height: 65px;
 	padding:0;    
@@ -211,7 +211,7 @@ nav #toggle.on #three {
 
 /**********************************************START**SECTIONS***************************************************************************************/
 
-#inicio{
+/* #inicio{
 	position: relative;
 	background: url("wow-classic-bg");
 	background-repeat: no-repeat;
@@ -219,28 +219,89 @@ nav #toggle.on #three {
 	background-position: 100% 0;
 	width:100%;
 	height:100vh;
-	overflow: hidden;	
+	overflow: hidden;
+} */
+#inicio{
+	display:flex;
+	background: url("wow-classic-bg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 0;
+	width:100%;
+	height:100vh;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
-
-#img-logo{	
-	position: absolute;	
-	left: 0;
-	height:auto;
-	width: 450px;	
-	transition: .5s;	
+.card_wow{
+	position:relative;
+	max-width:600px;
+	min-width: 320px;
+	height: 350px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	/* background: linear-gradient(135deg,#240E10,#4F211D); */
+	background-color: rgba(0,0,0,.8);
+}
+.card_wow img{
+	position: absolute;
+	/* bottom: 0; */
+	left:50%;
+	transform: translateX(-50%);
+	height: 180px;
+	transition: .5s;
+	z-index: 1000;	
+}
+.card_wow:hover img{
+	left:90%;
+	height: 220px;
+}
+#img-turtle{
+	height: 150px;
+}
+.card_wow:hover #img-turtle{
+	height: 200px;
+}
+.card_wow .card_wow_content{
+	position: relative;
+	width: 50%;
+	left: 0%;
+	padding: 20px 20px 20px 40px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.card_wow:hover .card_wow_content{
+	opacity: 1;
+	visibility: visible;
+	left: -20%;
+}
+.card_wow .card_wow_content h2{
+	color: #fff;
+	font-family: poppins;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+}
+.card_wow .card_wow_content p{
+	color: #fff;
+	font-family: poppins;
 }
 
 #inicio .i_text{
-	position: absolute;		
+	position: absolute;
 	font-size: 2.8em;
 	font-family: poppins;
-	top: 40%;	
+	top: 40%;
 	left:50%;
     transform: translate(-50%, -40%);
 	color: #ffffff;
 	text-shadow: 1px 1px 1px #000000;
-	transition: .5s;	
+	transition: .5s;
 }
 
 #inicio .i_text2{
@@ -267,7 +328,7 @@ nav #toggle.on #three {
 
 #classes .c_text{
 	position: absolute;
-	font-size: 2.8em;
+	font-size: 2.5em;
 	font-family: poppins;
 	top: 20%;	
 	left:50%;
@@ -281,7 +342,7 @@ nav #toggle.on #three {
     position: absolute;        
     top: 50%;
     left:50%;
-    width: 43%;
+    /* width: 43%; */
     transform: translate(-50%, -50%);
     transition: .5s;       
 }
@@ -493,33 +554,19 @@ section a{
 }
 
 @media only screen and (max-width: 1600px){
-/*	#img-logo{	
-	left: 50% !important;
-	transform: translate(-50%, 0);}  */
-    nav ul li {
+
+	nav ul li {
     font-size: 1.2em; 
     padding: 1.4em 4em;   
     }
 
-	#inicio .i_text{
-	font-size: 2.2em;
-	top:33%;
-    }
-
-    #inicio .i_text2{
-	font-size: 1.1em;
-	top: 40%; }
-
-    .classes{
+	.classes{
 	width:96px;
 	height:96px;
 	margin:10px 10px; }
     
-/*  #masmorras{
-	height: 1200px;}   */
 }
 
-/*@media only screen and (max-width: 1169px){   1366*/
 @media only screen and (max-width: 1440px){   
 
 nav ul li {
@@ -531,18 +578,8 @@ nav ul li {
 	padding: -0.4em 5em;
 }
 
-#inicio .i_text{
-	top: 50%;}
-
-#inicio .i_text2{    
-	font-size: 1.1em;
-	top: 60%; }
- 
 #classes .c_text{
      top: 15%;}
-
-/*#classes #container-classes{	    
-    top: 55%; }    */
 
 #masmorras img{	
 	top: 3vh;
@@ -575,7 +612,6 @@ nav ul li {
     font-size: 1em; 
     padding: 1.5em 1.5em; }
 
-
     .navlifixed {	
 	font-size: .9em;}
 }
@@ -603,32 +639,63 @@ nav ul li {
     right: 5vw;
     height: 55px;
     width: 55px; }
+	
+	#inicio{
+		flex-direction: column;
+	}
+	.card_wow{
+		width:85%;
+		height: 200px;
+		transition: .5s;
+	}
+	.card_wow img{
+		z-index: 1;
+		height: 150px;
+	}
 
-	#img-logo{		
-	width: 300px;
-	height:auto; }
+	.card_wow #img-turtle{
+		height: 120px;
+	}
 
-	#inicio .i_text{	
-	font-size: 1.1em;
-	top:30%;	
-    }
+	.card_wow:hover{
+		height:300px;
+	}
+	.card_wow:hover img{
+		left: 50%;
+		top: 0%;
+		transform: translate(-50%, -50%);
+		height: 130px;
+	}
+	
+	.card_wow:hover #img-turtle{
+		left: 50%;
+		top:0;
+		height: 100px;
+	}
+	
+	.card_wow .card_wow_content{
+		left: 0;
+		width: 100%;		
+	}
+	.card_wow:hover .card_wow_content{
+		width: 100%;
+		left:0;
+		padding-top: 40px;
+	}
+	.card_wow .card_wow_content h2{
+		font-size: 1.7em;
+	}
 
-    #inicio .i_text2{	    
-	font-size: .8em;
-	top: 37%; }   
-
-/*	#classes #container-classes{
-	width:60%;
-    top: 45%; }     */
-    
-    #classes #container-classes{
+	#classes #container-classes{
 	top:65%;
-	width:68%;}
+	width:68%;
+	display: ruby;
+}
     
-    .classes{    	
+    /* .classes{    	
 	width:80px;
 	height:80px;	    
-	margin:3px 3px; }
+	margin:3px 3px; } */
 
     #masmorras{
     background-image: none;
@@ -654,14 +721,8 @@ nav ul li {
 
    section h2{
    	top: 75%;}
-/*
-	.limit{
-		height: 350px;
-		width: 60%;
-	} */
-	
 
- .swiper-container .icon_swiper{
+	.swiper-container .icon_swiper{
     position: absolute;
     display: block !important;
     top: 95% !important;
@@ -687,60 +748,41 @@ nav ul li {
         top: 65%;}
     #masmorras h2{
         top: 75%;}
-
-
 }
 
-
-@media(min-width: 768px) {
+/* @media(min-width: 768px) {
       #resize {
             visibility: hidden !important;
       }
-}
+
+} */
 
 @media only screen and (max-width:480px){
-  
-    #img-logo{
-    top:10%;
-    left:50%;
-    transform: translate(-50%, -10%); }
-
-    #inicio .i_text{
-	font-size: 2em;
-	top:50%;
-	left:24%;
-	transform: translate(-12%,-50%);
-	 }
-
-    #inicio .i_text2{  
-	font-size: 1em;
-	top: 65%;
-	left:24%;
-	transform: translate(-12%,-50%);
-	 }
 
     #classes{
     	min-height: 500px;
     }
 
-    #classes .c_text{
-    	top:15%;
-    	left: 35%;
-    	transform: translate( -35%, -10%);
-    	font-size: 2em;
+	#classes .c_text {
+		display: flex;
+        justify-content: center;
+        top: 20%;
+        width: 100%;
+        font-size: 1.5em;
     }
 
-	#classes #container-classes{
-	top:35%;
-	left:50%;
-	transform: translate(-50%, 0%);
-	width:100%;
-	height:58%;}
-    
+	#classes #container-classes {
+        top: 35%;
+        transform: translate(-50%, 0%);
+        /* width: 83%; */
+		width: 320px;
+    }
     .classes {
     	height: 96px;
     	width: 96px;
-     	margin:0 9px; }
+     	/* margin:0 9px; */
+		 margin: 4px 4px;
+	 }
     
     #masmorras img{
       top:2vh;
@@ -749,8 +791,9 @@ nav ul li {
       width:90px;
     }
 
-    #masmorras ol{
-     top: 185vh;
+    #masmorras ol{     
+	 left: 23vw;
+	 top: 198vh;
     }
      #masmorras ol li{      
      font-size: 1.3em;  

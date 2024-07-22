@@ -1,7 +1,10 @@
 pt-br:  
-  app:
-    name: "WoW-Classico Builds!"
-    desc: "O acervo contém atualmente mais de 40 Builds!"
+  home:
+    wow_desc: "Se destaca por seu ritmo mais lento e desafiador em comparação às versões 
+    mais recentes. O progresso exige paciência e dedicação, tornando cada conquista significativa."
+    turtle_desc: "Mysteries of Azeroth — é uma expansão feita por fãs para World of Warcraft 
+    Vanilla, que se aprofunda na exploração da história original do jogo. Pretendendo seguir 
+    um caminho alternativo de Burning Crusade."
   menu:
     dungeons: "masmorras"
     class: "classes"

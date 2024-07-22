@@ -1,8 +1,8 @@
-  <nav>
+   <nav>
      <ul id="menu">
        <li>
-         <div class="dropdown">         
-         <%= submit_tag "#{t "menu.language"}", class:"dropbtn" %> 
+         <div class="dropdown">
+         <%= submit_tag "#{t "menu.language"}", class:"dropbtn" %>
          <div class="dropdown-content">
            <%= link_to "english", locale: "en" %>
            <%= link_to "português", locale: "pt-br" %>
@@ -23,28 +23,39 @@
    </nav>
 
 <div id="resize">
-            <ul id="menu" class="main-menu">
-                  <li class="main-menu-item">
-                    <a><%= t "menu.language"%></a>
-                    <ul class="submenu">
-                      <li class="submenu-item"><%= link_to "english", locale: "en" %></li>
-                      <li class="submenu-item"><%= link_to "português", locale: "pt-br" %></li>                      
-                    </ul>
-                  </li>
-                  <li class="main-menu-item"><%= link_to "#{t "menu.begin"}", "#inicio", onclick:"$('#toggle').click()"%></li>
-                  <li class="main-menu-item"><%= link_to "#{t "menu.class"}", "#classes", onclick:"$('#toggle').click()"%></li>
-                  <li class="main-menu-item"><%= link_to "#{t "menu.dungeons"}", "#masmorras", onclick:"$('#toggle').click()"%></li>
-            </ul>
+   <ul id="menu" class="main-menu">
+         <li class="main-menu-item">
+           <a><%= t "menu.language"%></a>
+           <ul class="submenu">
+             <li class="submenu-item"><%= link_to "english", locale: "en" %></li>
+             <li class="submenu-item"><%= link_to "português", locale: "pt-br" %></li>                      
+           </ul>
+         </li>
+         <li class="main-menu-item"><%= link_to "#{t "menu.begin"}", "#inicio", onclick:"$('#toggle').click()"%></li>
+         <li class="main-menu-item"><%= link_to "#{t "menu.class"}", "#classes", onclick:"$('#toggle').click()"%></li>
+         <li class="main-menu-item"><%= link_to "#{t "menu.dungeons"}", "#masmorras", onclick:"$('#toggle').click()"%></li>
+   </ul>
 </div>
 
 <section id="inicio">
-  <%= image_tag 'wow-classic-logo', id:"img-logo" %>
-        
-    <h1 class="i_text"><%= t "app.name"%></h1>
-    <h2 class="i_text2"><%= t "app.desc"%></h2>
-</section>   
+  <div class="card_wow">
+  <div class="card_wow_content">
+    <h2> World of Warcraft </h2>
+    <p> <%= t "home.wow_desc"%> </p>
+  </div>
+    <%= image_tag 'wow-classic-logo' %>
+  </div>
 
-<section id="classes">		
+  <div class="card_wow">
+  <div class="card_wow_content">
+    <h2> Turtle WoW </h2>
+    <p> <%= t "home.turtle_desc"%> </p>
+  </div>
+    <%= image_tag 'img-turtle-wow', id:"img-turtle" %>
+  </div>
+</section>
+
+<section id="classes">
 				<div class="layer">         
         <h1 class="c_text"><%= t "class.title"%></h1> 
         <div id="container-classes">          

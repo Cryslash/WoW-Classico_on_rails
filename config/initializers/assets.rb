@@ -11,6 +11,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 Rails.application.config.assets.precompile += %w(                                                   
                                                   wow-classic-logo
+                                                  img-turtle-wow
                                                   DG's/Treasure_chest
                                                   animation_swipe_icon
                                                   wow-classic-bg

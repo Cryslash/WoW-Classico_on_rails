@@ -20,9 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:  
-  app:
-    name: "QuickBuilds-Classic!"
-    desc: "The collection currently contains over 40 Builds!"
+  home:
+    wow_desc: "Is known for its slower, 
+    more challenging pace compared to more recent versions. 
+    Progressing through the game required patience and dedication, 
+    making each achievement meaningful."
+    turtle_desc: "Mysteries of Azeroth — is a fan-made expansion story 
+    for World of Warcraft Vanilla that delves deeper into exploring 
+    the original lore of the game. 
+    This expansion aims to take a different path from the Burning Crusade."
+
   menu:
     dungeons: "dungeons"
     class: "class"
