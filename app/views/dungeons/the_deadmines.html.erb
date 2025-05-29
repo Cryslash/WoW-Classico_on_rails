@@ -18,20 +18,21 @@
        <li><%= t "dungeons.template_title" %> <%= t "dungeons_name.The Deadmines" %>.</li>
     </ol>
 
-<%for i in 0..4%>
+<!--<%#for i in 0..4 %> -->
+<% @q.each do |key, value| %>
  <div class="quests">
    <div class="quest_text">
      <ul>
-          <li><span class="line1">[<%=@q[i][0]%>] - [<a href="<%=@q[i][1] %>"></a>]</span></li>
-       <%if @q[i][2] != ""%>
-          <li><%= t "quests.quest_begin"%> <a href="<%=@q[i][2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][3]}"%>.</li>
+          <li><span class="line1">[<%=value[0]%>] - [<a href="<%=value[1] %>"></a>]</span></li>
+       <%if value[2] != ""%>
+          <li><%= t "quests.quest_begin"%> <a href="<%=value[2] %>"></a> <%= t "quests.in" %> <%= t "locales.#{value[3]}"%>.</li>
        <%end%>
-      <%if @q[i][6] != ""%>
-          <li> <%= t "quests.quest_chain" %> <a href="<%=@q[i][5]%>"></a> <%= t "quests.quest_chain_begin" %> <a href="<%=@q[i][6]%>"></a> <%= t "quests.in" %> <%= t "locales.#{@q[i][7]}"%>.</li>
+      <%if value[6] != ""%>
+          <li> <%= t "quests.quest_chain" %> <a href="<%=value[5]%>"></a> <%= t "quests.quest_chain_begin" %> <a href="<%=value[6]%>"></a> <%= t "quests.in" %> <%= t "locales.#{value[7]}"%>.</li>
       <%end%>
      </ul>
    </div>
-<div class="<%=@q[i][4]%>"></div>
+<div class="<%=value[4]%>"></div>
 </div>
 <%end%>
 

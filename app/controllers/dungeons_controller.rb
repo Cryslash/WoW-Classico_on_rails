@@ -133,13 +133,16 @@ class DungeonsController < ApplicationController
        }
 	end
 	def the_deadmines
-		@q = {
+		@q = {# nvl         quest           starter            locale        icon_class / chain  /   starter2  /  locale2    
             0 =>["22","https://#{@l}classic.wowhead.com/quest=65/the-defias-brotherhood","","","alliance_icon","","https://#{@l}classic.wowhead.com/npc=234","westfall"],
 		    1 =>["18","https://#{@l}classic.wowhead.com/quest=168/collecting-memories","https://#{@l}classic.wowhead.com/npc=656","stormwind","alliance_icon","","",""],
 		    2 =>["18","https://#{@l}classic.wowhead.com/quest=167/oh-brother","https://#{@l}classic.wowhead.com/npc=656","stormwind","alliance_icon","","",""],
 		    3 =>["18","https://#{@l}classic.wowhead.com/quest=2040/underground-assault","https://#{@l}classic.wowhead.com/npc=6579","stormwind","alliance_icon","","",""],
 		    4 =>["21","https://#{@l}classic.wowhead.com/quest=214/red-silk-bandanas","https://#{@l}classic.wowhead.com/npc=820","westfall","alliance_icon",
-		    	 "https://#{@l}classic.wowhead.com/quest=155/a-irmandade-d%C3%A9fias","https://#{@l}classic.wowhead.com/npc=467","westfall"]
+		    	 "https://#{@l}classic.wowhead.com/quest=155/a-irmandade-d%C3%A9fias","https://#{@l}classic.wowhead.com/npc=467","westfall"],
+				5 =>["18","https://database.turtle-wow.org/?quest=55005","https://database.turtle-wow.org/?npc=91200&__cf_chl_tk=25qEx4ttslVVGMNLM8huzsnJrz6MdZCtPzO4wWdDy8A-1721668128-0.0.1.1-4414","?","horde_icon","","",""],
+				6 =>["22","https://database.turtle-wow.org/?quest=40396","https://database.turtle-wow.org/?npc=392","westfall","horde_alliance_icon","","",""],
+				7 =>["19","https://database.turtle-wow.org/?quest=40478","https://database.turtle-wow.org/?npc=60858","westfall","alliance_icon","","",""]
         }
 	end
 	def the_stockade
